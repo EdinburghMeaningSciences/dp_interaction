@@ -349,6 +349,7 @@ def handle_director_response(director_id,director_response):
 # are just set to ??? here, since the code for that is still to be written!
 # Both clients are sent a feedback command: command_type F, then multiple pieces of info including
 # score, the intended target, the clue provided, etc etc
+# Wataru: this is where we need to implement the weighting
 def handle_matcher_response(matcher_id,matcher_response):
     print("in handle_matcher_response")
     director_id = global_participant_data[matcher_id]['partner']
