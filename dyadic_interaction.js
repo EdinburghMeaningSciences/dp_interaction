@@ -705,7 +705,7 @@ function matcher_trial(label, partner_id) {
 A simple message informing the participant whether the communication was successful
 or not.
 */
-// WU need to incorporate the weighting here. 
+// WU need to incorporate the weighting here. / EDIT: rather in the dyadic_interaction_utilities.js
 
 function display_feedback(score) {
   end_waiting();
