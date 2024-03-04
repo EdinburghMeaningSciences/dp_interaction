@@ -215,7 +215,7 @@ var observation_trials = jsPsych.randomization.repeat(
     observation_trial_epiImp_lex,
     observation_trial_epiImp_comp,
     observation_trial_deonImp_lex,
-    observation_trial_deonImp_comp
+    observation_trial_deonImp_comp,
     observation_trial_epiNonnec,
     observation_trial_deonNonnec
   ],
