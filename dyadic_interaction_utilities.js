@@ -37,7 +37,7 @@ function interaction_loop() {
   //pause the timeline to stop us progressing past this point - incoming commands
   //from the server will unpause us
   jsPsych.pauseExperiment();
-  ws = new WebSocket("wss://jspsychlearning.ppls.ed.ac.uk" + my_port_number);
+  ws = new WebSocket("wss://emsl.ppls.ed.ac.uk" + my_port_number);
   //ws = new WebSocket("ws://localhost:9011")
   //when establishing connection for first time, send over some info - in this case,
   //the server needs to know participant_id, which is a unique identifier for this
