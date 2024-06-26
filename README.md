@@ -1,0 +1,1 @@
+Currently only the weighted_interactive condition is fully commented. Please assume any comments and notes in unweighted_interactive are original to Kenny Smith and the semantic extension experiment found here: https://github.com/kennysmithed/SemanticExtension/tree/main/Experiment1Code/shapes_interaction. 
