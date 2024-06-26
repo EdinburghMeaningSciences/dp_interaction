@@ -3,10 +3,9 @@
 //prefixed by [KS] have been retained from this original codebase. 
 
 //Global pathing prefix for stimuli
-const PREPATH = '../pictures/'
-
-//Weighted LEM goes to websocket 2. 
-var my_port_number = "/ws2/";
+const PREPATH = '../../uw_pictures/'
+ 
+var my_port_number = "/ws3/";
 
 //Initialize jsPsych
 var jsPsych = initJsPsych({
@@ -19,10 +18,10 @@ var jsPsych = initJsPsych({
 });
 
 //Assign an ID and preload the trial bank.
-var PARTICIPANT_ID = jsPsych.randomization.randomID(10)//jsPsych.data.getURLVariable('PROLIFIC_PID');
+const PARTICIPANT_ID = jsPsych.randomization.randomID(10)//jsPsych.data.getURLVariable('PROLIFIC_PID');
 async function fetchTrialData() {
-  //*********** change this to /zop_trials.json for the other condition! ************
-  const response = await fetch('../lem_trials.json');
+  //*********** change this to /lem_trials.json for the other condition! ************
+  const response = await fetch('../../zop_trials.json');
   if (!response.ok) {
       throw new Error('Could not fetch trials');
   }
@@ -283,34 +282,41 @@ function end_experiment(score) {
 
 function director_trial(target_object, partner_id) {
   end_waiting();
-
+  //look up label choices depending on object 
+  // if (target_object == "object4") {
+  //   label_choices = object_4_labels; 
+  // } else if (target_object == "object5") {
+  //   label_choices = object_5_labels;
+  // }
   var label_choices = choiceBanks[target_object['lexicalization_number']]
-
+  //console.log(label_choices)
+  //bit of book-keeping on object filename
+  //var object_filename = "images/" + target_object + ".jpg";
 
   var object_filename = PREPATH + target_object['picture']
   console.log(object_filename)
-  //Subtrial 1: show just the picture for one half-second.
+  //subtrial 1 - just show the object
   var subtrial1 = {
     type: jsPsychImageButtonResponse,
     stimulus: object_filename,
     stimulus_width: 600,
     maintain_aspect_ratio: true,
-    prompt: "&nbsp;", //null prompt
-    choices: label_choices,
+    prompt: "&nbsp;", //placeholder prompt
+    choices: label_choices, //these buttons are invisible and unclickable!
     button_html:
       '<button style="visibility: hidden;" class="jspsych-btn">%choice%</button>',
     response_ends_trial: false,
     trial_duration: 500
   };
-  //Subtrial 2: Have the director choose what they think is the most appropriate label for the picture, from the set of possible choices. 
+  //subtrial 2: show the labelled buttons and have the participant select
   var subtrial2 = {
     type: jsPsychImageButtonResponse,
     stimulus: object_filename,
     stimulus_width: 600,
     maintain_aspect_ratio: true,
-    prompt: "<br><br>", //null prompt
+    prompt: "<br><br>", //placeholder prompt
     choices: label_choices,
-    //[KS] at the start of the trial, randomise the left-right order of the labels
+    //at the start of the trial, randomise the left-right order of the labels
     //and note that randomisation in data
     on_start: function (trial) {
       var shuffled_label_choices = jsPsych.randomization.shuffle(label_choices);
@@ -320,15 +326,15 @@ function director_trial(target_object, partner_id) {
         button_choices: shuffled_label_choices,
       };
     },
-    //[KS] at the end, use data.response to figure out
+    //at the end, use data.response to figure out
     //which label they selected, and add that to data and save
     on_finish: function (data) {
       var button_number = data.response;
-      label_selected = data.button_choices[button_number]; //[KS] keep track of this in our variable
-      n_clicks_required = label_selected.length; //[KS] this determines how many times we click in the loop
-      data.button_selected = label_selected; //[KS] add this to data so it is saved to data file
-      data.trial_type = "director"; //[KS] add this to data so it is saved to data file
-      data.partner_id = partner_id; //[KS] add this to data so it is saved to data file 
+      label_selected = data.button_choices[button_number]; //keep track of this in our variable
+      n_clicks_required = label_selected.length; //this determines how many times we click in the loop
+      data.button_selected = label_selected; //add this to data so it is saved to data file
+      data.trial_type = "director"; //add this to data so it is saved to data file
+      data.partner_id = partner_id; //add this to data so it is saved to data file
       save_dyadic_interaction_data(data);
     },
   };
@@ -336,6 +342,8 @@ function director_trial(target_object, partner_id) {
   var message_to_server = {
     type: jsPsychCallFunction,
     func: function () {
+      //let the server know what label the participant selected,
+      //and some other info that makes the server's life easier
       send_to_server({
         response_type: "RESPONSE",
         participant: PARTICIPANT_ID,
@@ -347,7 +355,7 @@ function director_trial(target_object, partner_id) {
       jsPsych.pauseExperiment();
     },
   };
-  //Concatenate subtrials 1 & 2 and the server message into one over-trial. 
+  //put the three (TWO) sub-parts plus the message-send together in a single complex trial
   var trial = {
     timeline: [subtrial1, subtrial2, message_to_server],
   };
@@ -369,8 +377,9 @@ with a few changes to accommodate our new sorting and prompt selection methods.
 
 function matcher_trial(label, partner_id, object_choices) {
   end_waiting();
+  //var object_choices = possible_objects; //global variable defined at top!
   var imageChoices = object_choices.map(function(imageSrc) {
-    return `<img src="${imageSrc}" style="width:400px; height:auto;">`; 
+    return `<img src="${imageSrc}" style="width:400px; height:auto;">`; // Set width as needed
   });
   var trial = {
     type: jsPsychHtmlButtonResponse,
@@ -387,7 +396,7 @@ function matcher_trial(label, partner_id, object_choices) {
       var button_number = data.response;
       data.trial_type = "matcher";
       data.button_selected = data.button_choices[button_number];
-      data.partner_id = partner_id; 
+      data.partner_id = partner_id; //add this to data so it is saved to data file
       save_dyadic_interaction_data(data);
       send_to_server({
         response_type: "RESPONSE",
@@ -516,8 +525,6 @@ var instruction_screen_observation = {
   choices: ["Continue"],
 };
 
-window.instruction_screen_observation = instruction_screen_observation
-
 var instruction_screen_enter_waiting_room = {
   type: jsPsychHtmlButtonResponse,
   stimulus:"<h3>You are about to enter the waiting room for pairing!</h3>\
@@ -528,6 +535,7 @@ var instruction_screen_enter_waiting_room = {
   or click away from the tab</b>, since this will also end the experiment for your partner.</p>",
   choices: ["Continue"]
 };
+
 
 function show_interaction_instructions() {
   end_waiting();
@@ -544,16 +552,13 @@ function show_interaction_instructions() {
     When you are the RECEIVER you'll wait for the sender to select a label, \
     then you'll see the label selected by the sender plus four pictures - \
     you just have to click on the picture that is described by the sender's label. \
-    This phase consists of <span style'color:blue'<b>64</b></span> iterations, meaning you will be the RECEIVER and the SENDER <b>32 times each</b>.\
+    This phase consists of <span style'color:blue'<b>48</b></span> iterations, meaning you will be the RECEIVER and the SENDER <b>24 times each</b>.\
 </p>",
 "<h3>Pre-interaction Instructions: Weighting</h3> \
 <p style='text-align:left'> \
-    Your response will be scored after every trial: you get a positive score if the receiver correctly identifies the picture from the sender's description, \
-    and a negative score if the receiver picks the wrong picture. Note that the scoring depends on the type of picture. \
-    If the picture shown to the sender has a <span style='color:red'>red frame</span> (i.e. situations that can be described as \"not allowed...\" or \"not obliged\"), \
-    the score will be <span style='color:red'>+2</span> if the receiver identifies the picture correctly and <span style='color:red'>-2</span> if the receiver chooses the wrong picture. \
-    If the picture has a <span style='color:blue'>blue frame</span> (i.e. situations that can be described as \"cannot be that…\" or \"doesn’t have to be…\"), \
-    the score will be <span style='color:blue'>+1</span> if the receiver identifies the picture correctly and <span style='color:blue'>-1</span> if the receiver chooses the wrong picture. \
+    Your response will be scored after every trial: you get a positive score if you correctly identify the sentence from the picture, \
+    and a negative score if you pick the wrong sentence. Note that the scoring depends on the type of picture! \
+    The score will be <span style='color:blue'>+1</span> if you identify the picture correctly and <span style='color:red'>-1</span> if you choose the wrong one. \
     You will probably get many trials wrong at first, so don’t worry – watch the feedback and try to learn from it! \
 </p> \
 <p style='text-align:left'> \

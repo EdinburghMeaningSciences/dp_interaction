@@ -3,7 +3,6 @@
 #   - Scoring, both trial-by-trial and cumulatively, in handle_matcher_response.
 #   - Helper functions for trial sequence generation (shuffle, collect_prompts, collect_sentences) and modifications to trials as needed to accommodate. 
 #   - Pathing to stimulus objects and trial data for our experiment structure.
-
 # -*- coding: utf-8 -*-
 
 ##############
@@ -66,7 +65,7 @@ phase_sequence = ['Start','PairParticipants','Interaction','End']
 # list of target objects - this is it! Note that object 4 is 3 times as frequent as object 5.
 target_list = None#["epiImp", "epiNonnec", "deonImp", "deonNonnec"]*2
 
-prepath = '../pictures/'
+prepath = '../../uw_pictures/'
 
 def collect_prompts(input_list):
     prompt_dict = {}
@@ -221,7 +220,7 @@ def enter_phase(client_id, phase):
         progress_phase(client_id)
     elif phase == 'PairParticipants':
         # ***** Change this to the correct json file for the lexical condition *****
-        trial_path = os.path.join('..', '..', 'zop_trials.json')
+        trial_path = os.path.join('..', '..', '..', 'zop_trials.json')
         with open(trial_path, 'r') as f:
             trial_bank = json.load(f)
 
@@ -253,7 +252,6 @@ def enter_phase(client_id, phase):
         send_instructions(client_id, phase)
     elif phase == 'End':
         send_message_by_id(client_id, {"command_type": "EndExperiment", "final_score": global_participant_data[client_id]['score']})
-
 
 
 #################
@@ -420,15 +418,9 @@ def handle_matcher_response(matcher_id,matcher_response):
                 return False
 
         if check_guess(label, guess):
-            if target['flavor'] == 'deontic':
-                score = 2
-            else:
-                score = 1
+            score = 1
         else:
-            if target['flavor'] == 'deontic':
-                score = -2
-            else:
-                score = -1
+            score = -1
         
         global_participant_data[director_id]['score'] += score
         global_participant_data[matcher_id]['score'] += score
@@ -437,6 +429,8 @@ def handle_matcher_response(matcher_id,matcher_response):
                     "target":target,"label":label,"guess":guess, 'c_score': global_participant_data[matcher_id]['score']}
         for c in [matcher_id,director_id]: #send to both clients
             send_message_by_id(c,feedback)
+
+
 
 # Each client comes here when they signal they are done with feedback from an interaction trial.
 # The first client who returns will set their role to 'WaitingToSwitch'.
@@ -484,7 +478,7 @@ def send_instructions(client_id,phase):
 ### Start up server
 #######################
 
-PORT=9001 #this will run on port 9001
+PORT=9003 #this will run on port 9004
 
 #standard stuff here from the websocket_server code
 print('starting up')

@@ -65,7 +65,7 @@ phase_sequence = ['Start','PairParticipants','Interaction','End']
 # list of target objects - this is it! Note that object 4 is 3 times as frequent as object 5.
 target_list = None#["epiImp", "epiNonnec", "deonImp", "deonNonnec"]*2
 
-prepath = '../pictures/'
+prepath = '../../w_pictures/'
 
 def collect_prompts(input_list):
     prompt_dict = {}
@@ -220,7 +220,7 @@ def enter_phase(client_id, phase):
         progress_phase(client_id)
     elif phase == 'PairParticipants':
         # ***** Change this to the correct json file for the lexical condition *****
-        trial_path = os.path.join('..', '..', 'lem_trials.json')
+        trial_path = os.path.join('..', '..', '..', 'lem_trials.json')
         with open(trial_path, 'r') as f:
             trial_bank = json.load(f)
 

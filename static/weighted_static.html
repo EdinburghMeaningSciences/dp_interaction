@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Static Demo</title>
+    <script src="https://unpkg.com/jspsych"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-html-button-response"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-html-keyboard-response"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-image-button-response"></script>
+    <link href="https://unpkg.com/jspsych@7.3.4/css/jspsych.css" rel="stylesheet" type="text/css" />
+    <script src="https://unpkg.com/@jspsych/plugin-call-function"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-instructions"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-survey-text"></script>
+</head>
+<body>
+<script>
+
+async function loadJSON(path) {
+    const response = await fetch(path);
+    const data = await response.json();
+    return data;
+}
+
+async function initializeExperiment() {
+    const lem_trials = await loadJSON('../lem_trials.json');
+    const zop_trials = await loadJSON('../zop_trials.json');
+
+var jsPsych = initJsPsych({
+    show_progress_bar: true
+});
+
+var PARTICIPANT_ID = jsPsych.data.getURLVariable('PROLIFIC_PID');
+
+const PREPATH = '../w_pictures/';
+
+function save_trial_data(data) {
+    var url = "weighted_save_data.php";
+    var data_to_send = {
+        filename: "pid_" + PARTICIPANT_ID + ".csv",
+        filedata: [
+            PARTICIPANT_ID,
+            data.trial_index,
+            data.trial_type,
+            data.stimulus,
+            data.response,
+            data.rt,
+            data.choice_label,
+            data.score,
+            data.cumulative_score,
+            data.survey_response
+        ].join(",") + "\n"
+    };
+
+    console.log('Sending data:', data_to_send);
+
+    fetch(url, {
+        method: "POST",
+        body: JSON.stringify(data_to_send),
+        headers: new Headers({
+            "Content-Type": "application/json",
+        }),
+    }).then(response => response.text())
+      .then(data => console.log('Response from server:', data))
+      .catch(error => console.error('Error:', error));
+}
+
+function write_headers() {
+    var headers = "PARTICIPANT_ID,trial_index,trial_type,stimulus,response,rt,choice_label,score,cumulative_score\n";
+    save_trial_data({ filedata: headers });
+}
+
+function randomChoice(arr) {
+    return arr[Math.floor(arr.length * Math.random())];
+}
+
+function generateTrialItems(arr){
+    let firstShuffle = jsPsych.randomization.shuffle(arr);
+    let secondShuffle = jsPsych.randomization.shuffle(arr);
+    return firstShuffle.concat(secondShuffle);
+}
+
+function collectPrompts(inputList) {
+    const promptDict = {};
+    const returnDict = {};
+
+    inputList.forEach(item => {
+        const lexNumber = item.lexicalization_number;
+        const sentence = item.sentence;
+        if (lexNumber in promptDict) {
+            promptDict[lexNumber].push(sentence);
+        } else {
+            promptDict[lexNumber] = [sentence];
+        }
+    });
+    const promptList = Object.entries(promptDict).map(([key, value]) => {
+        return { [key]: [...new Set(value)] };
+    });
+    promptList.forEach(d => {
+        Object.assign(returnDict, d);
+    });
+    return returnDict;
+}
+
+trial_bank = randomChoice([lem_trials, zop_trials]);
+
+trial_items = generateTrialItems(trial_bank);
+console.log(trial_items.length);
+object_choices = collectPrompts(trial_bank);
+
+function make_observation_trial(object, total_trials, current_trial) {
+  var trial = {
+    type: jsPsychHtmlButtonResponse,
+    stimulus: function() {
+      return '<div class="top-prompt">' + object['context'] + '</div><br><br>' +
+             '<img src="' + PREPATH + object['picture'] + '" style="width: 600px; display: block; margin: 0 auto;"><br><br>' +
+             '<div class="bottom-prompt"><i style="font-size: 24px;">' + object['sentence'] + '</i></div>';
+    },
+    choices: [],
+    timeline: [
+      {
+        stimulus: function() {
+          return '<div class="top-prompt">' + object['context'] + '</div><br><br>' +
+                 '<img src="' + PREPATH + object['picture'] + '" style="width: 600px; display: block; margin: 0 auto;"><br><br>';
+        },
+        trial_duration: 3000,
+      },
+      {
+        stimulus: function() {
+          return '<div class="top-prompt">' + object['context'] + '</div><br><br>' +
+                 '<img src="' + PREPATH + object['picture'] + '" style="width: 600px; display: block; margin: 0 auto;"><br><br>' +
+                 '<div class="bottom-prompt"><i style="font-size: 24px;">' + object['sentence'] + '</i></div>';
+        },
+        trial_duration: 6000,
+        post_trial_gap: 500,
+        data: { trial_type: "observation", observation_label: object['sentence'] },
+        on_start: function() {
+          jsPsych.setProgressBar(current_trial / total_trials);
+        },
+      }
+    ]
+  };
+  return trial;
+}
+
+function build_observation_phase(array) {
+    var observation_timeline = [];
+    for (let repetition = 0; repetition < 2; repetition++) {
+        let shuffled_array = jsPsych.randomization.shuffle(array);
+        shuffled_array.forEach((item) => {
+            observation_timeline.push(make_observation_trial(item)); 
+        });
+    }
+    return observation_timeline;
+}
+
+var cumulative_score = 0;
+
+const pictureToEncodings = {};
+trial_bank.forEach(trial => {
+    const picture = trial.picture;
+    if (!pictureToEncodings[picture]) {
+        pictureToEncodings[picture] = [];
+    }
+    if (!pictureToEncodings[picture].includes(trial.sentence)) {
+        pictureToEncodings[picture].push(trial.sentence);
+    }
+});
+
+function build_matching_trial(target) {
+    var choices = jsPsych.randomization.shuffle(object_choices[target['lexicalization_number']]);
+    var score = 0; 
+
+    var matching_trial = {
+        type: jsPsychImageButtonResponse,
+        stimulus: PREPATH + target['picture'],
+        stimulus_width: 600,
+        maintain_aspect_ratio: true,
+        choices: choices,
+        button_html: '<button class="jspsych-btn">%choice%</button>',
+        on_finish: function(data) {
+            var response_idx = parseInt(data.response);
+            var label_choice = choices[response_idx];
+            data.choice_label = label_choice;
+
+            score = 0; 
+            if (pictureToEncodings[target['picture']].includes(label_choice)) {
+                if (target['flavor'] === 'deontic') {
+                    score = 2;
+                } else {
+                    score = 1;
+                }
+            } else if (target['flavor'] === 'deontic') {
+                score = -2;
+            } else {
+                score = -1;
+            }
+
+            cumulative_score += score;
+            data.score = score; 
+            data.cumulative_score = cumulative_score;
+            save_trial_data(data);
+        }
+    };
+
+    var feedback_trial = {
+        type: jsPsychHtmlButtonResponse,
+        choices: [],
+        trial_duration: 1500,
+        stimulus: function() {
+            var last_trial_data = jsPsych.data.get().last(1).values()[0];
+            var guess = last_trial_data.choice_label;
+
+            if (pictureToEncodings[target['picture']].includes(guess)) {
+                return "Correct! You have earned " + score + " point(s). Cumulative score: " + cumulative_score;
+            } else if (!pictureToEncodings[target['picture']].includes(guess)){
+                return "Incorrect! You have lost " + -1*score + " point(s). Cumulative score: " + cumulative_score;
+            } 
+        }
+    };
+
+    return [matching_trial, feedback_trial];
+}
+
+var preliminary_instructions = {
+  type: jsPsychInstructions,
+  pages: [
+    "<h3>Welcome to the experiment</h3> \
+    <p style='text-align:left'>Today you will be participating in a game about learning new words. \
+    We have invented two words that don't exist in standard English — \"zop\" and \"lem\" — and given them consistent meanings. \
+    But there's a catch - as a participant, you have to figure out what those meanings are.</p> \
+    <p style='text-align:left'>The game consists of two phases: TRAINING and TESTING. In the TRAINING phase, you will watch a sequence of pictures pass by on your screen. \
+    The pictures will be labeled with a sentence that is true in the situation, using one of our made-up words. \
+    Pay close attention because some meanings might be difficult!</p>",
+    "<p style='text-align:left'>Hint: Some pictures show situations that can be described as “<b>not allowed</b>…” or “<b>not obliged</b>” and have red frames. \
+    Other pictures show situations that can be described as “<b>cannot be…</b>” or “<b>not necessarily</b>” and have blue frames.</p> \
+    <p style='text-align:left'>In the TESTING phase, we will ask you to apply what you learned in the training phase, by guessing the correct label for a picture we provide for you.</p>"
+  ],
+  allow_backward: true,
+  show_clickable_nav: true,
+  button_label_next: 'Next'
+}
+
+var consent_screen = {
+  type: jsPsychHtmlButtonResponse,
+  stimulus: "<h3>Welcome to the experiment</h3>" +
+    "<p style='text-align:left'><strong>Informed Consent Form</strong><br><br>" +
+    "This is an experiment about language learning. It will take about 20 minutes to complete. " +
+    "You will be compensated by the amount indicated both on Prolific and in the consent form." +
+    "This study is being conducted by Dr. Wataru Uegaki (University of Edinburgh) and has been granted ethical approval. <br>" +
+    "By agreeing below you indicate that:" +
+    "<ul style='text-align:left'>" +
+    "<li>You are at least 18 years old.</li>" +
+    "<li>You have read the information letter.</li>" +
+    "<li>You voluntarily agree to participate, and understand you can stop your participation at any point.</li>" +
+    "<li>You agree that your anonymous data may be kept permanently in Edinburgh University storage and may be used for research purposes.</li></ul>" +
+    "</p>" +
+    "<a href='https://docs.google.com/document/d/e/2PACX-1vTGwG1eIdQpNg83QKnaSKBWvCvpiZJrLDNifXT7qebolmIlPydN3TWlWevBlPQ9bgb0PU0uFvWKeGNR/pub' target = 'blank'>" +
+    "Information on the use of your data and your rights as a participant are linked in this document. Please review it carefully before proceeding with the experiment.</a><br><br>",
+  choices: ["Yes, I consent to participate"],
+};
+
+var instruction_screen_observation = {
+  type: jsPsychHtmlButtonResponse,
+  stimulus:
+  "<h3>Observation Instructions</h3>\
+  <p>A sequence of pictures and their labels will appear on your screen. You cannot interact with the experiment at this time, so relax and watch closely and try to figure out the meanings of the words \"zop\" and \"lem\". Please note that the words <b>DO NOT</b> mean “not”!</p>",
+  choices: ["Continue"],
+};
+
+var instruction_screen_testing = {
+    type: jsPsychInstructions,
+    pages:[
+      "<h3>Pre-Testing Instructions</h3> \
+<p style='text-align:left'> \
+   You'll see a picture on your screen, and your job is to select a good label to name it based on your training. \
+    This phase consists of <span style'color:blue'<b>48</b></span> iterations.\
+</p>",
+"<h3>Pre-Testing Instructions: Weighting</h3> \
+<p style='text-align:left'> \
+    Your response will be scored after every trial: you get a positive score if you correctly identify the sentence from the picture, \
+    and a negative score if you pick the wrong sentence. Note that the scoring depends on the type of picture! \
+    If the picture shown has a <span style='color:red'>red frame</span> (i.e. situations that can be described as \"not allowed...\" or \"not obliged\"), \
+    the score will be <span style='color:red'>+2</span> if you identify the picture correctly and <span style='color:red'>-2</span> if you choose the wrong picture. \
+    If the picture has a <span style='color:blue'>blue frame</span> (i.e. situations that can be described as \"cannot be that…\" or \"doesn’t have to be…\"), \
+    the score will be <span style='color:blue'>+1</span> if you identify the meaning correctly and <span style='color:blue'>-1</span> if you choose the wrong one. \
+    Watch the feedback and try to learn from it! \
+</p> \
+<p style='text-align:left'> \
+    You will receive a <span style='color:green'>bonus payment</span> at the end if your score is greater than 0. The higher your final score, the higher your bonus! \
+</p>"
+],
+    button_label_next: ["Continue"],
+    show_clickable_nav: true,
+    allow_backward: true
+  };
+
+  var survey_trial = {
+    type: jsPsychSurveyText,
+    questions: [
+      { prompt: "What do you think <b>zop</b> means?" },
+      { prompt: "What do you think <b>lem</b> means?" }
+    ],
+    preamble: "Thank you again for participating in our experiment. Please answer in a few words what you think each of the two made-up words means.",
+    button_label: 'End experiment',
+    on_finish: function(data) {
+      var response_zop = data.response.Q0; 
+      var response_lem = data.response.Q1; 
+      data.survey_response = response_zop + " || " + response_lem;
+      save_trial_data(data);
+    }
+  };
+
+  var final_screen = {
+    type: jsPsychHtmlButtonResponse,
+    stimulus: function() {
+        var bonus = cumulative_score > 0 ? (200 + (cumulative_score * 2)) / 100 : 0;
+        return "<h3>Finished!</h3>\
+        <p style='text-align:left'>Please follow the link below to claim your reward. <b><span style='color:red'>If you do not navigate back to Prolific, you will not receive any payment!</span></b></p>\
+        <p style='text-align:left'>" +
+        (cumulative_score > 0
+            ? "Congratulations! You will receive a bonus payment of <b>" + bonus + "</b> GBP. Thank you again for participating in our experiment!"
+            : "Unfortunately, you did not score high enough to receive a bonus payment. Thank you for participating!") +
+        "</p>\
+        <p style='text-align:left'>Your final cumulative score is: <b>" + cumulative_score + "</b></p>" +
+        `<p><a href="https://app.prolific.com/submissions/complete?cc=CI67KCSQ">Click here to return to Prolific and complete the study</a>.</p>`; // COMPLETE WITH PROLIFIC LINK
+    },
+    choices: [],
+    on_finish: function () {
+        jsPsych.endCurrentTimeline();
+    },
+};
+
+var observation_trials = build_observation_phase(trial_bank);
+
+var timeline = [];
+
+write_headers();
+
+timeline.push(preliminary_instructions, instruction_screen_observation)
+
+timeline.push(...observation_trials);
+
+timeline.push(instruction_screen_testing)
+
+trial_items.forEach(function(target) {
+    var trials = build_matching_trial(target);
+    timeline.push(...trials);
+});
+
+timeline.push(survey_trial)
+timeline.push(final_screen)
+
+jsPsych.run(timeline);
+
+}
+
+initializeExperiment()
+
+</script>
+</body>
+</html>
