@@ -11,7 +11,7 @@
         "choice_2": "not_lem",
         "choice_3": "lem_not",
         "flavor": "deontic",
-        "context": "Swimming in the pool is prohibited at the moment."
+        "context": "Mary is swimming in the pool although swimming is not allowed."
     },
     {
         "lexicalization_number": 1,
@@ -25,7 +25,7 @@
         "choice_2": "not_lem",
         "choice_3": "lem_not",
         "flavor": "deontic",
-        "context": "Swimming in the pool is prohibited at the moment."
+        "context": "Mary is swimming in the pool although swimming is not allowed."
     },
     {
         "lexicalization_number": 1,
@@ -39,7 +39,7 @@
         "choice_2": "not_lem",
         "choice_3": "lem_not",
         "flavor": "deontic",
-        "context":"Students can choose either tennis or swimming as their PE activity."
+        "context":"During PE, students can choose either tennis or swimming. Mary doesn't have to choose swimming."
     },
     {
         "lexicalization_number": 2,
@@ -53,7 +53,7 @@
         "choice_2": "not_lem",
         "choice_3": "lem_not",
         "flavor": "deontic",
-        "context": "Students must not sleep during a class."
+        "context": "Paul is sleeping during a class although he is not allowed to."
     },
     {
         "lexicalization_number": 2,
@@ -67,7 +67,7 @@
         "choice_2": "not_lem",
         "choice_3": "lem_not",
         "flavor": "deontic",
-        "context": "Students must not sleep during a class."
+        "context": "Paul is sleeping during a class although he is not allowed to."
     },
     {
         "lexicalization_number": 2,
@@ -95,7 +95,7 @@
         "choice_2": "not_lem",
         "choice_3": "lem_not",
         "flavor": "deontic",
-        "context":"Students must not be playing outside during a class."
+        "context":"Paul is playing outside during a class although he is not allowed to."
     },
     {
         "lexicalization_number": 3,
@@ -109,7 +109,7 @@
         "choice_2": "not_lem",
         "choice_3": "lem_not",
         "flavor": "deontic",
-        "context":"Students must not be playing outside during a class."
+        "context":"Paul is playing outside during a class although he is not allowed to."
     },
     {
         "lexicalization_number": 3,
@@ -123,7 +123,7 @@
         "choice_2": "not_lem",
         "choice_3": "lem_not",
         "flavor": "deontic",
-        "context":"During breaktime, students can play either outside or inside."
+        "context":"During breaktime, students can play either outside or inside. Paul doesn't have to be outside."
     },
     {
         "lexicalization_number": 4,
@@ -137,7 +137,7 @@
         "choice_2": "not_lem",
         "choice_3": "lem_not",
         "flavor": "deontic",
-        "context":"Phones are prohibited in this room."
+        "context":"Mary is holding a phone although she is not allowed to."
     },
     {
         "lexicalization_number": 4,
@@ -151,7 +151,7 @@
         "choice_2": "not_lem",
         "choice_3": "lem_not",
         "flavor": "deontic",
-        "context":"Phones are prohibited in this room."
+        "context":"Mary is holding a phone although she is not allowed to."
     },
     {
         "lexicalization_number": 4,
@@ -165,7 +165,7 @@
         "choice_2": "not_lem",
         "choice_3": "lem_not",
         "flavor": "deontic",
-        "context":"You don't have to answer an email during a vacation. "
+        "context":"During a vacation, you don't have to check an email."
     },
     {
         "lexicalization_number": 1,
@@ -179,7 +179,7 @@
         "choice_2": "not_lem",
         "choice_3": "lem_not",
         "flavor": "epistemic",
-        "context":"Someone can't be calling if they are in the pool."
+        "context":"Mary is calling you on the phone so it’s not possible that she is in the pool."
     },
     {
         "lexicalization_number": 1,
@@ -193,7 +193,7 @@
         "choice_2": "not_lem",
         "choice_3": "lem_not",
         "flavor": "epistemic",
-        "context":"Someone can't be calling if they are in the pool."
+        "context":"Mary is calling you on the phone so it’s not possible that she is in the pool."
     },
     {
         "lexicalization_number": 1,
@@ -207,7 +207,7 @@
         "choice_2": "not_lem",
         "choice_3": "lem_not",
         "flavor": "epistemic",
-        "context":"We don't know if Mary is taking shower or swimming."
+        "context":"Mary may be taking shower. So, she is not necessarily in the pool."
     },
     {
         "lexicalization_number": 2,
@@ -221,7 +221,7 @@
         "choice_2": "not_lem",
         "choice_3": "lem_not",
         "flavor": "epistemic",
-        "context":"Paul is a light sleeper, and there is loud music coming from Paul's room."
+        "context":"Paul is a light sleeper, and there is loud music coming from Paul's room. So, it's not possible that Paul is sleeping."
     },
     {
         "lexicalization_number": 2,
@@ -235,7 +235,7 @@
         "choice_2": "not_lem",
         "choice_3": "lem_not",
         "flavor": "epistemic",
-        "context":"Paul is a light sleeper, and there is loud music coming from Paul's room."
+        "context":"Paul is a light sleeper, and there is loud music coming from Paul's room. So, it's not possible that Paul is sleeping."
     },
     {
         "lexicalization_number": 2,
@@ -249,7 +249,7 @@
         "choice_2": "not_lem",
         "choice_3": "lem_not",
         "flavor": "epistemic",
-        "context":"Paul sometimes, but not always, falls asleep with his door open."
+        "context":"Although Paul sometimes falls asleep with the door open, he doesn't always do so. So, he is not necessarily asleep."
     },
     {
         "lexicalization_number": 3,
@@ -263,7 +263,7 @@
         "choice_2": "not_lem",
         "choice_3": "lem_not",
         "flavor": "epistemic",
-        "context":"Paul always take his raincoat and rainboots when he goes out in the rain."
+        "context":"Paul always take his raincoat and rainboots when he goes out in the rain. Paul's raincoat and rainboots are here, so it's not possible that he is outside."
     },
     {
         "lexicalization_number": 3,
@@ -277,7 +277,7 @@
         "choice_2": "not_lem",
         "choice_3": "lem_not",
         "flavor": "epistemic",
-        "context":"Paul always take his raincoat and rainboots when he goes out in the rain."
+        "context":"Paul always take his raincoat and rainboots when he goes out in the rain. Paul's raincoat and rainboots are here, so it's not possible that he is outside."
     },
     {
         "lexicalization_number": 3,
@@ -291,7 +291,7 @@
         "choice_2": "not_lem",
         "choice_3": "lem_not",
         "flavor": "epistemic",
-        "context":"Paul sometimes, but not always, go outside without his jacket when it is sunny."
+        "context":"Although Paul sometimes goes outside without his jacket when it's sunny, he doesn't always do so. So, he is not necessarily outside."
     },
     {
         "lexicalization_number": 4,
@@ -305,7 +305,7 @@
         "choice_2": "not_lem",
         "choice_3": "lem_not",
         "flavor": "epistemic",
-        "context":"You don't carry a phone when you are in the water."
+        "context":"Mary is in the pool. So, it's not possible that she has a phone right now. "
     },
     {
         "lexicalization_number": 4,
@@ -319,7 +319,7 @@
         "choice_2": "not_lem",
         "choice_3": "lem_not",
         "flavor": "epistemic",
-        "context":"You don't carry a phone when you are in the water."
+        "context":"Mary is in the pool. So, it's not possible that she has a phone right now. "
     },
     {
         "lexicalization_number": 4,
@@ -333,6 +333,6 @@
         "choice_2": "not_lem",
         "choice_3": "lem_not",
         "flavor": "epistemic",
-        "context":"Mary sometimes carries her phone in the pocket of her skirt. (Her skirt has a pocket!)"
+        "context":"Although Mary sometimes carries her phone in the pocket of her skirt, she doesn't always do so. So, she doesn't necessarily have a phone right now."
     }
   ]
