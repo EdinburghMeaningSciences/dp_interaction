@@ -478,7 +478,7 @@ def send_instructions(client_id,phase):
 ### Start up server
 #######################
 
-PORT=9003 #this will run on port 9003
+PORT=9001 #this will run on port 9001
 
 #standard stuff here from the websocket_server code
 print('starting up')
