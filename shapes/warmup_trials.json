@@ -1,0 +1,62 @@
+[
+    {
+      "trial number": 1,
+      "role": "director",
+      "given stimulus": "warmup_a_cat.png",
+      "choice 1": "cat",
+      "choice 2": "dog",
+      "choice 3": "cow",
+      "choice 4": "",
+      "correct_choice": "cat"
+    },
+    {
+      "trial number": 2,
+      "role": "matcher",
+      "given stimulus": "<b>sheep</b>",
+      "choice 1": "warmup_a_cow.png",
+      "choice 2": "warmup_a_dog.png",
+      "choice 3": "warmup_a_sheep.png",
+      "choice 4": "warmup_a_lion.png",
+      "correct_choice": "warmup_a_sheep.png"
+    },
+    {
+      "trial number": 3,
+      "role": "director",
+      "given stimulus": "warmup_v_run.png",
+      "choice 1": "A person is running",
+      "choice 2": "A person is dancing",
+      "choice 3": "A person is singing",
+      "choice 4": "",
+      "correct_choice": "A person is running"
+    },
+    {
+      "trial number": 4,
+      "role": "matcher",
+      "given stimulus": "<b>A person is sleeping</b>",
+      "choice 1": "warmup_v_swim.png",
+      "choice 2": "warmup_v_sleep.png",
+      "choice 3": "warmup_v_dance.png",
+      "choice 4": "warmup_v_eat.png",
+      "correct_choice": "warmup_v_sleep.png"
+    },
+    {
+      "trial number": 5,
+      "role": "director",
+      "given stimulus": "warmup_v_eat.png",
+      "choice 1": "A person is eating",
+      "choice 2": "A person is not eating",
+      "choice 3": "A person is running",
+      "choice 4": "",
+      "correct_choice": "A person is eating"
+    },
+    {
+      "trial number": 6,
+      "role": "matcher",
+      "given stimulus": "<b>A person is not moving</b>",
+      "choice 1": "warmup_v_sleep.png",
+      "choice 2": "warmup_v_swim.png",
+      "choice 3": "warmup_v_dance.png",
+      "choice 4": "warmup_v_run.png",
+      "correct_choice": "warmup_v_sleep.png"
+    }
+   ]

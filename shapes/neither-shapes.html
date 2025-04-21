@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shapes Experiment</title>
+    <script src="https://unpkg.com/jspsych@7.3.0"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-html-button-response@1.1.1"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-instructions"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-preload@1.1.2"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-call-function@1.1.2"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-image-button-response@1.1.2"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-survey-text@1.1.3"></script>
+    <link href="https://unpkg.com/jspsych@7.3.0/css/jspsych.css" rel="stylesheet" type="text/css" />
+    <style>
+      /* Optional: Add some basic styling */
+      .top-prompt, .bottom-prompt {
+        text-align: center;
+        font-size: 18px;
+      }
+      .bottom-prompt {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+  <script>
+
+  // Function to load JSON files
+  async function loadJSON(path) {
+      const response = await fetch(path);
+      const data = await response.json();
+      return data;
+  }
+
+  async function initializeExperiment() {
+      // Load trial data
+      const trials = await loadJSON('shapes-trials.json');
+      const warmup_trials = await loadJSON('../warmup_trials.json');
+
+      // Initialize jsPsych
+      var jsPsych = initJsPsych({
+        show_progress_bar: true,
+        auto_update_progress_bar: true,
+        message_progress_bar: 'Progress',
+        on_finish: function () {
+          jsPsych.data.displayData("csv"); 
+        },
+      });
+
+      // Get Participant ID from URL (assuming Prolific)
+      var PARTICIPANT_ID = jsPsych.data.getURLVariable('PROLIFIC_PID') || 'anonymous';
+
+      const PREPATH = 'unframed/'; 
+
+      const pictureToEncodings = {};
+
+trials.forEach(trial => {
+    const circlePicture = trial['circle picture'];
+    const triPicture = trial['triangle picture'];
+
+    if (circlePicture) {
+        if (!pictureToEncodings[circlePicture]) {
+            pictureToEncodings[circlePicture] = [];
+        }
+        if (!pictureToEncodings[circlePicture].includes(trial['sentence'])) {
+            pictureToEncodings[circlePicture].push(trial['sentence']);
+        }
+    }
+
+    if (triPicture) {
+        if (!pictureToEncodings[triPicture]) {
+            pictureToEncodings[triPicture] = [];
+        }
+        if (!pictureToEncodings[triPicture].includes(trial['sentence'])) {
+            pictureToEncodings[triPicture].push(trial['sentence']);
+        }
+    }
+});
+
+console.log('Picture to Encodings:', JSON.stringify(pictureToEncodings, null, 2));
+
+trials.forEach(trial => {
+    const picture = trial['circle picture'] || trial['triangle picture'];
+    if (picture) {
+        const semantics = trial['semantics']; // Assuming each trial has a 'semantics' field
+        const sentences = pictureToEncodings[picture] || [];
+        if (semantics === 'not-exist' && sentences.length !== 2) {
+            console.warn(`Picture "${picture}" should have 2 correct answers based on 'not-exist' semantics but has ${sentences.length}.`);
+        } else if (semantics === 'not-universal' && sentences.length !== 1) {
+            console.warn(`Picture "${picture}" should have 1 correct answer based on 'not-universal' semantics but has ${sentences.length}.`);
+        }
+    }
+});
+
+      function save_trial_data(data) {
+          var url = "neither_shapes_save_data.php"; 
+          var data_to_send = {
+              filename: "pid_" + PARTICIPANT_ID + ".csv",
+              filedata: [
+                  PARTICIPANT_ID,
+                  data.trial_index,
+                  data.trial_type,
+                  data.shape,
+                  data.stimulus,
+                  data.response,
+                  data.rt,
+                  data.choice_label,
+                  data.score,
+                  data.cumulative_score,
+                  data.survey_response,
+                  data.condition
+              ].join(",") + "\n"
+          };
+
+          console.log('Sending data:', data_to_send);
+
+          fetch(url, {
+              method: "POST",
+              body: JSON.stringify(data_to_send),
+              headers: new Headers({
+                  "Content-Type": "application/json",
+              }),
+          }).then(response => response.text())
+            .then(data => console.log('Response from server:', data))
+            .catch(error => console.error('Error:', error));
+      }
+
+      // Function to write headers (optional, depends on server-side implementation)
+      function write_headers() {
+          var headers = "PARTICIPANT_ID,trial_index,trial_type,shape,stimulus,response,rt,choice_label,score,cumulative_score,survey_response\n";
+          save_trial_data({ filedata: headers });
+      }
+
+      // Randomly assign participants to 'zop' or 'lem' condition
+      var condition = jsPsych.randomization.sampleWithoutReplacement(['zop', 'lem'], 1)[0];
+      console.log('Assigned Condition:', condition);
+
+      // Function to filter trials based on condition ('nex form')
+      function filterByNexForm(trials, condition) {
+          return trials.filter(trial => trial["nex form"] === condition);
+      }
+
+      // Function to split trials by shape (circle and triangle)
+      function splitByShape(trials) {
+          let circleTrials = [];
+          let triangleTrials = [];
+
+          trials.forEach(trial => {
+              if (trial["circle picture"]) {
+                  let circleTrial = Object.assign({}, trial); 
+                  circleTrial['shape'] = 'circle';
+                  circleTrial['picture'] = trial['circle picture'];
+                  circleTrials.push(circleTrial);
+              }
+              if (trial["triangle picture"]) {
+                  let triangleTrial = Object.assign({}, trial);
+                  triangleTrial['shape'] = 'triangle';
+                  triangleTrial['picture'] = trial['triangle picture'];
+                  triangleTrials.push(triangleTrial);
+              }
+          });
+
+          return { circleTrials, triangleTrials };
+      }
+
+      // Function to randomly shuffle and combine circle and triangle trials
+      function generateTrialItems(arr1, arr2) {
+          return jsPsych.randomization.shuffle(arr1.concat(arr2))
+      }
+
+      // Function to make an observation trial
+      function make_observation_trial(object) {
+          var trial = {
+              type: jsPsychHtmlButtonResponse,
+              timeline: [
+                  {
+                      stimulus: function() {
+                          return `
+                              <div class="top-prompt"></div><br><br>
+                              <img src="${PREPATH}${object['picture']}.png" style="width: 450px; display: block; margin: 0 auto;"><br><br>
+                              <div class="bottom-prompt"><i style="font-size: 24px;">${object['sentence']}</i></div>
+                          `;
+                      },
+                      trial_duration: 5000,
+                      data: { 
+                          trial_type: "observation", 
+                          observation_label: object['sentence'],
+                          shape: object['shape']
+                      }
+                  }
+              ]
+          };
+          return trial;
+      }
+
+      function build_observation_phase(trials) {
+          var observation_timeline = [];
+          for (let repetition = 0; repetition < 1; repetition++) {
+              let shuffledItems = jsPsych.randomization.shuffle(trials);
+              shuffledItems.forEach(item => {
+                  observation_timeline.push(make_observation_trial(item)); 
+              });
+          }
+          return observation_timeline;
+      }
+
+      // Filter trials based on condition
+      const filteredTrials = filterByNexForm(trials, condition);
+
+      // Split trials into circle and triangle
+      const { circleTrials, triangleTrials } = splitByShape(filteredTrials);
+
+      // Generate 24 trial items (12 circles and 12 triangles)
+      const trial_bank = generateTrialItems(circleTrials, triangleTrials);
+      console.log('Total Trials per Participant:', trial_bank.length); // Should be 24
+
+      // Collect prompts (reuse existing function)
+      var object_choices = collectPrompts(filteredTrials);
+      console.log('Object Choices:', object_choices);
+
+      // Initialize cumulative score
+      var cumulative_score = 0;
+      
+      // Function to build matching trial
+      function build_matching_trial(target) {
+    var choices = jsPsych.randomization.shuffle(object_choices[target['lexicalization_number']]);
+    var score = 0; 
+
+    // Retrieve correct_answers from pictureToEncodings
+    var correct_answers = pictureToEncodings[target['picture']];
+
+    // Handle undefined correct_answers
+    if (!correct_answers) {
+        console.error(`No correct answers found for picture: ${target['picture']}`);
+        correct_answers = [];
+    }
+
+    var matching_trial = {
+        type: jsPsychImageButtonResponse,
+        stimulus: PREPATH + target['picture'] + '.png', // Ensure .png extension
+        stimulus_width: 450,
+        maintain_aspect_ratio: true,
+        choices: choices,
+        button_html: '<button class="jspsych-btn">%choice%</button>',
+        on_finish: function(data) {
+            var response_idx = parseInt(data.response);
+            var label_choice = choices[response_idx];
+            data.choice_label = label_choice;
+
+            // Check if the chosen label is among the correct answers
+            var is_correct = correct_answers.includes(label_choice);
+
+            // Assign score based on correctness
+            score = is_correct ? 1 : -1;
+
+            // Update cumulative score
+            cumulative_score += score;
+            data.score = score; 
+            data.cumulative_score = cumulative_score;
+
+            // Optional: Debugging logs
+            console.log(`Participant chose: "${label_choice}"`);
+            console.log(`Correct answers for "${target['picture']}": ${correct_answers.join(', ')}`);
+            console.log(`Score for this trial: ${score}`);
+            console.log(`Cumulative score: ${cumulative_score}`);
+
+            save_trial_data(data);
+        }
+    };
+
+    var feedback_trial = {
+    type: jsPsychHtmlButtonResponse,
+    choices: [], 
+    trial_duration: 1500,
+    stimulus: function() {
+        var last_trial_data = jsPsych.data.get().last(1).values()[0];
+        var score = last_trial_data.score;
+        var cumulative_score = last_trial_data.cumulative_score;
+        if (score > 0) {
+            return `Correct! You have earned ${score} point(s).<br>Cumulative score: ${cumulative_score}`;
+        } else {
+            return `Incorrect! You have lost ${-score} point(s).<br>Cumulative score: ${cumulative_score}`;
+        }
+    }
+};
+
+    return [matching_trial, feedback_trial];
+}
+
+      var preliminary_instructions = {
+        type: jsPsychInstructions,
+        pages: [
+          "<h3>Welcome to the Experiment</h3> \
+          <p style='text-align:left'>Today you will be participating in a game about learning new words. \
+          We have invented two words that don't exist in standard English — \"zop\" and \"lem\" — and given them consistent meanings. \
+          But there's a catch - as a participant, you have to figure out what those meanings are.</p> \
+          <p style='text-align:left'>The game consists of two phases: TRAINING and TESTING. In the TRAINING phase, you will watch a sequence of shapes pass by on your screen, \
+          along with a short description of the situation shown in the shape. \
+          The shapes will be labeled with a sentence that is true in the situation, using one of our made-up words. \
+          Pay close attention because some meanings might be difficult!</p> \
+          <p style='text-align:left'>In the TESTING phase, we will ask you to apply what you learned in the training phase, by guessing the correct description for a shape we provide for you.</p>"
+        ],
+        allow_backward: true,
+        show_clickable_nav: true,
+        button_label_next: 'Next'
+      }
+
+      var consent_screen = {
+        type: jsPsychHtmlButtonResponse,
+        stimulus: `
+          <h3>Welcome to the Experiment</h3>
+          <p style='text-align:left'><strong>Informed Consent Form</strong><br><br>
+          This is an experiment about language learning. It will take about 20 minutes to complete. 
+          You will be compensated by the amount indicated both on Prolific and in the consent form.
+          This study is being conducted by Dr. Wataru Uegaki (University of Edinburgh) and has been granted ethical approval. <br>
+          By agreeing below you indicate that:
+          <ul style='text-align:left'>
+              <li>You are at least 18 years old.</li>
+              <li>You have read the information letter.</li>
+              <li>You voluntarily agree to participate, and understand you can stop your participation at any point.</li>
+              <li>You agree that your anonymous data may be kept permanently in Edinburgh University storage and may be used for research purposes.</li>
+          </ul>
+          </p>
+          <a href='https://docs.google.com/document/d/e/2PACX-1vTGwG1eIdQpNg83QKnaSKBWvCvpiZJrLDNifXT7qebolmIlPydN3TWlWevBlPQ9bgb0PU0uFvWKeGNR/pub' target='_blank'>
+          Information on the use of your data and your rights as a participant are linked in this document. Please review it carefully before proceeding with the experiment.</a><br><br>
+        `,
+        choices: ["Yes, I consent to participate"],
+      };
+
+      var initial_warmup_instructions = {
+        type: jsPsychHtmlButtonResponse,
+        stimulus:
+          "<h3>Pre-experiment Warm-up</h3>\
+          <p style='text-align:left'>\
+          Before you start the training phase we'll do a short warm-up, which will familiarize you with \
+          the experiment interface and allow us to check you understand the task and are paying attention! \
+          <b>You need to do well on this warm-up task to proceed to the main experiment!</b> \
+          So please read these instructions carefully. Don't worry too much though: these warmups should be very easy!</p>",
+        choices: ["Continue to instructions"]
+      }
+
+      var warmup_instructions = {
+        type: jsPsychHtmlButtonResponse,
+        stimulus: 
+        "<h3>Pre-experiment Warm-up</h3> \
+        <p style='text-align:left'> \
+        In the warm-up you will practice the task of matching pictures and English descriptions. \
+        You'll see a picture on your screen. Your job is to select the best description from a small set of options.",
+        choices: ['Continue']
+      }
+
+
+      var sender_instructions = {
+        type: jsPsychHtmlButtonResponse,
+        stimulus:
+        "<h3>Warm-up Practice</h3>\
+        <p style='text-align:left'>\
+          In the warm-up you will practice sending and interpreting messages by playing a communication \
+          game with the computer. You and the computer will play as SENDER and RECEIVER.</p> \
+          <p style='text-align:left'>\
+          When you are the SENDER you'll see a shape on your screen. Your job is to select the best description from a small set of options to name it for the receiver, \
+          so that they can select the correct shape from their array.</p>",
+        choices: ["Continue"]
+      }
+
+      var instruction_screen_observation = {
+        type: jsPsychHtmlButtonResponse,
+        stimulus:
+        '<h3>Observation Instructions</h3>\
+        <p> You have successfully completed the warm-up trials! <br><br>\
+        Now it\'s time to learn the new words: “zop” and “lem”. A sequence of shapes and their descriptions will appear on your screen. You cannot interact with the experiment at this time, so relax and watch closely and try to figure out the meanings of the words "zop" and "lem." </p>',
+        choices: ["Continue"],
+      };
+
+      var instruction_screen_testing = {
+          type: jsPsychInstructions,
+          pages:[
+            "<h3>Pre-Testing Instructions</h3> \
+      <p style='text-align:left'> \
+         You'll see a shape on your screen, and your job is to select a good description to name it based on your training. \
+          This phase consists of <span style='color:blue'><b>24</b></span> iterations.\
+      </p>",
+      "<h3>Pre-Testing Instructions: Scoring</h3> \
+      <p style='text-align:left'> \
+          Your response will be scored after every trial: you get a positive score if you correctly identify the sentence from the picture, \
+          and a negative score if you pick the wrong sentence. \
+          The score will be <span style='color:blue'>+1</span> if you identify the meaning correctly and <span style='color:blue'>-1</span> if you choose the wrong one. \
+          Watch the feedback and try to learn from it! \
+      </p> \
+      <p style='text-align:left'> \
+          You will receive a <span style='color:green'>bonus payment</span> at the end if your score is greater than 0. The higher your final score, the higher your bonus! \
+      </p>"
+      ],
+          button_label_next: ["Continue"],
+          show_clickable_nav: true,
+          allow_backward: true
+        };
+
+        var survey_trial = {
+          type: jsPsychSurveyText,
+          questions: [
+            { prompt: "What do you think <b>zop</b> means?" },
+            { prompt: "What do you think <b>lem</b> means?" }
+          ],
+          preamble: "Thank you again for participating in our experiment. Please answer in a few words what you think each of the two made-up words means.",
+          button_label: 'End experiment',
+          on_finish: function(data) {
+            var response_zop = data.response.Q0; 
+            var response_lem = data.response.Q1; 
+            data.survey_response = response_zop + " || " + response_lem;
+            save_trial_data(data);
+          }
+        };
+
+        var final_screen = {
+          type: jsPsychHtmlButtonResponse,
+          stimulus: function() {
+              var bonus = cumulative_score > 0 ? (cumulative_score*3)/100 : 0;
+              return `<h3>Finished!</h3>
+              <p style='text-align:left'>Please follow the link below to claim your reward. <b><span style='color:red'>If you do not navigate back to Prolific, you will not receive any payment!</span></b></p>
+              <p style='text-align:left'>` +
+              (cumulative_score > 0
+                  ? `Congratulations! You will receive a bonus payment of <b>${bonus}</b> GBP. Thank you again for participating in our experiment!`
+                  : `Unfortunately, you did not score high enough to receive a bonus payment. Thank you for participating!`) +
+              `</p>
+              <p style='text-align:left'>Your final cumulative score is: <b>${cumulative_score}</b></p>
+              <p><a href="https://app.prolific.com/submissions/complete?cc=CZW5T6X3">Click here to return to Prolific and complete the study</a>.</p>`; // COMPLETE WITH PROLIFIC LINK
+          },
+          choices: [],
+          on_finish: function () {
+              jsPsych.endCurrentTimeline();
+          },
+      };
+
+      // Function to collect prompts (reuse existing function)
+      function collectPrompts(inputList) {
+          const promptDict = {};
+          const returnDict = {};
+
+          inputList.forEach(item => {
+              const lexNumber = item.lexicalization_number;
+              const sentence = item.sentence;
+              if (lexNumber in promptDict) {
+                  promptDict[lexNumber].push(sentence);
+              } else {
+                  promptDict[lexNumber] = [sentence];
+              }
+          });
+          const promptList = Object.entries(promptDict).map(([key, value]) => {
+              return { [key]: [...new Set(value)] };
+          });
+          promptList.forEach(d => {
+              Object.assign(returnDict, d);
+          });
+          return returnDict;
+      }
+
+      var object_choices = collectPrompts(filteredTrials);
+      console.log('Object Choices:', object_choices);
+
+      var observation_trials = build_observation_phase(trial_bank);
+
+      var timeline = [];
+
+      // Optional: Write headers if necessary
+      write_headers();
+
+      // Add screens to the timeline
+      timeline.push(consent_screen, preliminary_instructions, initial_warmup_instructions, warmup_instructions);
+
+    warmupPath = '../warmup_pictures/'
+    warmupChoices = ['choice 1', 'choice 2', 'choice 3', 'choice 4']
+    let wrongCount = 0
+    const maxWrong = 1
+
+    function warmup_failed() {
+    jsPsych.endExperiment('Warmup failed (too many wrong answers). You have been removed from the experiment. If you believe this is an error, please contact us on Prolific.')
+    }
+
+    function write_warmup_director(target_object) {
+    const shuffledChoices = jsPsych.randomization.shuffle([target_object['choice 1'], target_object['choice 2'], target_object['choice 3']]);
+    const choices = shuffledChoices.map(function(choice) {
+    return choice;
+    });
+
+    var trial = {
+    type: jsPsychImageButtonResponse,
+    stimulus: warmupPath + target_object['given stimulus'],
+    choices: choices,
+    on_finish: function(data) {
+        const chosenPrompt = shuffledChoices[data.response];
+        console.log(chosenPrompt)
+        warmup_feedback(target_object['correct_choice'], chosenPrompt);
+    }
+    }
+    return trial;
+    }
+
+    function warmup_feedback(correctChoice, userChoice) {
+    if (correctChoice !== userChoice) {
+        wrongCount++;
+    }
+    if (wrongCount >= maxWrong) {
+        warmup_failed();
+        return false;
+    }
+    return true;
+    }
+      
+      for (const trial of warmup_trials) { 
+            if (trial.role === 'director') {
+                 timeline.push(write_warmup_director(trial)); 
+             }
+         }
+
+      timeline.push(instruction_screen_observation);
+
+      // Add observation trials to the timeline
+      timeline.push(...observation_trials);
+
+      timeline.push(instruction_screen_testing);
+
+      // Matching Phase: Build and add matching trials based on trial_items
+      trial_bank.forEach(function(target) {
+          var trials = build_matching_trial(target);
+          timeline.push(...trials);
+      });
+
+      // Add survey and final screen
+      timeline.push(survey_trial);
+      timeline.push(final_screen);
+
+      // Run the experiment
+      jsPsych.run(timeline);
+
+  // Function to make an observation trial
+  function make_observation_trial(object) {
+      var trial = {
+          type: jsPsychHtmlButtonResponse,
+          stimulus: function() {
+              return `
+                  <div class="top-prompt"></div><br><br>
+                  <img src="${PREPATH}${object['picture']}.png" style="width: 450px; display: block; margin: 0 auto;"><br><br>
+                  <div class="bottom-prompt"><i style="font-size: 24px;">${object['sentence']}</i></div>
+              `;
+          },
+          choices: [],
+          timeline: [
+              {
+                  stimulus: function() {
+                      return `
+                          <div class="top-prompt"></div><br><br>
+                          <img src="${PREPATH}${object['picture']}.png" style="width: 450px; display: block; margin: 0 auto;"><br><br>
+                      `;
+                  },
+                  trial_duration: 3000,
+              },
+              {
+                  stimulus: function() {
+                      return `
+                          <div class="top-prompt"></div><br><br>
+                          <img src="${PREPATH}${object['picture']}.png" style="width: 450px; display: block; margin: 0 auto;"><br><br>
+                          <div class="bottom-prompt"><i style="font-size: 24px;">${object['sentence']}</i></div>
+                      `;
+                  },
+                  trial_duration: 3000,
+                  post_trial_gap: 500,
+                  data: { 
+                      trial_type: "observation", 
+                      observation_label: object['sentence'],
+                      shape: object['shape']
+                  }
+              }
+          ]
+      };
+      return trial;
+  }
+  }
+
+  initializeExperiment();
+
+  </script>
+  </body>
+</html>

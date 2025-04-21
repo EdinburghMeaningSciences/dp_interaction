@@ -1,0 +1,25 @@
+lexicalization_number,lexicalisation,encoding,semantics,sentence,nex form,circle picture,triangle picture
+1,lexical,zop,not-exist,Zop shapes are red,zop,circle-nex-red,tri-nex-red
+1,compositional,lem_not,not-exist,Lem shapes are non-red,zop,circle-nex-red,tri-nex-red
+1,compositional,not_lem,not-universal,Not lem shapes are red,zop,circle-nuni-red,tri-nuni-red
+1,lexical,lem,not-exist,Zop shapes are red,lem,circle-nex-red,tri-nex-red
+1,compositional,zop_not,not-exist,Lem shapes are non-red,lem,circle-nex-red,tri-nex-red
+1,compositional,not_zop,not-universal,Not lem shapes are red,lem,circle-nuni-red,tri-nuni-red
+2,lexical,zop,not-exist,Zop shapes are blue,zop,circle-nex-blue,tri-nex-blue
+2,compositional,lem_not,not-exist,Lem shapes are non-blue,zop,circle-nex-blue,tri-nex-blue
+2,compositional,not_lem,not-universal,Not lem shapes are blue,zop,circle-nuni-blue,tri-nuni-blue
+2,lexical,lem,not-exist,Zop shapes are blue,lem,circle-nex-blue,tri-nex-blue
+2,compositional,zop_not,not-exist,Lem shapes are non-blue,lem,circle-nex-blue,tri-nex-blue
+2,compositional,not_zop,not-universal,Not lem shapes are blue,lem,circle-nuni-blue,tri-nuni-blue
+3,lexical,zop,not-exist,Zop shapes are filled,zop,circle-nex-filled,tri-nex-filled
+3,compositional,lem_not,not-exist,Lem shapes are un-filled,zop,circle-nex-filled,tri-nex-filled
+3,compositional,not_lem,not-universal,Not lem shapes are filled,zop,circle-nuni-filled,tri-nuni-filled
+3,lexical,lem,not-exist,Zop shapes are filled,lem,circle-nex-filled,tri-nex-filled
+3,compositional,zop_not,not-exist,Lem shapes are un-filled,lem,circle-nex-filled,tri-nex-filled
+3,compositional,not_zop,not-universal,Not lem shapes are filled,lem,circle-nuni-filled,tri-nuni-filled
+4,lexical,zop,not-exist,Zop shapes are broken,zop,circle-nex-broken,tri-nex-broken
+4,compositional,lem_not,not-exist,Lem shapes are un-broken,zop,circle-nex-broken,tri-nex-broken
+4,compositional,not_lem,not-universal,Not lem shapes are broken,zop,circle-nuni-broken,tri-nuni-broken
+4,lexical,lem,not-exist,Zop shapes are broken,lem,circle-nex-broken,tri-nex-broken
+4,compositional,zop_not,not-exist,Lem shapes are un-broken,lem,circle-nex-broken,tri-nex-broken
+4,compositional,not_zop,not-universal,Not lem shapes are broken,lem,circle-nuni-broken,tri-nuni-broken
