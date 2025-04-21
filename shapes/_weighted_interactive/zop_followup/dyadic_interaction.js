@@ -18,6 +18,7 @@ var jsPsych = initJsPsych({
 });
 
 //Assign an ID and preload the trial bank.
+//WATARU: this needs to be flipped from randomID to prolific before an experiment launch online, and flipped back when tested locally.
 var PARTICIPANT_ID = jsPsych.randomization.randomID(10)//jsPsych.data.getURLVariable('PROLIFIC_PID')
 async function fetchTrialData() {
   //*********** change this to /lem_trials.json for the other condition! ************
@@ -671,7 +672,9 @@ handling for the cumulative score in the server.py and utlities.js file.
 //   jsPsych.addNodeToEndOfTimeline(feedback_trial);
 //   jsPsych.resumeExperiment();
 // }
-
+/******************************************************************************/
+/*** New Feedback Display ****************************************/
+/******************************************************************************/
 function display_feedback(score, c_score, label, guess, target, object_label) {
   end_waiting();
 
@@ -752,7 +755,7 @@ function display_feedback(score, c_score, label, guess, target, object_label) {
   jsPsych.resumeExperiment();
 }
 
-
+//[JE] OLD FEEDBACK DISPLAY
 // function display_feedback(score, c_score, label, guess, target) {
 //   end_waiting();
 //   if (score >= 1) {
