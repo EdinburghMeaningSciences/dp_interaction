@@ -448,6 +448,7 @@ function director_trial(target_object, partner_id) {
       const imageHTML = imageChoices.map(imgSrc => {
         const fullPath = imgSrc.includes('assets') ? imgSrc : PREPATH + imgSrc;
         const isTarget = fullPath === targetImgPath;
+        // WATARU: this is where the "correct" choice is highlighted for the SENDER
         return `<img src="${fullPath}" 
                      style="width: 400px; height: auto; margin: 10px; padding: 5px; 
                             ${isTarget ? 'border: 6px solid green;' : 'border: none;'}">`;
