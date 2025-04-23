@@ -10,6 +10,7 @@ var my_port_number = "/ws9/";
 //Initialize jsPsych
 var jsPsych = initJsPsych({
   show_progress_bar: true,
+  // override_safe_mode: true,
   auto_update_progress_bar: false,
   message_progress_bar: 'Training progress',
   on_finish: function () {
@@ -452,7 +453,7 @@ function director_trial(target_object, partner_id) {
         // WATARU: this is where the "correct" choice is highlighted for the SENDER
         return `<img src="${fullPath}" 
                      style="width: 400px; height: auto; margin: 10px; padding: 5px; 
-                            ${isTarget ? 'border: 6px solid green;' : 'border: none;'}">`;
+                            ${isTarget ? 'opacity: 1;' : 'opacity: 0.3;'}">`;
       }).join("");
     
       return `
@@ -464,6 +465,9 @@ function director_trial(target_object, partner_id) {
         </div>
       `;
     },
+    prompt1: function () {
+        return "<p><em>Select a sentence matching the highlighted picture to send to your partner. Your partner will choose a picture from the set of options you see here.</em></p>";
+      },
     choices: label_choices,
     on_start: function (trial) {
       const shuffled_label_choices = jsPsych.randomization.shuffle(label_choices);
@@ -521,6 +525,9 @@ function matcher_trial(label, partner_id, object_choices) {
   var trial = {
     type: jsPsychHtmlButtonResponse,
     stimulus: label,
+    prompt1: function () {
+        return "<p><em>Select the picture your partner is describing.</em></p>";
+      },
     choices: imageChoices,
     button_html:
       '<button class="jspsych-btn">%choice%</button>',
