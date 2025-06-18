@@ -1,0 +1,322 @@
+[
+  {
+    "lexicalization_number": 2,
+    "lexicalisation": "lexical",
+    "encoding": "Nothing",
+    "semantics": "not-exist",
+    "sentence": "Nothing in this picture is blue",
+    "shape": "tri",
+    "nex form": "Nothing",
+    "picture": "tri-nex-blue"
+  },
+  {
+    "lexicalization_number": 2,
+    "lexicalisation": "compositional",
+    "encoding": "everything_not",
+    "semantics": "not-exist",
+    "sentence": "Everything in this picture is not blue",
+    "shape": "tri",
+    "nex form": "Nothing",
+    "picture": "tri-nex-blue"
+  },
+  {
+    "lexicalization_number": 2,
+    "lexicalisation": "lexical",
+    "encoding": "Nothing",
+    "semantics": "not-exist",
+    "sentence": "Nothing in this picture is blue",
+    "shape": "tri",
+    "nex form": "Nothing",
+    "picture": "tri-nex-blue"
+  },
+  {
+    "lexicalization_number": 2,
+    "lexicalisation": "compositional",
+    "encoding": "everything_not",
+    "semantics": "not-exist",
+    "sentence": "Everything in this picture is not blue",
+    "shape": "tri",
+    "nex form": "Nothing",
+    "picture": "tri-nex-blue"
+  },
+  {
+    "lexicalization_number": 2,
+    "lexicalisation": "lexical",
+    "encoding": "Nothing",
+    "semantics": "not-exist",
+    "sentence": "Nothing in this picture is blue",
+    "shape": "tri",
+    "nex form": "Nothing",
+    "picture": "tri-nex-blue"
+  },
+  {
+    "lexicalization_number": 2,
+    "lexicalisation": "compositional",
+    "encoding": "everything_not",
+    "semantics": "not-exist",
+    "sentence": "Everything in this picture is not blue",
+    "shape": "tri",
+    "nex form": "Nothing",
+    "picture": "tri-nex-blue"
+  },
+  {
+    "lexicalization_number": 2,
+    "lexicalisation": "lexical",
+    "encoding": "Nothing",
+    "semantics": "not-exist",
+    "sentence": "Nothing in this picture is blue",
+    "shape": "tri",
+    "nex form": "Nothing",
+    "picture": "tri-nex-blue"
+  },
+  {
+    "lexicalization_number": 2,
+    "lexicalisation": "compositional",
+    "encoding": "everything_not",
+    "semantics": "not-exist",
+    "sentence": "Everything in this picture is not blue",
+    "shape": "tri",
+    "nex form": "Nothing",
+    "picture": "tri-nex-blue"
+  },
+  {
+    "lexicalization_number": 2,
+    "lexicalisation": "lexical",
+    "encoding": "Nothing",
+    "semantics": "not-exist",
+    "sentence": "Nothing in this picture is blue",
+    "shape": "tri",
+    "nex form": "Nothing",
+    "picture": "tri-nex-blue"
+  },
+  {
+    "lexicalization_number": 2,
+    "lexicalisation": "compositional",
+    "encoding": "not_everything",
+    "semantics": "not-universal",
+    "sentence": "Not everything in this picture is blue",
+    "shape": "square",
+    "nex form": "Nothing",
+    "picture": "square-nuni-blue"
+  },
+  {
+    "lexicalization_number": 2,
+    "lexicalisation": "compositional",
+    "encoding": "not_everything",
+    "semantics": "not-universal",
+    "sentence": "Not everything in this picture is blue",
+    "shape": "square",
+    "nex form": "Nothing",
+    "picture": "square-nuni-blue"
+  },
+  {
+    "lexicalization_number": 2,
+    "lexicalisation": "compositional",
+    "encoding": "not_everything",
+    "semantics": "not-universal",
+    "sentence": "Not everything in this picture is blue",
+    "shape": "square",
+    "nex form": "Nothing",
+    "picture": "square-nuni-blue"
+  },
+  {
+    "lexicalization_number": 2,
+    "lexicalisation": "compositional",
+    "encoding": "not_everything",
+    "semantics": "not-universal",
+    "sentence": "Not everything in this picture is blue",
+    "shape": "square",
+    "nex form": "Nothing",
+    "picture": "square-nuni-blue"
+  },
+  {
+    "lexicalization_number": 2,
+    "lexicalisation": "lexical",
+    "encoding": "Nothing",
+    "semantics": "not-exist",
+    "sentence": "Nothing in this picture is blue",
+    "shape": "circle",
+    "nex form": "Nothing",
+    "picture": "circle-nex-blue"
+  },
+  {
+    "lexicalization_number": 2,
+    "lexicalisation": "compositional",
+    "encoding": "everything_not",
+    "semantics": "not-exist",
+    "sentence": "Everything in this picture is not blue",
+    "shape": "circle",
+    "nex form": "Nothing",
+    "picture": "circle-nex-blue"
+  },
+  {
+    "lexicalization_number": 2,
+    "lexicalisation": "lexical",
+    "encoding": "Nothing",
+    "semantics": "not-exist",
+    "sentence": "Nothing in this picture is blue",
+    "shape": "circle",
+    "nex form": "Nothing",
+    "picture": "circle-nex-blue"
+  },
+  {
+    "lexicalization_number": 1,
+    "lexicalisation": "lexical",
+    "encoding": "Nothing",
+    "semantics": "not-exist",
+    "sentence": "Nothing in this picture is red",
+    "shape": "tri",
+    "nex form": "Nothing",
+    "picture": "tri-nex-red"
+  },
+  {
+    "lexicalization_number": 1,
+    "lexicalisation": "compositional",
+    "encoding": "everything_not",
+    "semantics": "not-exist",
+    "sentence": "Everything in this picture is not red",
+    "shape": "tri",
+    "nex form": "Nothing",
+    "picture": "tri-nex-red"
+  },
+  {
+    "lexicalization_number": 1,
+    "lexicalisation": "lexical",
+    "encoding": "Nothing",
+    "semantics": "not-exist",
+    "sentence": "Nothing in this picture is red",
+    "shape": "tri",
+    "nex form": "Nothing",
+    "picture": "tri-nex-red"
+  },
+  {
+    "lexicalization_number": 1,
+    "lexicalisation": "compositional",
+    "encoding": "everything_not",
+    "semantics": "not-exist",
+    "sentence": "Everything in this picture is not red",
+    "shape": "tri",
+    "nex form": "Nothing",
+    "picture": "tri-nex-red"
+  },
+  {
+    "lexicalization_number": 1,
+    "lexicalisation": "lexical",
+    "encoding": "Nothing",
+    "semantics": "not-exist",
+    "sentence": "Nothing in this picture is red",
+    "shape": "tri",
+    "nex form": "Nothing",
+    "picture": "tri-nex-red"
+  },
+  {
+    "lexicalization_number": 1,
+    "lexicalisation": "compositional",
+    "encoding": "everything_not",
+    "semantics": "not-exist",
+    "sentence": "Everything in this picture is not red",
+    "shape": "tri",
+    "nex form": "Nothing",
+    "picture": "tri-nex-red"
+  },
+  {
+    "lexicalization_number": 1,
+    "lexicalisation": "lexical",
+    "encoding": "Nothing",
+    "semantics": "not-exist",
+    "sentence": "Nothing in this picture is red",
+    "shape": "tri",
+    "nex form": "Nothing",
+    "picture": "tri-nex-red"
+  },
+  {
+    "lexicalization_number": 1,
+    "lexicalisation": "compositional",
+    "encoding": "everything_not",
+    "semantics": "not-exist",
+    "sentence": "Everything in this picture is not red",
+    "shape": "tri",
+    "nex form": "Nothing",
+    "picture": "tri-nex-red"
+  },
+  {
+    "lexicalization_number": 1,
+    "lexicalisation": "lexical",
+    "encoding": "Nothing",
+    "semantics": "not-exist",
+    "sentence": "Nothing in this picture is red",
+    "shape": "tri",
+    "nex form": "Nothing",
+    "picture": "tri-nex-red"
+  },
+  {
+    "lexicalization_number": 1,
+    "lexicalisation": "compositional",
+    "encoding": "not_everything",
+    "semantics": "not-universal",
+    "sentence": "Not everything in this picture is red",
+    "shape": "square",
+    "nex form": "Nothing",
+    "picture": "square-nuni-red"
+  },
+  {
+    "lexicalization_number": 1,
+    "lexicalisation": "compositional",
+    "encoding": "not_everything",
+    "semantics": "not-universal",
+    "sentence": "Not everything in this picture is red",
+    "shape": "square",
+    "nex form": "Nothing",
+    "picture": "square-nuni-red"
+  },
+  {
+    "lexicalization_number": 1,
+    "lexicalisation": "compositional",
+    "encoding": "not_everything",
+    "semantics": "not-universal",
+    "sentence": "Not everything in this picture is red",
+    "shape": "square",
+    "nex form": "Nothing",
+    "picture": "square-nuni-red"
+  },
+  {
+    "lexicalization_number": 1,
+    "lexicalisation": "compositional",
+    "encoding": "not_everything",
+    "semantics": "not-universal",
+    "sentence": "Not everything in this picture is red",
+    "shape": "square",
+    "nex form": "Nothing",
+    "picture": "square-nuni-red"
+  },
+  {
+    "lexicalization_number": 1,
+    "lexicalisation": "lexical",
+    "encoding": "Nothing",
+    "semantics": "not-exist",
+    "sentence": "Nothing in this picture is red",
+    "shape": "circle",
+    "nex form": "Nothing",
+    "picture": "circle-nex-red"
+  },
+  {
+    "lexicalization_number": 1,
+    "lexicalisation": "compositional",
+    "encoding": "everything_not",
+    "semantics": "not-exist",
+    "sentence": "Everything in this picture is not red",
+    "shape": "circle",
+    "nex form": "Nothing",
+    "picture": "circle-nex-red"
+  },
+  {
+    "lexicalization_number": 1,
+    "lexicalisation": "lexical",
+    "encoding": "Nothing",
+    "semantics": "not-exist",
+    "sentence": "Nothing in this picture is red",
+    "shape": "circle",
+    "nex form": "Nothing",
+    "picture": "circle-nex-red"
+  }
+]

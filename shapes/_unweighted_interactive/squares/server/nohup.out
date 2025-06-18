@@ -1,0 +1,1970 @@
+starting up
+New client connected and was given id 1
+Client(1) said: {"response_type":"CLIENT_INFO","client_info":"u6e89dv4aa"}
+handle_client_response 1 CLIENT_INFO {'response_type': 'CLIENT_INFO', 'client_info': 'u6e89dv4aa'}
+Client(1) said: {"response_type":"Ping"}
+handle_client_response 1 Ping {'response_type': 'Ping'}
+Client(1) said: {"response_type":"Ping"}
+handle_client_response 1 Ping {'response_type': 'Ping'}
+Client(1) said: {"response_type":"Ping"}
+handle_client_response 1 Ping {'response_type': 'Ping'}
+Client(1) said: {"response_type":"Ping"}
+handle_client_response 1 Ping {'response_type': 'Ping'}
+Client(1) said: {"response_type":"Ping"}
+handle_client_response 1 Ping {'response_type': 'Ping'}
+Client(1) said: {"response_type":"Ping"}
+handle_client_response 1 Ping {'response_type': 'Ping'}
+Client(1) said: {"response_type":"Ping"}
+handle_client_response 1 Ping {'response_type': 'Ping'}
+Client(1) said: {"response_type":"Ping"}
+handle_client_response 1 Ping {'response_type': 'Ping'}
+Client(1) said: {"response_type":"Ping"}
+handle_client_response 1 Ping {'response_type': 'Ping'}
+Client(1) said: {"response_type":"Ping"}
+handle_client_response 1 Ping {'response_type': 'Ping'}
+Client(1) said: {"response_type":"Ping"}
+handle_client_response 1 Ping {'response_type': 'Ping'}
+Client(1) said: {"response_type":"Ping"}
+handle_client_response 1 Ping {'response_type': 'Ping'}
+Client(1) said: {"response_type":"Ping"}
+handle_client_response 1 Ping {'response_type': 'Ping'}
+Client(1) said: {"response_type":"Ping"}
+handle_client_response 1 Ping {'response_type': 'Ping'}
+Client(1) said: {"response_type":"Ping"}
+handle_client_response 1 Ping {'response_type': 'Ping'}
+Client(1) said: {"response_type":"Ping"}
+handle_client_response 1 Ping {'response_type': 'Ping'}
+Client(1) said: {"response_type":"Ping"}
+handle_client_response 1 Ping {'response_type': 'Ping'}
+Client(1) said: {"response_type":"Ping"}
+handle_client_response 1 Ping {'response_type': 'Ping'}
+Client(1) said: {"response_type":"Ping"}
+handle_client_response 1 Ping {'response_type': 'Ping'}
+Client(1) said: {"response_type":"Ping"}
+handle_client_response 1 Ping {'response_type': 'Ping'}
+Client(1) said: {"response_type":"Ping"}
+handle_client_response 1 Ping {'response_type': 'Ping'}
+Client(1) said: {"response_type":"Ping"}
+handle_client_response 1 Ping {'response_type': 'Ping'}
+Client(1) disconnected
+New client connected and was given id 2
+Client(2) said: {"response_type":"CLIENT_INFO","client_info":"ax80e00pgm"}
+handle_client_response 2 CLIENT_INFO {'response_type': 'CLIENT_INFO', 'client_info': 'ax80e00pgm'}
+Client(2) said: {"response_type":"Ping"}
+handle_client_response 2 Ping {'response_type': 'Ping'}
+New client connected and was given id 3
+Warning: Missing 'circle picture' in trial 2. Skipping this trial.
+Warning: Missing 'triangle picture' in trial 2. Skipping this trial.
+Warning: Missing 'circle picture' in trial 2. Skipping this trial.
+Warning: Missing 'triangle picture' in trial 2. Skipping this trial.
+Warning: Missing 'circle picture' in trial 2. Skipping this trial.
+Warning: Missing 'triangle picture' in trial 2. Skipping this trial.
+Warning: Missing 'circle picture' in trial 2. Skipping this trial.
+Warning: Missing 'triangle picture' in trial 2. Skipping this trial.
+Warning: Missing 'circle picture' in trial 2. Skipping this trial.
+Warning: Missing 'triangle picture' in trial 2. Skipping this trial.
+Warning: Missing 'circle picture' in trial 2. Skipping this trial.
+Warning: Missing 'triangle picture' in trial 2. Skipping this trial.
+Warning: Missing 'circle picture' in trial 2. Skipping this trial.
+Warning: Missing 'triangle picture' in trial 2. Skipping this trial.
+Warning: Missing 'circle picture' in trial 2. Skipping this trial.
+Warning: Missing 'triangle picture' in trial 2. Skipping this trial.
+Warning: Missing 'circle picture' in trial 2. Skipping this trial.
+Warning: Missing 'triangle picture' in trial 2. Skipping this trial.
+Warning: Missing 'circle picture' in trial 2. Skipping this trial.
+Warning: Missing 'triangle picture' in trial 2. Skipping this trial.
+Warning: Missing 'circle picture' in trial 2. Skipping this trial.
+Warning: Missing 'triangle picture' in trial 2. Skipping this trial.
+Warning: Missing 'circle picture' in trial 2. Skipping this trial.
+Warning: Missing 'triangle picture' in trial 2. Skipping this trial.
+Client(3) said: {"response_type":"CLIENT_INFO","client_info":"rc07kgzwym"}
+handle_client_response 3 CLIENT_INFO {'response_type': 'CLIENT_INFO', 'client_info': 'rc07kgzwym'}
+Client(3) said: {"response_type":"Ping"}
+handle_client_response 3 Ping {'response_type': 'Ping'}
+Client(2) said: {"response_type":"Pong"}
+handle_client_response 2 Pong {'response_type': 'Pong'}
+Client(2) said: {"response_type":"Pong"}
+handle_client_response 2 Pong {'response_type': 'Pong'}
+Client(3) said: {"response_type":"INTERACTION_INSTRUCTIONS_COMPLETE"}
+handle_client_response 3 INTERACTION_INSTRUCTIONS_COMPLETE {'response_type': 'INTERACTION_INSTRUCTIONS_COMPLETE'}
+Client(2) said: {"response_type":"Pong"}
+handle_client_response 2 Pong {'response_type': 'Pong'}
+Client(2) said: {"response_type":"Ping"}
+handle_client_response 2 Ping {'response_type': 'Ping'}
+Client(3) said: {"response_type":"Pong"}
+handle_client_response 3 Pong {'response_type': 'Pong'}
+Client(2) said: {"response_type":"INTERACTION_INSTRUCTIONS_COMPLETE"}
+handle_client_response 2 INTERACTION_INSTRUCTIONS_COMPLETE {'response_type': 'INTERACTION_INSTRUCTIONS_COMPLETE'}
+Starting interaction
+Sending to director_id 2: {'command_type': 'Director', 'target_object': {'lexicalization_number': 2, 'lexicalization': 'compositional', 'sentence': 'Not everything in this picture is blue', 'semantics': 'not-universal', 'picture': 'square-nuni-blue', 'shape': 'square'}, 'partner_id': 'rc07kgzwym', 'lexicalization_number': 2, 'object_choices': ['../assets/square-nuni-red.png', '../assets/square-nuni-blue.png']}
+Client(3) said: {"response_type":"Pong"}
+handle_client_response 3 Pong {'response_type': 'Pong'}
+Client(3) said: {"response_type":"Ping"}
+handle_client_response 3 Ping {'response_type': 'Ping'}
+Client(2) said: {"response_type":"Pong"}
+handle_client_response 2 Pong {'response_type': 'Pong'}
+Client(2) said: {"response_type":"Ping"}
+handle_client_response 2 Ping {'response_type': 'Ping'}
+Client(3) said: {"response_type":"Pong"}
+handle_client_response 3 Pong {'response_type': 'Pong'}
+Client(3) said: {"response_type":"Ping"}
+handle_client_response 3 Ping {'response_type': 'Ping'}
+Client(2) said: {"response_type":"Pong"}
+handle_client_response 2 Pong {'response_type': 'Pong'}
+Client(2) said: {"response_type":"Ping"}
+handle_client_response 2 Ping {'response_type': 'Ping'}
+Client(3) said: {"response_type":"Pong"}
+handle_client_response 3 Pong {'response_type': 'Pong'}
+Client(3) said: {"response_type":"Ping"}
+handle_client_response 3 Ping {'response_type': 'Ping'}
+Client(2) said: {"response_type":"Pong"}
+handle_client_response 2 Pong {'response_type': 'Pong'}
+Client(2) said: {"response_type":"Ping"}
+handle_client_response 2 Ping {'response_type': 'Ping'}
+Client(3) said: {"response_type":"Pong"}
+handle_client_response 3 Pong {'response_type': 'Pong'}
+Client(3) said: {"response_type":"Ping"}
+handle_client_response 3 Ping {'response_type': 'Ping'}
+Client(2) said: {"response_type":"Pong"}
+handle_client_response 2 Pong {'response_type': 'Pong'}
+Client(2) said: {"response_type":"RESPONSE","participant":"ax80e00pgm","partner":"rc07kgzwym","role":"Director","target_object":{"lexicalization_number":2,"lexicalization":"compositional","sentence":"Not everything in this picture is blue","semantics":"not-universal","picture":"square-nuni-blue","shape":"square","object_choices":["../assets/square-nuni-red.png","../assets/square-nuni-blue.png"]},"response":"Not everything in this picture is blue"}
+handle_client_response 2 RESPONSE {'response_type': 'RESPONSE', 'participant': 'ax80e00pgm', 'partner': 'rc07kgzwym', 'role': 'Director', 'target_object': {'lexicalization_number': 2, 'lexicalization': 'compositional', 'sentence': 'Not everything in this picture is blue', 'semantics': 'not-universal', 'picture': 'square-nuni-blue', 'shape': 'square', 'object_choices': ['../assets/square-nuni-red.png', '../assets/square-nuni-blue.png']}, 'response': 'Not everything in this picture is blue'}
+handle_director_response {'response_type': 'RESPONSE', 'participant': 'ax80e00pgm', 'partner': 'rc07kgzwym', 'role': 'Director', 'target_object': {'lexicalization_number': 2, 'lexicalization': 'compositional', 'sentence': 'Not everything in this picture is blue', 'semantics': 'not-universal', 'picture': 'square-nuni-blue', 'shape': 'square', 'object_choices': ['../assets/square-nuni-red.png', '../assets/square-nuni-blue.png']}, 'response': 'Not everything in this picture is blue'}
+Client(3) said: {"response_type":"Pong"}
+handle_client_response 3 Pong {'response_type': 'Pong'}
+Client(2) said: {"response_type":"Ping"}
+handle_client_response 2 Ping {'response_type': 'Ping'}
+Client(3) said: {"response_type":"Pong"}
+handle_client_response 3 Pong {'response_type': 'Pong'}
+Client(3) said: {"response_type":"RESPONSE","participant":"rc07kgzwym","partner":"ax80e00pgm","role":"Matcher","director_label":"Not everything in this picture is blue","response":"<img src=\"../assets/square-nuni-blue.png\" style=\"width:400px; height:auto;\">","choices":["../assets/square-nuni-red.png","../assets/square-nuni-blue.png"]}
+handle_client_response 3 RESPONSE {'response_type': 'RESPONSE', 'participant': 'rc07kgzwym', 'partner': 'ax80e00pgm', 'role': 'Matcher', 'director_label': 'Not everything in this picture is blue', 'response': '<img src="../assets/square-nuni-blue.png" style="width:400px; height:auto;">', 'choices': ['../assets/square-nuni-red.png', '../assets/square-nuni-blue.png']}
+in handle_matcher_response
+ ////////// {'response_type': 'RESPONSE', 'participant': 'rc07kgzwym', 'partner': 'ax80e00pgm', 'role': 'Matcher', 'director_label': 'Not everything in this picture is blue', 'response': '<img src="../assets/square-nuni-blue.png" style="width:400px; height:auto;">', 'choices': ['../assets/square-nuni-red.png', '../assets/square-nuni-blue.png']} /////////
+LABEL: square-nuni-blue ***************** GUESS: <img src="../assets/square-nuni-blue.png" style="width:400px; height:auto;">
+Client(2) said: {"response_type":"Pong"}
+handle_client_response 2 Pong {'response_type': 'Pong'}
+Client(3) said: {"response_type":"Ping"}
+handle_client_response 3 Ping {'response_type': 'Ping'}
+Client(2) said: {"response_type":"Pong"}
+handle_client_response 2 Pong {'response_type': 'Pong'}
+Client(2) said: {"response_type":"Ping"}
+handle_client_response 2 Ping {'response_type': 'Ping'}
+Client(3) said: {"response_type":"Pong"}
+handle_client_response 3 Pong {'response_type': 'Pong'}
+Client(3) said: {"response_type":"Ping"}
+handle_client_response 3 Ping {'response_type': 'Ping'}
+Client(2) said: {"response_type":"Pong"}
+handle_client_response 2 Pong {'response_type': 'Pong'}
+Client(2) said: {"response_type":"Ping"}
+handle_client_response 2 Ping {'response_type': 'Ping'}
+Client(3) said: {"response_type":"Pong"}
+handle_client_response 3 Pong {'response_type': 'Pong'}
+Client(3) said: {"response_type":"Ping"}
+handle_client_response 3 Ping {'response_type': 'Ping'}
+Client(2) said: {"response_type":"Pong"}
+handle_client_response 2 Pong {'response_type': 'Pong'}
+Client(2) said: {"response_type":"Ping"}
+handle_client_response 2 Ping {'response_type': 'Ping'}
+Client(3) said: {"response_type":"Pong"}
+handle_client_response 3 Pong {'response_type': 'Pong'}
+Client(2) said: {"response_type":"FINISHED_FEEDBACK"}
+handle_client_response 2 FINISHED_FEEDBACK {'response_type': 'FINISHED_FEEDBACK'}
+swap roles 2
+Client(3) said: {"response_type":"FINISHED_FEEDBACK"}
+handle_client_response 3 FINISHED_FEEDBACK {'response_type': 'FINISHED_FEEDBACK'}
+swap roles 3
+Sending to director_id 3: {'command_type': 'Director', 'target_object': {'lexicalization_number': 2, 'lexicalization': 'compositional', 'sentence': 'Not everything in this picture is blue', 'semantics': 'not-universal', 'picture': 'square-nuni-blue', 'shape': 'square'}, 'partner_id': 'ax80e00pgm', 'lexicalization_number': 2, 'object_choices': ['../assets/square-nuni-red.png', '../assets/square-nuni-blue.png']}
+Client(3) said: {"response_type":"Pong"}
+handle_client_response 3 Pong {'response_type': 'Pong'}
+Client(2) said: {"response_type":"Pong"}
+handle_client_response 2 Pong {'response_type': 'Pong'}
+Client(3) said: {"response_type":"Ping"}
+handle_client_response 3 Ping {'response_type': 'Ping'}
+Client(2) said: {"response_type":"Pong"}
+handle_client_response 2 Pong {'response_type': 'Pong'}
+Client(3) said: {"response_type":"RESPONSE","participant":"rc07kgzwym","partner":"ax80e00pgm","role":"Director","target_object":{"lexicalization_number":2,"lexicalization":"compositional","sentence":"Not everything in this picture is blue","semantics":"not-universal","picture":"square-nuni-blue","shape":"square","object_choices":["../assets/square-nuni-red.png","../assets/square-nuni-blue.png"]},"response":"Nothing in this picture is blue"}
+handle_client_response 3 RESPONSE {'response_type': 'RESPONSE', 'participant': 'rc07kgzwym', 'partner': 'ax80e00pgm', 'role': 'Director', 'target_object': {'lexicalization_number': 2, 'lexicalization': 'compositional', 'sentence': 'Not everything in this picture is blue', 'semantics': 'not-universal', 'picture': 'square-nuni-blue', 'shape': 'square', 'object_choices': ['../assets/square-nuni-red.png', '../assets/square-nuni-blue.png']}, 'response': 'Nothing in this picture is blue'}
+handle_director_response {'response_type': 'RESPONSE', 'participant': 'rc07kgzwym', 'partner': 'ax80e00pgm', 'role': 'Director', 'target_object': {'lexicalization_number': 2, 'lexicalization': 'compositional', 'sentence': 'Not everything in this picture is blue', 'semantics': 'not-universal', 'picture': 'square-nuni-blue', 'shape': 'square', 'object_choices': ['../assets/square-nuni-red.png', '../assets/square-nuni-blue.png']}, 'response': 'Nothing in this picture is blue'}
+Client(2) said: {"response_type":"Pong"}
+handle_client_response 2 Pong {'response_type': 'Pong'}
+Client(2) said: {"response_type":"Ping"}
+handle_client_response 2 Ping {'response_type': 'Ping'}
+Client(3) said: {"response_type":"Pong"}
+handle_client_response 3 Pong {'response_type': 'Pong'}
+Client(2) said: {"response_type":"RESPONSE","participant":"ax80e00pgm","partner":"rc07kgzwym","role":"Matcher","director_label":"Nothing in this picture is blue","response":"<img src=\"../assets/square-nuni-red.png\" style=\"width:400px; height:auto;\">","choices":["../assets/square-nuni-red.png","../assets/square-nuni-blue.png"]}
+handle_client_response 2 RESPONSE {'response_type': 'RESPONSE', 'participant': 'ax80e00pgm', 'partner': 'rc07kgzwym', 'role': 'Matcher', 'director_label': 'Nothing in this picture is blue', 'response': '<img src="../assets/square-nuni-red.png" style="width:400px; height:auto;">', 'choices': ['../assets/square-nuni-red.png', '../assets/square-nuni-blue.png']}
+in handle_matcher_response
+ ////////// {'response_type': 'RESPONSE', 'participant': 'ax80e00pgm', 'partner': 'rc07kgzwym', 'role': 'Matcher', 'director_label': 'Nothing in this picture is blue', 'response': '<img src="../assets/square-nuni-red.png" style="width:400px; height:auto;">', 'choices': ['../assets/square-nuni-red.png', '../assets/square-nuni-blue.png']} /////////
+LABEL: square-nuni-blue ***************** GUESS: <img src="../assets/square-nuni-red.png" style="width:400px; height:auto;">
+Client(3) said: {"response_type":"Pong"}
+handle_client_response 3 Pong {'response_type': 'Pong'}
+Client(3) said: {"response_type":"Ping"}
+handle_client_response 3 Ping {'response_type': 'Ping'}
+Client(2) said: {"response_type":"Pong"}
+handle_client_response 2 Pong {'response_type': 'Pong'}
+Client(2) said: {"response_type":"Ping"}
+handle_client_response 2 Ping {'response_type': 'Ping'}
+Client(3) said: {"response_type":"Pong"}
+handle_client_response 3 Pong {'response_type': 'Pong'}
+Client(3) said: {"response_type":"Ping"}
+handle_client_response 3 Ping {'response_type': 'Ping'}
+Client(2) said: {"response_type":"Pong"}
+handle_client_response 2 Pong {'response_type': 'Pong'}
+Client(2) said: {"response_type":"Ping"}
+handle_client_response 2 Ping {'response_type': 'Ping'}
+Client(3) said: {"response_type":"Pong"}
+handle_client_response 3 Pong {'response_type': 'Pong'}
+Client(3) said: {"response_type":"Ping"}
+handle_client_response 3 Ping {'response_type': 'Ping'}
+Client(2) said: {"response_type":"Pong"}
+handle_client_response 2 Pong {'response_type': 'Pong'}
+Client(2) said: {"response_type":"Ping"}
+handle_client_response 2 Ping {'response_type': 'Ping'}
+Client(3) said: {"response_type":"Pong"}
+handle_client_response 3 Pong {'response_type': 'Pong'}
+Client(2) said: {"response_type":"FINISHED_FEEDBACK"}
+handle_client_response 2 FINISHED_FEEDBACK {'response_type': 'FINISHED_FEEDBACK'}
+swap roles 2
+Client(3) said: {"response_type":"Pong"}
+handle_client_response 3 Pong {'response_type': 'Pong'}
+Client(3) said: {"response_type":"FINISHED_FEEDBACK"}
+handle_client_response 3 FINISHED_FEEDBACK {'response_type': 'FINISHED_FEEDBACK'}
+swap roles 3
+Sending to director_id 2: {'command_type': 'Director', 'target_object': {'lexicalization_number': 2, 'lexicalization': 'compositional', 'sentence': 'Not everything in this picture is red', 'semantics': 'not-universal', 'picture': 'square-nuni-red', 'shape': 'square'}, 'partner_id': 'rc07kgzwym', 'lexicalization_number': 2, 'object_choices': ['../assets/square-nuni-red.png', '../assets/square-nuni-blue.png']}
+Client(2) said: {"response_type":"Pong"}
+handle_client_response 2 Pong {'response_type': 'Pong'}
+Client(3) said: {"response_type":"Ping"}
+handle_client_response 3 Ping {'response_type': 'Ping'}
+Client(2) said: {"response_type":"Pong"}
+handle_client_response 2 Pong {'response_type': 'Pong'}
+Client(2) said: {"response_type":"Ping"}
+handle_client_response 2 Ping {'response_type': 'Ping'}
+Client(3) said: {"response_type":"Pong"}
+handle_client_response 3 Pong {'response_type': 'Pong'}
+Client(2) said: {"response_type":"RESPONSE","participant":"ax80e00pgm","partner":"rc07kgzwym","role":"Director","target_object":{"lexicalization_number":2,"lexicalization":"compositional","sentence":"Not everything in this picture is red","semantics":"not-universal","picture":"square-nuni-red","shape":"square","object_choices":["../assets/square-nuni-red.png","../assets/square-nuni-blue.png"]},"response":"Nothing in this picture is blue"}
+handle_client_response 2 RESPONSE {'response_type': 'RESPONSE', 'participant': 'ax80e00pgm', 'partner': 'rc07kgzwym', 'role': 'Director', 'target_object': {'lexicalization_number': 2, 'lexicalization': 'compositional', 'sentence': 'Not everything in this picture is red', 'semantics': 'not-universal', 'picture': 'square-nuni-red', 'shape': 'square', 'object_choices': ['../assets/square-nuni-red.png', '../assets/square-nuni-blue.png']}, 'response': 'Nothing in this picture is blue'}
+handle_director_response {'response_type': 'RESPONSE', 'participant': 'ax80e00pgm', 'partner': 'rc07kgzwym', 'role': 'Director', 'target_object': {'lexicalization_number': 2, 'lexicalization': 'compositional', 'sentence': 'Not everything in this picture is red', 'semantics': 'not-universal', 'picture': 'square-nuni-red', 'shape': 'square', 'object_choices': ['../assets/square-nuni-red.png', '../assets/square-nuni-blue.png']}, 'response': 'Nothing in this picture is blue'}
+Client(3) said: {"response_type":"Pong"}
+handle_client_response 3 Pong {'response_type': 'Pong'}
+Client(3) said: {"response_type":"RESPONSE","participant":"rc07kgzwym","partner":"ax80e00pgm","role":"Matcher","director_label":"Nothing in this picture is blue","response":"<img src=\"../assets/square-nuni-red.png\" style=\"width:400px; height:auto;\">","choices":["../assets/square-nuni-red.png","../assets/square-nuni-blue.png"]}
+handle_client_response 3 RESPONSE {'response_type': 'RESPONSE', 'participant': 'rc07kgzwym', 'partner': 'ax80e00pgm', 'role': 'Matcher', 'director_label': 'Nothing in this picture is blue', 'response': '<img src="../assets/square-nuni-red.png" style="width:400px; height:auto;">', 'choices': ['../assets/square-nuni-red.png', '../assets/square-nuni-blue.png']}
+in handle_matcher_response
+ ////////// {'response_type': 'RESPONSE', 'participant': 'rc07kgzwym', 'partner': 'ax80e00pgm', 'role': 'Matcher', 'director_label': 'Nothing in this picture is blue', 'response': '<img src="../assets/square-nuni-red.png" style="width:400px; height:auto;">', 'choices': ['../assets/square-nuni-red.png', '../assets/square-nuni-blue.png']} /////////
+LABEL: square-nuni-red ***************** GUESS: <img src="../assets/square-nuni-red.png" style="width:400px; height:auto;">
+Client(2) said: {"response_type":"Pong"}
+handle_client_response 2 Pong {'response_type': 'Pong'}
+Client(3) said: {"response_type":"Ping"}
+handle_client_response 3 Ping {'response_type': 'Ping'}
+Client(2) said: {"response_type":"Pong"}
+handle_client_response 2 Pong {'response_type': 'Pong'}
+Client(2) said: {"response_type":"Ping"}
+handle_client_response 2 Ping {'response_type': 'Ping'}
+Client(3) said: {"response_type":"Pong"}
+handle_client_response 3 Pong {'response_type': 'Pong'}
+Client(3) said: {"response_type":"Ping"}
+handle_client_response 3 Ping {'response_type': 'Ping'}
+Client(2) said: {"response_type":"Pong"}
+handle_client_response 2 Pong {'response_type': 'Pong'}
+Client(2) said: {"response_type":"Ping"}
+handle_client_response 2 Ping {'response_type': 'Ping'}
+Client(3) said: {"response_type":"Pong"}
+handle_client_response 3 Pong {'response_type': 'Pong'}
+Client(3) said: {"response_type":"Ping"}
+handle_client_response 3 Ping {'response_type': 'Ping'}
+Client(2) said: {"response_type":"Pong"}
+handle_client_response 2 Pong {'response_type': 'Pong'}
+Client(2) said: {"response_type":"Ping"}
+handle_client_response 2 Ping {'response_type': 'Ping'}
+Client(3) said: {"response_type":"Pong"}
+handle_client_response 3 Pong {'response_type': 'Pong'}
+Client(3) said: {"response_type":"FINISHED_FEEDBACK"}
+handle_client_response 3 FINISHED_FEEDBACK {'response_type': 'FINISHED_FEEDBACK'}
+swap roles 3
+Client(2) said: {"response_type":"Pong"}
+handle_client_response 2 Pong {'response_type': 'Pong'}
+Client(2) said: {"response_type":"FINISHED_FEEDBACK"}
+handle_client_response 2 FINISHED_FEEDBACK {'response_type': 'FINISHED_FEEDBACK'}
+swap roles 2
+Sending to director_id 3: {'command_type': 'Director', 'target_object': {'lexicalization_number': 2, 'lexicalization': 'compositional', 'sentence': 'Not everything in this picture is red', 'semantics': 'not-universal', 'picture': 'square-nuni-red', 'shape': 'square'}, 'partner_id': 'ax80e00pgm', 'lexicalization_number': 2, 'object_choices': ['../assets/square-nuni-blue.png', '../assets/square-nuni-red.png']}
+Client(3) said: {"response_type":"Pong"}
+handle_client_response 3 Pong {'response_type': 'Pong'}
+Client(3) said: {"response_type":"Ping"}
+handle_client_response 3 Ping {'response_type': 'Ping'}
+Client(2) said: {"response_type":"Pong"}
+handle_client_response 2 Pong {'response_type': 'Pong'}
+Client(2) said: {"response_type":"Ping"}
+handle_client_response 2 Ping {'response_type': 'Ping'}
+Client(3) said: {"response_type":"Pong"}
+handle_client_response 3 Pong {'response_type': 'Pong'}
+Client(3) said: {"response_type":"Ping"}
+handle_client_response 3 Ping {'response_type': 'Ping'}
+Client(2) said: {"response_type":"Pong"}
+handle_client_response 2 Pong {'response_type': 'Pong'}
+Client(2) said: {"response_type":"Ping"}
+handle_client_response 2 Ping {'response_type': 'Ping'}
+Client(3) said: {"response_type":"Pong"}
+handle_client_response 3 Pong {'response_type': 'Pong'}
+Client(3) said: {"response_type":"Ping"}
+handle_client_response 3 Ping {'response_type': 'Ping'}
+Client(2) said: {"response_type":"Pong"}
+handle_client_response 2 Pong {'response_type': 'Pong'}
+Client(2) said: {"response_type":"Ping"}
+handle_client_response 2 Ping {'response_type': 'Ping'}
+Client(3) said: {"response_type":"Pong"}
+handle_client_response 3 Pong {'response_type': 'Pong'}
+Client(3) said: {"response_type":"Ping"}
+handle_client_response 3 Ping {'response_type': 'Ping'}
+Client(2) said: {"response_type":"Pong"}
+handle_client_response 2 Pong {'response_type': 'Pong'}
+Client(2) said: {"response_type":"Ping"}
+handle_client_response 2 Ping {'response_type': 'Ping'}
+Client(3) said: {"response_type":"Pong"}
+handle_client_response 3 Pong {'response_type': 'Pong'}
+Client(3) said: {"response_type":"Ping"}
+handle_client_response 3 Ping {'response_type': 'Ping'}
+Client(2) said: {"response_type":"Pong"}
+handle_client_response 2 Pong {'response_type': 'Pong'}
+Client(2) said: {"response_type":"Ping"}
+handle_client_response 2 Ping {'response_type': 'Ping'}
+Client(3) said: {"response_type":"Pong"}
+handle_client_response 3 Pong {'response_type': 'Pong'}
+Client(3) said: {"response_type":"Ping"}
+handle_client_response 3 Ping {'response_type': 'Ping'}
+Client(2) said: {"response_type":"Pong"}
+handle_client_response 2 Pong {'response_type': 'Pong'}
+Client(2) said: {"response_type":"Ping"}
+handle_client_response 2 Ping {'response_type': 'Ping'}
+Client(3) said: {"response_type":"Pong"}
+handle_client_response 3 Pong {'response_type': 'Pong'}
+Client(3) said: {"response_type":"Ping"}
+handle_client_response 3 Ping {'response_type': 'Ping'}
+Client(2) said: {"response_type":"Pong"}
+handle_client_response 2 Pong {'response_type': 'Pong'}
+Client(2) said: {"response_type":"Ping"}
+handle_client_response 2 Ping {'response_type': 'Ping'}
+Client(3) said: {"response_type":"Pong"}
+handle_client_response 3 Pong {'response_type': 'Pong'}
+Client(3) said: {"response_type":"Ping"}
+handle_client_response 3 Ping {'response_type': 'Ping'}
+Client(2) said: {"response_type":"Pong"}
+handle_client_response 2 Pong {'response_type': 'Pong'}
+Client(2) said: {"response_type":"Ping"}
+handle_client_response 2 Ping {'response_type': 'Ping'}
+Client(3) said: {"response_type":"Pong"}
+handle_client_response 3 Pong {'response_type': 'Pong'}
+Client(3) said: {"response_type":"Ping"}
+handle_client_response 3 Ping {'response_type': 'Ping'}
+Client(2) said: {"response_type":"Pong"}
+handle_client_response 2 Pong {'response_type': 'Pong'}
+Client(2) said: {"response_type":"Ping"}
+handle_client_response 2 Ping {'response_type': 'Ping'}
+Client(3) said: {"response_type":"Pong"}
+handle_client_response 3 Pong {'response_type': 'Pong'}
+Client(3) said: {"response_type":"Ping"}
+handle_client_response 3 Ping {'response_type': 'Ping'}
+Client(2) said: {"response_type":"Pong"}
+handle_client_response 2 Pong {'response_type': 'Pong'}
+Client(2) said: {"response_type":"Ping"}
+handle_client_response 2 Ping {'response_type': 'Ping'}
+Client(3) said: {"response_type":"Pong"}
+handle_client_response 3 Pong {'response_type': 'Pong'}
+Client(3) said: {"response_type":"Ping"}
+handle_client_response 3 Ping {'response_type': 'Ping'}
+Client(2) said: {"response_type":"Pong"}
+handle_client_response 2 Pong {'response_type': 'Pong'}
+starting up
+New client connected and was given id 1
+Client(1) said: {"response_type":"CLIENT_INFO","client_info":"x1eekyow3n"}
+handle_client_response 1 CLIENT_INFO {'response_type': 'CLIENT_INFO', 'client_info': 'x1eekyow3n'}
+Client(1) said: {"response_type":"Ping"}
+handle_client_response 1 Ping {'response_type': 'Ping'}
+New client connected and was given id 2
+Client(2) said: {"response_type":"CLIENT_INFO","client_info":"ttjrpfo2rc"}
+handle_client_response 2 CLIENT_INFO {'response_type': 'CLIENT_INFO', 'client_info': 'ttjrpfo2rc'}
+Client(2) said: {"response_type":"Ping"}
+handle_client_response 2 Ping {'response_type': 'Ping'}
+Client(1) said: {"response_type":"Pong"}
+handle_client_response 1 Pong {'response_type': 'Pong'}
+Client(1) said: {"response_type":"Pong"}
+handle_client_response 1 Pong {'response_type': 'Pong'}
+Client(1) said: {"response_type":"Ping"}
+handle_client_response 1 Ping {'response_type': 'Ping'}
+Client(2) said: {"response_type":"Pong"}
+handle_client_response 2 Pong {'response_type': 'Pong'}
+Client(2) said: {"response_type":"Ping"}
+handle_client_response 2 Ping {'response_type': 'Ping'}
+Client(1) said: {"response_type":"Pong"}
+handle_client_response 1 Pong {'response_type': 'Pong'}
+Client(1) said: {"response_type":"Ping"}
+handle_client_response 1 Ping {'response_type': 'Ping'}
+Client(2) said: {"response_type":"Pong"}
+handle_client_response 2 Pong {'response_type': 'Pong'}
+Client(2) said: {"response_type":"Ping"}
+handle_client_response 2 Ping {'response_type': 'Ping'}
+Client(1) said: {"response_type":"Pong"}
+handle_client_response 1 Pong {'response_type': 'Pong'}
+Client(2) said: {"response_type":"INTERACTION_INSTRUCTIONS_COMPLETE"}
+handle_client_response 2 INTERACTION_INSTRUCTIONS_COMPLETE {'response_type': 'INTERACTION_INSTRUCTIONS_COMPLETE'}
+Client(1) said: {"response_type":"Pong"}
+handle_client_response 1 Pong {'response_type': 'Pong'}
+Client(1) said: {"response_type":"Ping"}
+handle_client_response 1 Ping {'response_type': 'Ping'}
+Client(2) said: {"response_type":"Pong"}
+handle_client_response 2 Pong {'response_type': 'Pong'}
+Client(2) said: {"response_type":"Ping"}
+handle_client_response 2 Ping {'response_type': 'Ping'}
+Client(1) said: {"response_type":"Pong"}
+handle_client_response 1 Pong {'response_type': 'Pong'}
+Client(1) said: {"response_type":"Ping"}
+handle_client_response 1 Ping {'response_type': 'Ping'}
+Client(2) said: {"response_type":"Pong"}
+handle_client_response 2 Pong {'response_type': 'Pong'}
+Client(1) said: {"response_type":"INTERACTION_INSTRUCTIONS_COMPLETE"}
+handle_client_response 1 INTERACTION_INSTRUCTIONS_COMPLETE {'response_type': 'INTERACTION_INSTRUCTIONS_COMPLETE'}
+Starting interaction
+Sending to director_id 1: {'command_type': 'Director', 'target_object': {'lexicalization_number': 2, 'lexicalisation': 'compositional', 'encoding': 'not_everything', 'semantics': 'not-universal', 'sentence': 'Not everything in this picture is blue', 'shape': 'square', 'nex form': 'Nothing', 'picture': 'square-nuni-blue'}, 'partner_id': 'ttjrpfo2rc', 'lexicalization_number': 2, 'object_choices': ['../assets/square-nuni-blue.png', '../assets/tri-nex-blue.png', '../assets/circle-nex-blue.png']}
+Client(2) said: {"response_type":"Pong"}
+handle_client_response 2 Pong {'response_type': 'Pong'}
+Client(2) said: {"response_type":"Ping"}
+handle_client_response 2 Ping {'response_type': 'Ping'}
+Client(1) said: {"response_type":"Pong"}
+handle_client_response 1 Pong {'response_type': 'Pong'}
+Client(1) said: {"response_type":"Ping"}
+handle_client_response 1 Ping {'response_type': 'Ping'}
+Client(2) said: {"response_type":"Pong"}
+handle_client_response 2 Pong {'response_type': 'Pong'}
+Client(2) said: {"response_type":"Ping"}
+handle_client_response 2 Ping {'response_type': 'Ping'}
+Client(1) said: {"response_type":"Pong"}
+handle_client_response 1 Pong {'response_type': 'Pong'}
+Client(1) said: {"response_type":"Ping"}
+handle_client_response 1 Ping {'response_type': 'Ping'}
+Client(2) said: {"response_type":"Pong"}
+handle_client_response 2 Pong {'response_type': 'Pong'}
+Client(2) said: {"response_type":"Ping"}
+handle_client_response 2 Ping {'response_type': 'Ping'}
+Client(1) said: {"response_type":"Pong"}
+handle_client_response 1 Pong {'response_type': 'Pong'}
+Client(1) said: {"response_type":"Ping"}
+handle_client_response 1 Ping {'response_type': 'Ping'}
+Client(2) said: {"response_type":"Pong"}
+handle_client_response 2 Pong {'response_type': 'Pong'}
+Client(2) said: {"response_type":"Ping"}
+handle_client_response 2 Ping {'response_type': 'Ping'}
+Client(1) said: {"response_type":"RESPONSE","participant":"x1eekyow3n","partner":"ttjrpfo2rc","role":"Director","target_object":{"lexicalization_number":2,"lexicalisation":"compositional","encoding":"not_everything","semantics":"not-universal","sentence":"Not everything in this picture is blue","shape":"square","nex form":"Nothing","picture":"square-nuni-blue","object_choices":["../assets/square-nuni-blue.png","../assets/tri-nex-blue.png","../assets/circle-nex-blue.png"]},"response":"Not everything in this picture is blue"}
+handle_client_response 1 RESPONSE {'response_type': 'RESPONSE', 'participant': 'x1eekyow3n', 'partner': 'ttjrpfo2rc', 'role': 'Director', 'target_object': {'lexicalization_number': 2, 'lexicalisation': 'compositional', 'encoding': 'not_everything', 'semantics': 'not-universal', 'sentence': 'Not everything in this picture is blue', 'shape': 'square', 'nex form': 'Nothing', 'picture': 'square-nuni-blue', 'object_choices': ['../assets/square-nuni-blue.png', '../assets/tri-nex-blue.png', '../assets/circle-nex-blue.png']}, 'response': 'Not everything in this picture is blue'}
+handle_director_response {'response_type': 'RESPONSE', 'participant': 'x1eekyow3n', 'partner': 'ttjrpfo2rc', 'role': 'Director', 'target_object': {'lexicalization_number': 2, 'lexicalisation': 'compositional', 'encoding': 'not_everything', 'semantics': 'not-universal', 'sentence': 'Not everything in this picture is blue', 'shape': 'square', 'nex form': 'Nothing', 'picture': 'square-nuni-blue', 'object_choices': ['../assets/square-nuni-blue.png', '../assets/tri-nex-blue.png', '../assets/circle-nex-blue.png']}, 'response': 'Not everything in this picture is blue'}
+Client(1) said: {"response_type":"Pong"}
+handle_client_response 1 Pong {'response_type': 'Pong'}
+Client(1) said: {"response_type":"Ping"}
+handle_client_response 1 Ping {'response_type': 'Ping'}
+Client(2) said: {"response_type":"Pong"}
+handle_client_response 2 Pong {'response_type': 'Pong'}
+Client(2) said: {"response_type":"Pong"}
+handle_client_response 2 Pong {'response_type': 'Pong'}
+Client(2) said: {"response_type":"Ping"}
+handle_client_response 2 Ping {'response_type': 'Ping'}
+Client(1) said: {"response_type":"Pong"}
+handle_client_response 1 Pong {'response_type': 'Pong'}
+Client(1) said: {"response_type":"Ping"}
+handle_client_response 1 Ping {'response_type': 'Ping'}
+Client(2) said: {"response_type":"Pong"}
+handle_client_response 2 Pong {'response_type': 'Pong'}
+Client(2) said: {"response_type":"RESPONSE","participant":"ttjrpfo2rc","partner":"x1eekyow3n","role":"Matcher","director_label":"Not everything in this picture is blue","response":"<img src=\"../assets/square-nuni-blue.png\" style=\"width:400px; height:auto;\">","choices":["../assets/square-nuni-blue.png","../assets/tri-nex-blue.png","../assets/circle-nex-blue.png"]}
+handle_client_response 2 RESPONSE {'response_type': 'RESPONSE', 'participant': 'ttjrpfo2rc', 'partner': 'x1eekyow3n', 'role': 'Matcher', 'director_label': 'Not everything in this picture is blue', 'response': '<img src="../assets/square-nuni-blue.png" style="width:400px; height:auto;">', 'choices': ['../assets/square-nuni-blue.png', '../assets/tri-nex-blue.png', '../assets/circle-nex-blue.png']}
+in handle_matcher_response
+ ////////// {'response_type': 'RESPONSE', 'participant': 'ttjrpfo2rc', 'partner': 'x1eekyow3n', 'role': 'Matcher', 'director_label': 'Not everything in this picture is blue', 'response': '<img src="../assets/square-nuni-blue.png" style="width:400px; height:auto;">', 'choices': ['../assets/square-nuni-blue.png', '../assets/tri-nex-blue.png', '../assets/circle-nex-blue.png']} /////////
+LABEL: square-nuni-blue ***************** GUESS: <img src="../assets/square-nuni-blue.png" style="width:400px; height:auto;">
+Client(1) said: {"response_type":"Pong"}
+handle_client_response 1 Pong {'response_type': 'Pong'}
+Client(2) said: {"response_type":"Ping"}
+handle_client_response 2 Ping {'response_type': 'Ping'}
+Client(1) said: {"response_type":"Pong"}
+handle_client_response 1 Pong {'response_type': 'Pong'}
+Client(1) said: {"response_type":"Ping"}
+handle_client_response 1 Ping {'response_type': 'Ping'}
+Client(2) said: {"response_type":"Pong"}
+handle_client_response 2 Pong {'response_type': 'Pong'}
+Client(2) said: {"response_type":"Ping"}
+handle_client_response 2 Ping {'response_type': 'Ping'}
+Client(1) said: {"response_type":"Pong"}
+handle_client_response 1 Pong {'response_type': 'Pong'}
+Client(1) said: {"response_type":"Ping"}
+handle_client_response 1 Ping {'response_type': 'Ping'}
+Client(2) said: {"response_type":"Pong"}
+handle_client_response 2 Pong {'response_type': 'Pong'}
+Client(2) said: {"response_type":"Ping"}
+handle_client_response 2 Ping {'response_type': 'Ping'}
+Client(1) said: {"response_type":"Pong"}
+handle_client_response 1 Pong {'response_type': 'Pong'}
+Client(2) said: {"response_type":"FINISHED_FEEDBACK"}
+handle_client_response 2 FINISHED_FEEDBACK {'response_type': 'FINISHED_FEEDBACK'}
+swap roles 2
+Client(1) said: {"response_type":"Pong"}
+handle_client_response 1 Pong {'response_type': 'Pong'}
+Client(1) said: {"response_type":"FINISHED_FEEDBACK"}
+handle_client_response 1 FINISHED_FEEDBACK {'response_type': 'FINISHED_FEEDBACK'}
+swap roles 1
+Sending to director_id 2: {'command_type': 'Director', 'target_object': {'lexicalization_number': 2, 'lexicalisation': 'lexical', 'encoding': 'Nothing', 'semantics': 'not-exist', 'sentence': 'Nothing in this picture is blue', 'shape': 'circle', 'nex form': 'Nothing', 'picture': 'circle-nex-blue'}, 'partner_id': 'x1eekyow3n', 'lexicalization_number': 2, 'object_choices': ['../assets/tri-nex-blue.png', '../assets/circle-nex-blue.png', '../assets/square-nuni-blue.png']}
+Client(2) said: {"response_type":"Pong"}
+handle_client_response 2 Pong {'response_type': 'Pong'}
+Client(1) said: {"response_type":"Ping"}
+handle_client_response 1 Ping {'response_type': 'Ping'}
+Client(2) said: {"response_type":"Pong"}
+handle_client_response 2 Pong {'response_type': 'Pong'}
+Client(2) said: {"response_type":"Ping"}
+handle_client_response 2 Ping {'response_type': 'Ping'}
+Client(1) said: {"response_type":"Pong"}
+handle_client_response 1 Pong {'response_type': 'Pong'}
+Client(1) said: {"response_type":"Ping"}
+handle_client_response 1 Ping {'response_type': 'Ping'}
+Client(2) said: {"response_type":"Pong"}
+handle_client_response 2 Pong {'response_type': 'Pong'}
+Client(2) said: {"response_type":"Ping"}
+handle_client_response 2 Ping {'response_type': 'Ping'}
+Client(1) said: {"response_type":"Pong"}
+handle_client_response 1 Pong {'response_type': 'Pong'}
+Client(2) said: {"response_type":"Ping"}
+handle_client_response 2 Ping {'response_type': 'Ping'}
+Client(1) said: {"response_type":"Pong"}
+handle_client_response 1 Pong {'response_type': 'Pong'}
+Client(1) said: {"response_type":"Ping"}
+handle_client_response 1 Ping {'response_type': 'Ping'}
+Client(2) said: {"response_type":"Pong"}
+handle_client_response 2 Pong {'response_type': 'Pong'}
+Client(2) said: {"response_type":"RESPONSE","participant":"ttjrpfo2rc","partner":"x1eekyow3n","role":"Director","target_object":{"lexicalization_number":2,"lexicalisation":"lexical","encoding":"Nothing","semantics":"not-exist","sentence":"Nothing in this picture is blue","shape":"circle","nex form":"Nothing","picture":"circle-nex-blue","object_choices":["../assets/tri-nex-blue.png","../assets/circle-nex-blue.png","../assets/square-nuni-blue.png"]},"response":"Everything in this picture is not blue"}
+handle_client_response 2 RESPONSE {'response_type': 'RESPONSE', 'participant': 'ttjrpfo2rc', 'partner': 'x1eekyow3n', 'role': 'Director', 'target_object': {'lexicalization_number': 2, 'lexicalisation': 'lexical', 'encoding': 'Nothing', 'semantics': 'not-exist', 'sentence': 'Nothing in this picture is blue', 'shape': 'circle', 'nex form': 'Nothing', 'picture': 'circle-nex-blue', 'object_choices': ['../assets/tri-nex-blue.png', '../assets/circle-nex-blue.png', '../assets/square-nuni-blue.png']}, 'response': 'Everything in this picture is not blue'}
+handle_director_response {'response_type': 'RESPONSE', 'participant': 'ttjrpfo2rc', 'partner': 'x1eekyow3n', 'role': 'Director', 'target_object': {'lexicalization_number': 2, 'lexicalisation': 'lexical', 'encoding': 'Nothing', 'semantics': 'not-exist', 'sentence': 'Nothing in this picture is blue', 'shape': 'circle', 'nex form': 'Nothing', 'picture': 'circle-nex-blue', 'object_choices': ['../assets/tri-nex-blue.png', '../assets/circle-nex-blue.png', '../assets/square-nuni-blue.png']}, 'response': 'Everything in this picture is not blue'}
+Client(1) said: {"response_type":"Pong"}
+handle_client_response 1 Pong {'response_type': 'Pong'}
+Client(1) said: {"response_type":"Ping"}
+handle_client_response 1 Ping {'response_type': 'Ping'}
+Client(2) said: {"response_type":"Ping"}
+handle_client_response 2 Ping {'response_type': 'Ping'}
+Client(2) said: {"response_type":"Pong"}
+handle_client_response 2 Pong {'response_type': 'Pong'}
+Client(1) said: {"response_type":"Pong"}
+handle_client_response 1 Pong {'response_type': 'Pong'}
+Client(1) said: {"response_type":"RESPONSE","participant":"x1eekyow3n","partner":"ttjrpfo2rc","role":"Matcher","director_label":"Everything in this picture is not blue","response":"<img src=\"../assets/circle-nex-blue.png\" style=\"width:400px; height:auto;\">","choices":["../assets/tri-nex-blue.png","../assets/circle-nex-blue.png","../assets/square-nuni-blue.png"]}
+handle_client_response 1 RESPONSE {'response_type': 'RESPONSE', 'participant': 'x1eekyow3n', 'partner': 'ttjrpfo2rc', 'role': 'Matcher', 'director_label': 'Everything in this picture is not blue', 'response': '<img src="../assets/circle-nex-blue.png" style="width:400px; height:auto;">', 'choices': ['../assets/tri-nex-blue.png', '../assets/circle-nex-blue.png', '../assets/square-nuni-blue.png']}
+in handle_matcher_response
+ ////////// {'response_type': 'RESPONSE', 'participant': 'x1eekyow3n', 'partner': 'ttjrpfo2rc', 'role': 'Matcher', 'director_label': 'Everything in this picture is not blue', 'response': '<img src="../assets/circle-nex-blue.png" style="width:400px; height:auto;">', 'choices': ['../assets/tri-nex-blue.png', '../assets/circle-nex-blue.png', '../assets/square-nuni-blue.png']} /////////
+LABEL: circle-nex-blue ***************** GUESS: <img src="../assets/circle-nex-blue.png" style="width:400px; height:auto;">
+Client(2) said: {"response_type":"Pong"}
+handle_client_response 2 Pong {'response_type': 'Pong'}
+Client(1) said: {"response_type":"Ping"}
+handle_client_response 1 Ping {'response_type': 'Ping'}
+Client(2) said: {"response_type":"Pong"}
+handle_client_response 2 Pong {'response_type': 'Pong'}
+Client(2) said: {"response_type":"Ping"}
+handle_client_response 2 Ping {'response_type': 'Ping'}
+Client(1) said: {"response_type":"Pong"}
+handle_client_response 1 Pong {'response_type': 'Pong'}
+Client(1) said: {"response_type":"Ping"}
+handle_client_response 1 Ping {'response_type': 'Ping'}
+Client(2) said: {"response_type":"Pong"}
+handle_client_response 2 Pong {'response_type': 'Pong'}
+Client(2) said: {"response_type":"Ping"}
+handle_client_response 2 Ping {'response_type': 'Ping'}
+Client(1) said: {"response_type":"Pong"}
+handle_client_response 1 Pong {'response_type': 'Pong'}
+Client(1) said: {"response_type":"Ping"}
+handle_client_response 1 Ping {'response_type': 'Ping'}
+Client(2) said: {"response_type":"Pong"}
+handle_client_response 2 Pong {'response_type': 'Pong'}
+Client(2) said: {"response_type":"Ping"}
+handle_client_response 2 Ping {'response_type': 'Ping'}
+Client(1) said: {"response_type":"Pong"}
+handle_client_response 1 Pong {'response_type': 'Pong'}
+Client(1) said: {"response_type":"FINISHED_FEEDBACK"}
+handle_client_response 1 FINISHED_FEEDBACK {'response_type': 'FINISHED_FEEDBACK'}
+swap roles 1
+Client(2) said: {"response_type":"Pong"}
+handle_client_response 2 Pong {'response_type': 'Pong'}
+Client(2) said: {"response_type":"FINISHED_FEEDBACK"}
+handle_client_response 2 FINISHED_FEEDBACK {'response_type': 'FINISHED_FEEDBACK'}
+swap roles 2
+Sending to director_id 1: {'command_type': 'Director', 'target_object': {'lexicalization_number': 1, 'lexicalisation': 'compositional', 'encoding': 'not_everything', 'semantics': 'not-universal', 'sentence': 'Not everything in this picture is red', 'shape': 'square', 'nex form': 'Nothing', 'picture': 'square-nuni-red'}, 'partner_id': 'ttjrpfo2rc', 'lexicalization_number': 1, 'object_choices': ['../assets/tri-nex-red.png', '../assets/circle-nex-red.png', '../assets/square-nuni-red.png']}
+Client(1) said: {"response_type":"Pong"}
+handle_client_response 1 Pong {'response_type': 'Pong'}
+Client(1) said: {"response_type":"Ping"}
+handle_client_response 1 Ping {'response_type': 'Ping'}
+Client(2) said: {"response_type":"Pong"}
+handle_client_response 2 Pong {'response_type': 'Pong'}
+Client(2) said: {"response_type":"Ping"}
+handle_client_response 2 Ping {'response_type': 'Ping'}
+Client(1) said: {"response_type":"Pong"}
+handle_client_response 1 Pong {'response_type': 'Pong'}
+Client(1) said: {"response_type":"RESPONSE","participant":"x1eekyow3n","partner":"ttjrpfo2rc","role":"Director","target_object":{"lexicalization_number":1,"lexicalisation":"compositional","encoding":"not_everything","semantics":"not-universal","sentence":"Not everything in this picture is red","shape":"square","nex form":"Nothing","picture":"square-nuni-red","object_choices":["../assets/tri-nex-red.png","../assets/circle-nex-red.png","../assets/square-nuni-red.png"]},"response":"Not everything in this picture is red"}
+handle_client_response 1 RESPONSE {'response_type': 'RESPONSE', 'participant': 'x1eekyow3n', 'partner': 'ttjrpfo2rc', 'role': 'Director', 'target_object': {'lexicalization_number': 1, 'lexicalisation': 'compositional', 'encoding': 'not_everything', 'semantics': 'not-universal', 'sentence': 'Not everything in this picture is red', 'shape': 'square', 'nex form': 'Nothing', 'picture': 'square-nuni-red', 'object_choices': ['../assets/tri-nex-red.png', '../assets/circle-nex-red.png', '../assets/square-nuni-red.png']}, 'response': 'Not everything in this picture is red'}
+handle_director_response {'response_type': 'RESPONSE', 'participant': 'x1eekyow3n', 'partner': 'ttjrpfo2rc', 'role': 'Director', 'target_object': {'lexicalization_number': 1, 'lexicalisation': 'compositional', 'encoding': 'not_everything', 'semantics': 'not-universal', 'sentence': 'Not everything in this picture is red', 'shape': 'square', 'nex form': 'Nothing', 'picture': 'square-nuni-red', 'object_choices': ['../assets/tri-nex-red.png', '../assets/circle-nex-red.png', '../assets/square-nuni-red.png']}, 'response': 'Not everything in this picture is red'}
+Client(2) said: {"response_type":"Pong"}
+handle_client_response 2 Pong {'response_type': 'Pong'}
+Client(1) said: {"response_type":"Ping"}
+handle_client_response 1 Ping {'response_type': 'Ping'}
+Client(2) said: {"response_type":"Pong"}
+handle_client_response 2 Pong {'response_type': 'Pong'}
+Client(2) said: {"response_type":"RESPONSE","participant":"ttjrpfo2rc","partner":"x1eekyow3n","role":"Matcher","director_label":"Not everything in this picture is red","response":"<img src=\"../assets/square-nuni-red.png\" style=\"width:400px; height:auto;\">","choices":["../assets/square-nuni-red.png","../assets/circle-nex-red.png","../assets/tri-nex-red.png"]}
+handle_client_response 2 RESPONSE {'response_type': 'RESPONSE', 'participant': 'ttjrpfo2rc', 'partner': 'x1eekyow3n', 'role': 'Matcher', 'director_label': 'Not everything in this picture is red', 'response': '<img src="../assets/square-nuni-red.png" style="width:400px; height:auto;">', 'choices': ['../assets/square-nuni-red.png', '../assets/circle-nex-red.png', '../assets/tri-nex-red.png']}
+in handle_matcher_response
+ ////////// {'response_type': 'RESPONSE', 'participant': 'ttjrpfo2rc', 'partner': 'x1eekyow3n', 'role': 'Matcher', 'director_label': 'Not everything in this picture is red', 'response': '<img src="../assets/square-nuni-red.png" style="width:400px; height:auto;">', 'choices': ['../assets/square-nuni-red.png', '../assets/circle-nex-red.png', '../assets/tri-nex-red.png']} /////////
+LABEL: square-nuni-red ***************** GUESS: <img src="../assets/square-nuni-red.png" style="width:400px; height:auto;">
+Client(1) said: {"response_type":"Pong"}
+handle_client_response 1 Pong {'response_type': 'Pong'}
+Client(2) said: {"response_type":"Ping"}
+handle_client_response 2 Ping {'response_type': 'Ping'}
+Client(1) said: {"response_type":"Pong"}
+handle_client_response 1 Pong {'response_type': 'Pong'}
+Client(1) said: {"response_type":"Ping"}
+handle_client_response 1 Ping {'response_type': 'Ping'}
+Client(2) said: {"response_type":"Pong"}
+handle_client_response 2 Pong {'response_type': 'Pong'}
+Client(2) said: {"response_type":"Ping"}
+handle_client_response 2 Ping {'response_type': 'Ping'}
+Client(1) said: {"response_type":"Pong"}
+handle_client_response 1 Pong {'response_type': 'Pong'}
+Client(1) said: {"response_type":"Ping"}
+handle_client_response 1 Ping {'response_type': 'Ping'}
+Client(2) said: {"response_type":"Pong"}
+handle_client_response 2 Pong {'response_type': 'Pong'}
+Client(2) said: {"response_type":"Ping"}
+handle_client_response 2 Ping {'response_type': 'Ping'}
+Client(1) said: {"response_type":"Pong"}
+handle_client_response 1 Pong {'response_type': 'Pong'}
+Client(2) said: {"response_type":"FINISHED_FEEDBACK"}
+handle_client_response 2 FINISHED_FEEDBACK {'response_type': 'FINISHED_FEEDBACK'}
+swap roles 2
+Client(1) said: {"response_type":"Pong"}
+handle_client_response 1 Pong {'response_type': 'Pong'}
+Client(1) said: {"response_type":"FINISHED_FEEDBACK"}
+handle_client_response 1 FINISHED_FEEDBACK {'response_type': 'FINISHED_FEEDBACK'}
+swap roles 1
+Sending to director_id 2: {'command_type': 'Director', 'target_object': {'lexicalization_number': 1, 'lexicalisation': 'compositional', 'encoding': 'not_everything', 'semantics': 'not-universal', 'sentence': 'Not everything in this picture is red', 'shape': 'square', 'nex form': 'Nothing', 'picture': 'square-nuni-red'}, 'partner_id': 'x1eekyow3n', 'lexicalization_number': 1, 'object_choices': ['../assets/circle-nex-red.png', '../assets/square-nuni-red.png', '../assets/tri-nex-red.png']}
+Client(2) said: {"response_type":"Pong"}
+handle_client_response 2 Pong {'response_type': 'Pong'}
+Client(1) said: {"response_type":"Ping"}
+handle_client_response 1 Ping {'response_type': 'Ping'}
+Client(2) said: {"response_type":"Pong"}
+handle_client_response 2 Pong {'response_type': 'Pong'}
+Client(2) said: {"response_type":"Ping"}
+handle_client_response 2 Ping {'response_type': 'Ping'}
+Client(1) said: {"response_type":"Pong"}
+handle_client_response 1 Pong {'response_type': 'Pong'}
+Client(1) said: {"response_type":"Ping"}
+handle_client_response 1 Ping {'response_type': 'Ping'}
+Client(2) said: {"response_type":"Pong"}
+handle_client_response 2 Pong {'response_type': 'Pong'}
+Client(2) disconnected
+Client(1) disconnected
+New client connected and was given id 3
+Client(3) said: {"response_type":"CLIENT_INFO","client_info":"p63fkwqzg9"}
+handle_client_response 3 CLIENT_INFO {'response_type': 'CLIENT_INFO', 'client_info': 'p63fkwqzg9'}
+Client(3) said: {"response_type":"Ping"}
+handle_client_response 3 Ping {'response_type': 'Ping'}
+New client connected and was given id 4
+Client(4) said: {"response_type":"CLIENT_INFO","client_info":"7jmqkk5t35"}
+handle_client_response 4 CLIENT_INFO {'response_type': 'CLIENT_INFO', 'client_info': '7jmqkk5t35'}
+Client(4) said: {"response_type":"Ping"}
+handle_client_response 4 Ping {'response_type': 'Ping'}
+Client(3) said: {"response_type":"Pong"}
+handle_client_response 3 Pong {'response_type': 'Pong'}
+Client(3) said: {"response_type":"Pong"}
+handle_client_response 3 Pong {'response_type': 'Pong'}
+Client(4) said: {"response_type":"INTERACTION_INSTRUCTIONS_COMPLETE"}
+handle_client_response 4 INTERACTION_INSTRUCTIONS_COMPLETE {'response_type': 'INTERACTION_INSTRUCTIONS_COMPLETE'}
+Client(3) said: {"response_type":"Pong"}
+handle_client_response 3 Pong {'response_type': 'Pong'}
+Client(3) said: {"response_type":"Ping"}
+handle_client_response 3 Ping {'response_type': 'Ping'}
+Client(4) said: {"response_type":"Pong"}
+handle_client_response 4 Pong {'response_type': 'Pong'}
+Client(3) said: {"response_type":"INTERACTION_INSTRUCTIONS_COMPLETE"}
+handle_client_response 3 INTERACTION_INSTRUCTIONS_COMPLETE {'response_type': 'INTERACTION_INSTRUCTIONS_COMPLETE'}
+Starting interaction
+Sending to director_id 3: {'command_type': 'Director', 'target_object': {'lexicalization_number': 2, 'lexicalisation': 'compositional', 'encoding': 'not_everything', 'semantics': 'not-universal', 'sentence': 'Not everything in this picture is blue', 'shape': 'square', 'nex form': 'Nothing', 'picture': 'square-nuni-blue'}, 'partner_id': '7jmqkk5t35', 'lexicalization_number': 2, 'object_choices': ['../assets/square-nuni-blue.png', '../assets/circle-nex-blue.png', '../assets/tri-nex-blue.png']}
+Client(4) said: {"response_type":"Pong"}
+handle_client_response 4 Pong {'response_type': 'Pong'}
+Client(4) said: {"response_type":"Ping"}
+handle_client_response 4 Ping {'response_type': 'Ping'}
+Client(3) said: {"response_type":"Pong"}
+handle_client_response 3 Pong {'response_type': 'Pong'}
+Client(3) said: {"response_type":"Ping"}
+handle_client_response 3 Ping {'response_type': 'Ping'}
+Client(4) said: {"response_type":"Pong"}
+handle_client_response 4 Pong {'response_type': 'Pong'}
+Client(4) said: {"response_type":"Ping"}
+handle_client_response 4 Ping {'response_type': 'Ping'}
+Client(3) said: {"response_type":"Pong"}
+handle_client_response 3 Pong {'response_type': 'Pong'}
+Client(3) said: {"response_type":"Ping"}
+handle_client_response 3 Ping {'response_type': 'Ping'}
+Client(4) said: {"response_type":"Pong"}
+handle_client_response 4 Pong {'response_type': 'Pong'}
+Client(4) said: {"response_type":"Ping"}
+handle_client_response 4 Ping {'response_type': 'Ping'}
+Client(3) said: {"response_type":"Pong"}
+handle_client_response 3 Pong {'response_type': 'Pong'}
+Client(3) said: {"response_type":"Ping"}
+handle_client_response 3 Ping {'response_type': 'Ping'}
+Client(4) said: {"response_type":"Pong"}
+handle_client_response 4 Pong {'response_type': 'Pong'}
+Client(4) said: {"response_type":"Ping"}
+handle_client_response 4 Ping {'response_type': 'Ping'}
+Client(3) said: {"response_type":"Pong"}
+handle_client_response 3 Pong {'response_type': 'Pong'}
+Client(3) said: {"response_type":"Ping"}
+handle_client_response 3 Ping {'response_type': 'Ping'}
+Client(4) said: {"response_type":"Pong"}
+handle_client_response 4 Pong {'response_type': 'Pong'}
+Client(4) said: {"response_type":"Ping"}
+handle_client_response 4 Ping {'response_type': 'Ping'}
+Client(3) said: {"response_type":"Pong"}
+handle_client_response 3 Pong {'response_type': 'Pong'}
+Client(3) said: {"response_type":"Ping"}
+handle_client_response 3 Ping {'response_type': 'Ping'}
+Client(4) said: {"response_type":"Pong"}
+handle_client_response 4 Pong {'response_type': 'Pong'}
+Client(4) said: {"response_type":"Ping"}
+handle_client_response 4 Ping {'response_type': 'Ping'}
+Client(3) said: {"response_type":"Pong"}
+handle_client_response 3 Pong {'response_type': 'Pong'}
+Client(3) said: {"response_type":"Ping"}
+handle_client_response 3 Ping {'response_type': 'Ping'}
+Client(4) said: {"response_type":"Pong"}
+handle_client_response 4 Pong {'response_type': 'Pong'}
+Client(3) disconnected
+Client(4) disconnected
+New client connected and was given id 5
+Client(5) said: {"response_type":"CLIENT_INFO","client_info":"abczsjm7qg"}
+handle_client_response 5 CLIENT_INFO {'response_type': 'CLIENT_INFO', 'client_info': 'abczsjm7qg'}
+Client(5) said: {"response_type":"Ping"}
+handle_client_response 5 Ping {'response_type': 'Ping'}
+New client connected and was given id 6
+Client(6) said: {"response_type":"CLIENT_INFO","client_info":"mjys7tyd1m"}
+handle_client_response 6 CLIENT_INFO {'response_type': 'CLIENT_INFO', 'client_info': 'mjys7tyd1m'}
+Client(6) said: {"response_type":"Ping"}
+handle_client_response 6 Ping {'response_type': 'Ping'}
+Client(5) said: {"response_type":"Pong"}
+handle_client_response 5 Pong {'response_type': 'Pong'}
+Client(5) said: {"response_type":"Pong"}
+handle_client_response 5 Pong {'response_type': 'Pong'}
+Client(6) said: {"response_type":"INTERACTION_INSTRUCTIONS_COMPLETE"}
+handle_client_response 6 INTERACTION_INSTRUCTIONS_COMPLETE {'response_type': 'INTERACTION_INSTRUCTIONS_COMPLETE'}
+Client(5) said: {"response_type":"Pong"}
+handle_client_response 5 Pong {'response_type': 'Pong'}
+Client(5) said: {"response_type":"Ping"}
+handle_client_response 5 Ping {'response_type': 'Ping'}
+Client(6) said: {"response_type":"Pong"}
+handle_client_response 6 Pong {'response_type': 'Pong'}
+Client(5) said: {"response_type":"INTERACTION_INSTRUCTIONS_COMPLETE"}
+handle_client_response 5 INTERACTION_INSTRUCTIONS_COMPLETE {'response_type': 'INTERACTION_INSTRUCTIONS_COMPLETE'}
+Starting interaction
+Sending to director_id 5: {'command_type': 'Director', 'target_object': {'lexicalization_number': 1, 'lexicalisation': 'compositional', 'encoding': 'everything_not', 'semantics': 'not-exist', 'sentence': 'Everything in this picture is not red', 'shape': 'circle', 'nex form': 'Nothing', 'picture': 'circle-nex-red'}, 'partner_id': 'mjys7tyd1m', 'lexicalization_number': 1, 'object_choices': ['../assets/circle-nex-red.png', '../assets/tri-nex-red.png', '../assets/square-nuni-red.png']}
+Client(6) said: {"response_type":"Pong"}
+handle_client_response 6 Pong {'response_type': 'Pong'}
+Client(6) said: {"response_type":"Ping"}
+handle_client_response 6 Ping {'response_type': 'Ping'}
+Client(5) said: {"response_type":"Pong"}
+handle_client_response 5 Pong {'response_type': 'Pong'}
+Client(5) said: {"response_type":"RESPONSE","participant":"abczsjm7qg","partner":"mjys7tyd1m","role":"Director","target_object":[{"lexicalization_number":1,"lexicalisation":"compositional","encoding":"everything_not","semantics":"not-exist","sentence":"Everything in this picture is not red","shape":"circle","nex form":"Nothing","picture":"circle-nex-red","object_choices":["../assets/circle-nex-red.png","../assets/tri-nex-red.png","../assets/square-nuni-red.png"]},"TARGET OBJECT"],"response":["Nothing in this picture is red","LABEL SELECTED"]}
+handle_client_response 5 RESPONSE {'response_type': 'RESPONSE', 'participant': 'abczsjm7qg', 'partner': 'mjys7tyd1m', 'role': 'Director', 'target_object': [{'lexicalization_number': 1, 'lexicalisation': 'compositional', 'encoding': 'everything_not', 'semantics': 'not-exist', 'sentence': 'Everything in this picture is not red', 'shape': 'circle', 'nex form': 'Nothing', 'picture': 'circle-nex-red', 'object_choices': ['../assets/circle-nex-red.png', '../assets/tri-nex-red.png', '../assets/square-nuni-red.png']}, 'TARGET OBJECT'], 'response': ['Nothing in this picture is red', 'LABEL SELECTED']}
+handle_director_response {'response_type': 'RESPONSE', 'participant': 'abczsjm7qg', 'partner': 'mjys7tyd1m', 'role': 'Director', 'target_object': [{'lexicalization_number': 1, 'lexicalisation': 'compositional', 'encoding': 'everything_not', 'semantics': 'not-exist', 'sentence': 'Everything in this picture is not red', 'shape': 'circle', 'nex form': 'Nothing', 'picture': 'circle-nex-red', 'object_choices': ['../assets/circle-nex-red.png', '../assets/tri-nex-red.png', '../assets/square-nuni-red.png']}, 'TARGET OBJECT'], 'response': ['Nothing in this picture is red', 'LABEL SELECTED']}
+Client(6) said: {"response_type":"Pong"}
+handle_client_response 6 Pong {'response_type': 'Pong'}
+Client(6) said: {"response_type":"RESPONSE","participant":"mjys7tyd1m","partner":"abczsjm7qg","role":"Matcher","director_label":["Nothing in this picture is red","LABEL SELECTED"],"response":"<img src=\"../assets/circle-nex-red.png\" style=\"width:400px; height:auto;\">","choices":["../assets/circle-nex-red.png","../assets/square-nuni-red.png","../assets/tri-nex-red.png"]}
+handle_client_response 6 RESPONSE {'response_type': 'RESPONSE', 'participant': 'mjys7tyd1m', 'partner': 'abczsjm7qg', 'role': 'Matcher', 'director_label': ['Nothing in this picture is red', 'LABEL SELECTED'], 'response': '<img src="../assets/circle-nex-red.png" style="width:400px; height:auto;">', 'choices': ['../assets/circle-nex-red.png', '../assets/square-nuni-red.png', '../assets/tri-nex-red.png']}
+in handle_matcher_response
+ ////////// {'response_type': 'RESPONSE', 'participant': 'mjys7tyd1m', 'partner': 'abczsjm7qg', 'role': 'Matcher', 'director_label': ['Nothing in this picture is red', 'LABEL SELECTED'], 'response': '<img src="../assets/circle-nex-red.png" style="width:400px; height:auto;">', 'choices': ['../assets/circle-nex-red.png', '../assets/square-nuni-red.png', '../assets/tri-nex-red.png']} /////////
+LABEL: circle-nex-red ***************** GUESS: <img src="../assets/circle-nex-red.png" style="width:400px; height:auto;">
+Client(5) said: {"response_type":"Pong"}
+handle_client_response 5 Pong {'response_type': 'Pong'}
+Client(5) said: {"response_type":"Ping"}
+handle_client_response 5 Ping {'response_type': 'Ping'}
+Client(6) said: {"response_type":"Pong"}
+handle_client_response 6 Pong {'response_type': 'Pong'}
+Client(6) said: {"response_type":"Ping"}
+handle_client_response 6 Ping {'response_type': 'Ping'}
+Client(5) said: {"response_type":"Pong"}
+handle_client_response 5 Pong {'response_type': 'Pong'}
+Client(5) said: {"response_type":"Ping"}
+handle_client_response 5 Ping {'response_type': 'Ping'}
+Client(6) said: {"response_type":"Pong"}
+handle_client_response 6 Pong {'response_type': 'Pong'}
+Client(6) said: {"response_type":"Ping"}
+handle_client_response 6 Ping {'response_type': 'Ping'}
+Client(5) said: {"response_type":"Pong"}
+handle_client_response 5 Pong {'response_type': 'Pong'}
+Client(5) said: {"response_type":"Ping"}
+handle_client_response 5 Ping {'response_type': 'Ping'}
+Client(6) said: {"response_type":"Pong"}
+handle_client_response 6 Pong {'response_type': 'Pong'}
+Client(6) said: {"response_type":"Ping"}
+handle_client_response 6 Ping {'response_type': 'Ping'}
+Client(5) said: {"response_type":"Pong"}
+handle_client_response 5 Pong {'response_type': 'Pong'}
+Client(6) said: {"response_type":"FINISHED_FEEDBACK"}
+handle_client_response 6 FINISHED_FEEDBACK {'response_type': 'FINISHED_FEEDBACK'}
+swap roles 6
+Client(5) said: {"response_type":"FINISHED_FEEDBACK"}
+handle_client_response 5 FINISHED_FEEDBACK {'response_type': 'FINISHED_FEEDBACK'}
+swap roles 5
+Sending to director_id 6: {'command_type': 'Director', 'target_object': {'lexicalization_number': 2, 'lexicalisation': 'lexical', 'encoding': 'Nothing', 'semantics': 'not-exist', 'sentence': 'Nothing in this picture is blue', 'shape': 'tri', 'nex form': 'Nothing', 'picture': 'tri-nex-blue'}, 'partner_id': 'abczsjm7qg', 'lexicalization_number': 2, 'object_choices': ['../assets/circle-nex-blue.png', '../assets/tri-nex-blue.png', '../assets/square-nuni-blue.png']}
+Client(5) said: {"response_type":"Pong"}
+handle_client_response 5 Pong {'response_type': 'Pong'}
+Client(6) said: {"response_type":"Pong"}
+handle_client_response 6 Pong {'response_type': 'Pong'}
+Client(5) said: {"response_type":"Ping"}
+handle_client_response 5 Ping {'response_type': 'Ping'}
+Client(6) said: {"response_type":"Pong"}
+handle_client_response 6 Pong {'response_type': 'Pong'}
+Client(6) said: {"response_type":"Ping"}
+handle_client_response 6 Ping {'response_type': 'Ping'}
+Client(5) said: {"response_type":"Pong"}
+handle_client_response 5 Pong {'response_type': 'Pong'}
+Client(5) said: {"response_type":"Ping"}
+handle_client_response 5 Ping {'response_type': 'Ping'}
+Client(6) said: {"response_type":"Pong"}
+handle_client_response 6 Pong {'response_type': 'Pong'}
+Client(6) said: {"response_type":"Ping"}
+handle_client_response 6 Ping {'response_type': 'Ping'}
+Client(5) said: {"response_type":"Pong"}
+handle_client_response 5 Pong {'response_type': 'Pong'}
+Client(5) said: {"response_type":"Ping"}
+handle_client_response 5 Ping {'response_type': 'Ping'}
+Client(6) said: {"response_type":"Pong"}
+handle_client_response 6 Pong {'response_type': 'Pong'}
+Client(6) said: {"response_type":"Ping"}
+handle_client_response 6 Ping {'response_type': 'Ping'}
+Client(5) said: {"response_type":"Pong"}
+handle_client_response 5 Pong {'response_type': 'Pong'}
+Client(5) said: {"response_type":"Ping"}
+handle_client_response 5 Ping {'response_type': 'Ping'}
+Client(6) said: {"response_type":"Pong"}
+handle_client_response 6 Pong {'response_type': 'Pong'}
+Client(6) said: {"response_type":"Ping"}
+handle_client_response 6 Ping {'response_type': 'Ping'}
+Client(5) said: {"response_type":"Pong"}
+handle_client_response 5 Pong {'response_type': 'Pong'}
+Client(5) said: {"response_type":"Ping"}
+handle_client_response 5 Ping {'response_type': 'Ping'}
+Client(6) said: {"response_type":"Pong"}
+handle_client_response 6 Pong {'response_type': 'Pong'}
+Client(6) said: {"response_type":"Ping"}
+handle_client_response 6 Ping {'response_type': 'Ping'}
+Client(5) said: {"response_type":"Pong"}
+handle_client_response 5 Pong {'response_type': 'Pong'}
+Client(6) disconnected
+Client(5) disconnected
+New client connected and was given id 7
+Client(7) said: {"response_type":"CLIENT_INFO","client_info":"2kv8y8wpkk"}
+handle_client_response 7 CLIENT_INFO {'response_type': 'CLIENT_INFO', 'client_info': '2kv8y8wpkk'}
+Client(7) said: {"response_type":"Ping"}
+handle_client_response 7 Ping {'response_type': 'Ping'}
+New client connected and was given id 8
+Client(8) said: {"response_type":"CLIENT_INFO","client_info":"jltmot62jm"}
+handle_client_response 8 CLIENT_INFO {'response_type': 'CLIENT_INFO', 'client_info': 'jltmot62jm'}
+Client(8) said: {"response_type":"Ping"}
+handle_client_response 8 Ping {'response_type': 'Ping'}
+Client(7) said: {"response_type":"Pong"}
+handle_client_response 7 Pong {'response_type': 'Pong'}
+Client(7) said: {"response_type":"Pong"}
+handle_client_response 7 Pong {'response_type': 'Pong'}
+Client(8) said: {"response_type":"INTERACTION_INSTRUCTIONS_COMPLETE"}
+handle_client_response 8 INTERACTION_INSTRUCTIONS_COMPLETE {'response_type': 'INTERACTION_INSTRUCTIONS_COMPLETE'}
+Client(7) said: {"response_type":"Pong"}
+handle_client_response 7 Pong {'response_type': 'Pong'}
+Client(7) said: {"response_type":"Ping"}
+handle_client_response 7 Ping {'response_type': 'Ping'}
+Client(8) said: {"response_type":"Pong"}
+handle_client_response 8 Pong {'response_type': 'Pong'}
+Client(8) said: {"response_type":"Ping"}
+handle_client_response 8 Ping {'response_type': 'Ping'}
+Client(7) said: {"response_type":"Pong"}
+handle_client_response 7 Pong {'response_type': 'Pong'}
+Client(7) said: {"response_type":"Ping"}
+handle_client_response 7 Ping {'response_type': 'Ping'}
+Client(8) said: {"response_type":"Pong"}
+handle_client_response 8 Pong {'response_type': 'Pong'}
+Client(8) said: {"response_type":"Ping"}
+handle_client_response 8 Ping {'response_type': 'Ping'}
+Client(7) said: {"response_type":"Pong"}
+handle_client_response 7 Pong {'response_type': 'Pong'}
+Client(7) said: {"response_type":"Ping"}
+handle_client_response 7 Ping {'response_type': 'Ping'}
+Client(8) said: {"response_type":"Pong"}
+handle_client_response 8 Pong {'response_type': 'Pong'}
+Client(8) said: {"response_type":"Ping"}
+handle_client_response 8 Ping {'response_type': 'Ping'}
+Client(7) said: {"response_type":"Pong"}
+handle_client_response 7 Pong {'response_type': 'Pong'}
+Client(7) said: {"response_type":"Ping"}
+handle_client_response 7 Ping {'response_type': 'Ping'}
+Client(8) said: {"response_type":"Pong"}
+handle_client_response 8 Pong {'response_type': 'Pong'}
+Client(8) said: {"response_type":"Ping"}
+handle_client_response 8 Ping {'response_type': 'Ping'}
+Client(7) said: {"response_type":"Pong"}
+handle_client_response 7 Pong {'response_type': 'Pong'}
+Client(7) said: {"response_type":"Ping"}
+handle_client_response 7 Ping {'response_type': 'Ping'}
+Client(8) said: {"response_type":"Pong"}
+handle_client_response 8 Pong {'response_type': 'Pong'}
+Client(8) said: {"response_type":"Ping"}
+handle_client_response 8 Ping {'response_type': 'Ping'}
+Client(7) said: {"response_type":"Pong"}
+handle_client_response 7 Pong {'response_type': 'Pong'}
+Client(7) said: {"response_type":"Ping"}
+handle_client_response 7 Ping {'response_type': 'Ping'}
+Client(8) said: {"response_type":"Pong"}
+handle_client_response 8 Pong {'response_type': 'Pong'}
+Client(8) said: {"response_type":"Ping"}
+handle_client_response 8 Ping {'response_type': 'Ping'}
+Client(7) said: {"response_type":"Pong"}
+handle_client_response 7 Pong {'response_type': 'Pong'}
+Client(7) said: {"response_type":"Ping"}
+handle_client_response 7 Ping {'response_type': 'Ping'}
+Client(8) said: {"response_type":"Pong"}
+handle_client_response 8 Pong {'response_type': 'Pong'}
+Client(8) said: {"response_type":"Ping"}
+handle_client_response 8 Ping {'response_type': 'Ping'}
+Client(7) said: {"response_type":"Pong"}
+handle_client_response 7 Pong {'response_type': 'Pong'}
+Client(7) said: {"response_type":"Ping"}
+handle_client_response 7 Ping {'response_type': 'Ping'}
+Client(8) said: {"response_type":"Pong"}
+handle_client_response 8 Pong {'response_type': 'Pong'}
+Client(8) said: {"response_type":"Ping"}
+handle_client_response 8 Ping {'response_type': 'Ping'}
+Client(7) said: {"response_type":"Pong"}
+handle_client_response 7 Pong {'response_type': 'Pong'}
+Client(7) said: {"response_type":"Ping"}
+handle_client_response 7 Ping {'response_type': 'Ping'}
+Client(8) said: {"response_type":"Pong"}
+handle_client_response 8 Pong {'response_type': 'Pong'}
+Client(8) said: {"response_type":"Ping"}
+handle_client_response 8 Ping {'response_type': 'Ping'}
+Client(7) said: {"response_type":"Pong"}
+handle_client_response 7 Pong {'response_type': 'Pong'}
+Client(7) said: {"response_type":"Ping"}
+handle_client_response 7 Ping {'response_type': 'Ping'}
+Client(8) said: {"response_type":"Pong"}
+handle_client_response 8 Pong {'response_type': 'Pong'}
+Client(8) said: {"response_type":"Ping"}
+handle_client_response 8 Ping {'response_type': 'Ping'}
+Client(7) said: {"response_type":"Pong"}
+handle_client_response 7 Pong {'response_type': 'Pong'}
+Client(7) said: {"response_type":"Ping"}
+handle_client_response 7 Ping {'response_type': 'Ping'}
+Client(8) said: {"response_type":"Pong"}
+handle_client_response 8 Pong {'response_type': 'Pong'}
+Client(8) said: {"response_type":"Ping"}
+handle_client_response 8 Ping {'response_type': 'Ping'}
+Client(7) said: {"response_type":"Pong"}
+handle_client_response 7 Pong {'response_type': 'Pong'}
+Client(7) said: {"response_type":"Ping"}
+handle_client_response 7 Ping {'response_type': 'Ping'}
+Client(8) said: {"response_type":"Pong"}
+handle_client_response 8 Pong {'response_type': 'Pong'}
+Client(8) said: {"response_type":"Ping"}
+handle_client_response 8 Ping {'response_type': 'Ping'}
+Client(7) said: {"response_type":"Pong"}
+handle_client_response 7 Pong {'response_type': 'Pong'}
+Client(8) disconnected
+Client(7) said: {"response_type":"Ping"}
+[WARNING] Skipping ping to 8: ** client_info not set. ** 
+handle_client_response 7 Ping {'response_type': 'Ping'}
+Client(7) disconnected
+New client connected and was given id 9
+Client(9) said: {"response_type":"CLIENT_INFO","client_info":"pavk3qmhms"}
+handle_client_response 9 CLIENT_INFO {'response_type': 'CLIENT_INFO', 'client_info': 'pavk3qmhms'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+New client connected and was given id 10
+Client(10) said: {"response_type":"CLIENT_INFO","client_info":"ugupagm6nt"}
+handle_client_response 10 CLIENT_INFO {'response_type': 'CLIENT_INFO', 'client_info': 'ugupagm6nt'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"INTERACTION_INSTRUCTIONS_COMPLETE"}
+handle_client_response 10 INTERACTION_INSTRUCTIONS_COMPLETE {'response_type': 'INTERACTION_INSTRUCTIONS_COMPLETE'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"INTERACTION_INSTRUCTIONS_COMPLETE"}
+handle_client_response 9 INTERACTION_INSTRUCTIONS_COMPLETE {'response_type': 'INTERACTION_INSTRUCTIONS_COMPLETE'}
+Starting interaction
+Sending to director_id 9: {'command_type': 'Director', 'target_object': {'lexicalization_number': 2, 'lexicalisation': 'lexical', 'encoding': 'Nothing', 'semantics': 'not-exist', 'sentence': 'Nothing in this picture is blue', 'shape': 'tri', 'nex form': 'Nothing', 'picture': 'tri-nex-blue'}, 'partner_id': 'ugupagm6nt', 'lexicalization_number': 2, 'object_choices': ['../assets/tri-nex-blue.png', '../assets/square-nuni-blue.png', '../assets/circle-nex-blue.png']}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"RESPONSE","participant":"pavk3qmhms","partner":"ugupagm6nt","role":"Director","target_object":{"lexicalization_number":2,"lexicalisation":"lexical","encoding":"Nothing","semantics":"not-exist","sentence":"Nothing in this picture is blue","shape":"tri","nex form":"Nothing","picture":"tri-nex-blue","object_choices":["../assets/tri-nex-blue.png","../assets/square-nuni-blue.png","../assets/circle-nex-blue.png"]},"response":"Everything in this picture is not blue"}
+handle_client_response 9 RESPONSE {'response_type': 'RESPONSE', 'participant': 'pavk3qmhms', 'partner': 'ugupagm6nt', 'role': 'Director', 'target_object': {'lexicalization_number': 2, 'lexicalisation': 'lexical', 'encoding': 'Nothing', 'semantics': 'not-exist', 'sentence': 'Nothing in this picture is blue', 'shape': 'tri', 'nex form': 'Nothing', 'picture': 'tri-nex-blue', 'object_choices': ['../assets/tri-nex-blue.png', '../assets/square-nuni-blue.png', '../assets/circle-nex-blue.png']}, 'response': 'Everything in this picture is not blue'}
+handle_director_response {'response_type': 'RESPONSE', 'participant': 'pavk3qmhms', 'partner': 'ugupagm6nt', 'role': 'Director', 'target_object': {'lexicalization_number': 2, 'lexicalisation': 'lexical', 'encoding': 'Nothing', 'semantics': 'not-exist', 'sentence': 'Nothing in this picture is blue', 'shape': 'tri', 'nex form': 'Nothing', 'picture': 'tri-nex-blue', 'object_choices': ['../assets/tri-nex-blue.png', '../assets/square-nuni-blue.png', '../assets/circle-nex-blue.png']}, 'response': 'Everything in this picture is not blue'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"RESPONSE","participant":"ugupagm6nt","partner":"pavk3qmhms","role":"Matcher","director_label":"Everything in this picture is not blue","response":"<img src=\"../assets/tri-nex-blue.png\" style=\"width:400px; height:auto;\">","choices":["../assets/square-nuni-blue.png","../assets/circle-nex-blue.png","../assets/tri-nex-blue.png"]}
+handle_client_response 10 RESPONSE {'response_type': 'RESPONSE', 'participant': 'ugupagm6nt', 'partner': 'pavk3qmhms', 'role': 'Matcher', 'director_label': 'Everything in this picture is not blue', 'response': '<img src="../assets/tri-nex-blue.png" style="width:400px; height:auto;">', 'choices': ['../assets/square-nuni-blue.png', '../assets/circle-nex-blue.png', '../assets/tri-nex-blue.png']}
+in handle_matcher_response
+ ////////// {'response_type': 'RESPONSE', 'participant': 'ugupagm6nt', 'partner': 'pavk3qmhms', 'role': 'Matcher', 'director_label': 'Everything in this picture is not blue', 'response': '<img src="../assets/tri-nex-blue.png" style="width:400px; height:auto;">', 'choices': ['../assets/square-nuni-blue.png', '../assets/circle-nex-blue.png', '../assets/tri-nex-blue.png']} /////////
+LABEL: tri-nex-blue ***************** GUESS: <img src="../assets/tri-nex-blue.png" style="width:400px; height:auto;">
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"FINISHED_FEEDBACK"}
+handle_client_response 10 FINISHED_FEEDBACK {'response_type': 'FINISHED_FEEDBACK'}
+swap roles 10
+Client(9) said: {"response_type":"FINISHED_FEEDBACK"}
+handle_client_response 9 FINISHED_FEEDBACK {'response_type': 'FINISHED_FEEDBACK'}
+swap roles 9
+Sending to director_id 10: {'command_type': 'Director', 'target_object': {'lexicalization_number': 1, 'lexicalisation': 'lexical', 'encoding': 'Nothing', 'semantics': 'not-exist', 'sentence': 'Nothing in this picture is red', 'shape': 'tri', 'nex form': 'Nothing', 'picture': 'tri-nex-red'}, 'partner_id': 'pavk3qmhms', 'lexicalization_number': 1, 'object_choices': ['../assets/circle-nex-red.png', '../assets/tri-nex-red.png', '../assets/square-nuni-red.png']}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"RESPONSE","participant":"ugupagm6nt","partner":"pavk3qmhms","role":"Director","target_object":{"lexicalization_number":1,"lexicalisation":"lexical","encoding":"Nothing","semantics":"not-exist","sentence":"Nothing in this picture is red","shape":"tri","nex form":"Nothing","picture":"tri-nex-red","object_choices":["../assets/circle-nex-red.png","../assets/tri-nex-red.png","../assets/square-nuni-red.png"]},"response":"Nothing in this picture is red"}
+handle_client_response 10 RESPONSE {'response_type': 'RESPONSE', 'participant': 'ugupagm6nt', 'partner': 'pavk3qmhms', 'role': 'Director', 'target_object': {'lexicalization_number': 1, 'lexicalisation': 'lexical', 'encoding': 'Nothing', 'semantics': 'not-exist', 'sentence': 'Nothing in this picture is red', 'shape': 'tri', 'nex form': 'Nothing', 'picture': 'tri-nex-red', 'object_choices': ['../assets/circle-nex-red.png', '../assets/tri-nex-red.png', '../assets/square-nuni-red.png']}, 'response': 'Nothing in this picture is red'}
+handle_director_response {'response_type': 'RESPONSE', 'participant': 'ugupagm6nt', 'partner': 'pavk3qmhms', 'role': 'Director', 'target_object': {'lexicalization_number': 1, 'lexicalisation': 'lexical', 'encoding': 'Nothing', 'semantics': 'not-exist', 'sentence': 'Nothing in this picture is red', 'shape': 'tri', 'nex form': 'Nothing', 'picture': 'tri-nex-red', 'object_choices': ['../assets/circle-nex-red.png', '../assets/tri-nex-red.png', '../assets/square-nuni-red.png']}, 'response': 'Nothing in this picture is red'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"RESPONSE","participant":"pavk3qmhms","partner":"ugupagm6nt","role":"Matcher","director_label":"Nothing in this picture is red","response":"<img src=\"../assets/tri-nex-red.png\" style=\"width:400px; height:auto;\">","choices":["../assets/tri-nex-red.png","../assets/square-nuni-red.png","../assets/circle-nex-red.png"]}
+handle_client_response 9 RESPONSE {'response_type': 'RESPONSE', 'participant': 'pavk3qmhms', 'partner': 'ugupagm6nt', 'role': 'Matcher', 'director_label': 'Nothing in this picture is red', 'response': '<img src="../assets/tri-nex-red.png" style="width:400px; height:auto;">', 'choices': ['../assets/tri-nex-red.png', '../assets/square-nuni-red.png', '../assets/circle-nex-red.png']}
+in handle_matcher_response
+ ////////// {'response_type': 'RESPONSE', 'participant': 'pavk3qmhms', 'partner': 'ugupagm6nt', 'role': 'Matcher', 'director_label': 'Nothing in this picture is red', 'response': '<img src="../assets/tri-nex-red.png" style="width:400px; height:auto;">', 'choices': ['../assets/tri-nex-red.png', '../assets/square-nuni-red.png', '../assets/circle-nex-red.png']} /////////
+LABEL: tri-nex-red ***************** GUESS: <img src="../assets/tri-nex-red.png" style="width:400px; height:auto;">
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"FINISHED_FEEDBACK"}
+handle_client_response 10 FINISHED_FEEDBACK {'response_type': 'FINISHED_FEEDBACK'}
+swap roles 10
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"FINISHED_FEEDBACK"}
+handle_client_response 9 FINISHED_FEEDBACK {'response_type': 'FINISHED_FEEDBACK'}
+swap roles 9
+Sending to director_id 9: {'command_type': 'Director', 'target_object': {'lexicalization_number': 1, 'lexicalisation': 'lexical', 'encoding': 'Nothing', 'semantics': 'not-exist', 'sentence': 'Nothing in this picture is red', 'shape': 'tri', 'nex form': 'Nothing', 'picture': 'tri-nex-red'}, 'partner_id': 'ugupagm6nt', 'lexicalization_number': 1, 'object_choices': ['../assets/circle-nex-red.png', '../assets/tri-nex-red.png', '../assets/square-nuni-red.png']}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"RESPONSE","participant":"pavk3qmhms","partner":"ugupagm6nt","role":"Director","target_object":{"lexicalization_number":1,"lexicalisation":"lexical","encoding":"Nothing","semantics":"not-exist","sentence":"Nothing in this picture is red","shape":"tri","nex form":"Nothing","picture":"tri-nex-red","object_choices":["../assets/circle-nex-red.png","../assets/tri-nex-red.png","../assets/square-nuni-red.png"]},"response":"Everything in this picture is not red"}
+handle_client_response 9 RESPONSE {'response_type': 'RESPONSE', 'participant': 'pavk3qmhms', 'partner': 'ugupagm6nt', 'role': 'Director', 'target_object': {'lexicalization_number': 1, 'lexicalisation': 'lexical', 'encoding': 'Nothing', 'semantics': 'not-exist', 'sentence': 'Nothing in this picture is red', 'shape': 'tri', 'nex form': 'Nothing', 'picture': 'tri-nex-red', 'object_choices': ['../assets/circle-nex-red.png', '../assets/tri-nex-red.png', '../assets/square-nuni-red.png']}, 'response': 'Everything in this picture is not red'}
+handle_director_response {'response_type': 'RESPONSE', 'participant': 'pavk3qmhms', 'partner': 'ugupagm6nt', 'role': 'Director', 'target_object': {'lexicalization_number': 1, 'lexicalisation': 'lexical', 'encoding': 'Nothing', 'semantics': 'not-exist', 'sentence': 'Nothing in this picture is red', 'shape': 'tri', 'nex form': 'Nothing', 'picture': 'tri-nex-red', 'object_choices': ['../assets/circle-nex-red.png', '../assets/tri-nex-red.png', '../assets/square-nuni-red.png']}, 'response': 'Everything in this picture is not red'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"RESPONSE","participant":"ugupagm6nt","partner":"pavk3qmhms","role":"Matcher","director_label":"Everything in this picture is not red","response":"<img src=\"../assets/circle-nex-red.png\" style=\"width:400px; height:auto;\">","choices":["../assets/circle-nex-red.png","../assets/tri-nex-red.png","../assets/square-nuni-red.png"]}
+handle_client_response 10 RESPONSE {'response_type': 'RESPONSE', 'participant': 'ugupagm6nt', 'partner': 'pavk3qmhms', 'role': 'Matcher', 'director_label': 'Everything in this picture is not red', 'response': '<img src="../assets/circle-nex-red.png" style="width:400px; height:auto;">', 'choices': ['../assets/circle-nex-red.png', '../assets/tri-nex-red.png', '../assets/square-nuni-red.png']}
+in handle_matcher_response
+ ////////// {'response_type': 'RESPONSE', 'participant': 'ugupagm6nt', 'partner': 'pavk3qmhms', 'role': 'Matcher', 'director_label': 'Everything in this picture is not red', 'response': '<img src="../assets/circle-nex-red.png" style="width:400px; height:auto;">', 'choices': ['../assets/circle-nex-red.png', '../assets/tri-nex-red.png', '../assets/square-nuni-red.png']} /////////
+LABEL: tri-nex-red ***************** GUESS: <img src="../assets/circle-nex-red.png" style="width:400px; height:auto;">
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"FINISHED_FEEDBACK"}
+handle_client_response 10 FINISHED_FEEDBACK {'response_type': 'FINISHED_FEEDBACK'}
+swap roles 10
+Client(9) said: {"response_type":"FINISHED_FEEDBACK"}
+handle_client_response 9 FINISHED_FEEDBACK {'response_type': 'FINISHED_FEEDBACK'}
+swap roles 9
+Sending to director_id 10: {'command_type': 'Director', 'target_object': {'lexicalization_number': 2, 'lexicalisation': 'compositional', 'encoding': 'everything_not', 'semantics': 'not-exist', 'sentence': 'Everything in this picture is not blue', 'shape': 'circle', 'nex form': 'Nothing', 'picture': 'circle-nex-blue'}, 'partner_id': 'pavk3qmhms', 'lexicalization_number': 2, 'object_choices': ['../assets/square-nuni-blue.png', '../assets/tri-nex-blue.png', '../assets/circle-nex-blue.png']}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"RESPONSE","participant":"ugupagm6nt","partner":"pavk3qmhms","role":"Director","target_object":{"lexicalization_number":2,"lexicalisation":"compositional","encoding":"everything_not","semantics":"not-exist","sentence":"Everything in this picture is not blue","shape":"circle","nex form":"Nothing","picture":"circle-nex-blue","object_choices":["../assets/square-nuni-blue.png","../assets/tri-nex-blue.png","../assets/circle-nex-blue.png"]},"response":"Nothing in this picture is blue"}
+handle_client_response 10 RESPONSE {'response_type': 'RESPONSE', 'participant': 'ugupagm6nt', 'partner': 'pavk3qmhms', 'role': 'Director', 'target_object': {'lexicalization_number': 2, 'lexicalisation': 'compositional', 'encoding': 'everything_not', 'semantics': 'not-exist', 'sentence': 'Everything in this picture is not blue', 'shape': 'circle', 'nex form': 'Nothing', 'picture': 'circle-nex-blue', 'object_choices': ['../assets/square-nuni-blue.png', '../assets/tri-nex-blue.png', '../assets/circle-nex-blue.png']}, 'response': 'Nothing in this picture is blue'}
+handle_director_response {'response_type': 'RESPONSE', 'participant': 'ugupagm6nt', 'partner': 'pavk3qmhms', 'role': 'Director', 'target_object': {'lexicalization_number': 2, 'lexicalisation': 'compositional', 'encoding': 'everything_not', 'semantics': 'not-exist', 'sentence': 'Everything in this picture is not blue', 'shape': 'circle', 'nex form': 'Nothing', 'picture': 'circle-nex-blue', 'object_choices': ['../assets/square-nuni-blue.png', '../assets/tri-nex-blue.png', '../assets/circle-nex-blue.png']}, 'response': 'Nothing in this picture is blue'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"RESPONSE","participant":"pavk3qmhms","partner":"ugupagm6nt","role":"Matcher","director_label":"Nothing in this picture is blue","response":"<img src=\"../assets/circle-nex-blue.png\" style=\"width:400px; height:auto;\">","choices":["../assets/circle-nex-blue.png","../assets/tri-nex-blue.png","../assets/square-nuni-blue.png"]}
+handle_client_response 9 RESPONSE {'response_type': 'RESPONSE', 'participant': 'pavk3qmhms', 'partner': 'ugupagm6nt', 'role': 'Matcher', 'director_label': 'Nothing in this picture is blue', 'response': '<img src="../assets/circle-nex-blue.png" style="width:400px; height:auto;">', 'choices': ['../assets/circle-nex-blue.png', '../assets/tri-nex-blue.png', '../assets/square-nuni-blue.png']}
+in handle_matcher_response
+ ////////// {'response_type': 'RESPONSE', 'participant': 'pavk3qmhms', 'partner': 'ugupagm6nt', 'role': 'Matcher', 'director_label': 'Nothing in this picture is blue', 'response': '<img src="../assets/circle-nex-blue.png" style="width:400px; height:auto;">', 'choices': ['../assets/circle-nex-blue.png', '../assets/tri-nex-blue.png', '../assets/square-nuni-blue.png']} /////////
+LABEL: circle-nex-blue ***************** GUESS: <img src="../assets/circle-nex-blue.png" style="width:400px; height:auto;">
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"FINISHED_FEEDBACK"}
+handle_client_response 9 FINISHED_FEEDBACK {'response_type': 'FINISHED_FEEDBACK'}
+swap roles 9
+Client(10) said: {"response_type":"FINISHED_FEEDBACK"}
+handle_client_response 10 FINISHED_FEEDBACK {'response_type': 'FINISHED_FEEDBACK'}
+swap roles 10
+Sending to director_id 9: {'command_type': 'Director', 'target_object': {'lexicalization_number': 1, 'lexicalisation': 'lexical', 'encoding': 'Nothing', 'semantics': 'not-exist', 'sentence': 'Nothing in this picture is red', 'shape': 'tri', 'nex form': 'Nothing', 'picture': 'tri-nex-red'}, 'partner_id': 'ugupagm6nt', 'lexicalization_number': 1, 'object_choices': ['../assets/tri-nex-red.png', '../assets/square-nuni-red.png', '../assets/circle-nex-red.png']}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"RESPONSE","participant":"pavk3qmhms","partner":"ugupagm6nt","role":"Director","target_object":{"lexicalization_number":1,"lexicalisation":"lexical","encoding":"Nothing","semantics":"not-exist","sentence":"Nothing in this picture is red","shape":"tri","nex form":"Nothing","picture":"tri-nex-red","object_choices":["../assets/tri-nex-red.png","../assets/square-nuni-red.png","../assets/circle-nex-red.png"]},"response":"Nothing in this picture is red"}
+handle_client_response 9 RESPONSE {'response_type': 'RESPONSE', 'participant': 'pavk3qmhms', 'partner': 'ugupagm6nt', 'role': 'Director', 'target_object': {'lexicalization_number': 1, 'lexicalisation': 'lexical', 'encoding': 'Nothing', 'semantics': 'not-exist', 'sentence': 'Nothing in this picture is red', 'shape': 'tri', 'nex form': 'Nothing', 'picture': 'tri-nex-red', 'object_choices': ['../assets/tri-nex-red.png', '../assets/square-nuni-red.png', '../assets/circle-nex-red.png']}, 'response': 'Nothing in this picture is red'}
+handle_director_response {'response_type': 'RESPONSE', 'participant': 'pavk3qmhms', 'partner': 'ugupagm6nt', 'role': 'Director', 'target_object': {'lexicalization_number': 1, 'lexicalisation': 'lexical', 'encoding': 'Nothing', 'semantics': 'not-exist', 'sentence': 'Nothing in this picture is red', 'shape': 'tri', 'nex form': 'Nothing', 'picture': 'tri-nex-red', 'object_choices': ['../assets/tri-nex-red.png', '../assets/square-nuni-red.png', '../assets/circle-nex-red.png']}, 'response': 'Nothing in this picture is red'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"RESPONSE","participant":"ugupagm6nt","partner":"pavk3qmhms","role":"Matcher","director_label":"Nothing in this picture is red","response":"<img src=\"../assets/square-nuni-red.png\" style=\"width:400px; height:auto;\">","choices":["../assets/tri-nex-red.png","../assets/circle-nex-red.png","../assets/square-nuni-red.png"]}
+handle_client_response 10 RESPONSE {'response_type': 'RESPONSE', 'participant': 'ugupagm6nt', 'partner': 'pavk3qmhms', 'role': 'Matcher', 'director_label': 'Nothing in this picture is red', 'response': '<img src="../assets/square-nuni-red.png" style="width:400px; height:auto;">', 'choices': ['../assets/tri-nex-red.png', '../assets/circle-nex-red.png', '../assets/square-nuni-red.png']}
+in handle_matcher_response
+ ////////// {'response_type': 'RESPONSE', 'participant': 'ugupagm6nt', 'partner': 'pavk3qmhms', 'role': 'Matcher', 'director_label': 'Nothing in this picture is red', 'response': '<img src="../assets/square-nuni-red.png" style="width:400px; height:auto;">', 'choices': ['../assets/tri-nex-red.png', '../assets/circle-nex-red.png', '../assets/square-nuni-red.png']} /////////
+LABEL: tri-nex-red ***************** GUESS: <img src="../assets/square-nuni-red.png" style="width:400px; height:auto;">
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"FINISHED_FEEDBACK"}
+handle_client_response 10 FINISHED_FEEDBACK {'response_type': 'FINISHED_FEEDBACK'}
+swap roles 10
+Client(9) said: {"response_type":"FINISHED_FEEDBACK"}
+handle_client_response 9 FINISHED_FEEDBACK {'response_type': 'FINISHED_FEEDBACK'}
+swap roles 9
+Sending to director_id 10: {'command_type': 'Director', 'target_object': {'lexicalization_number': 1, 'lexicalisation': 'compositional', 'encoding': 'everything_not', 'semantics': 'not-exist', 'sentence': 'Everything in this picture is not red', 'shape': 'tri', 'nex form': 'Nothing', 'picture': 'tri-nex-red'}, 'partner_id': 'pavk3qmhms', 'lexicalization_number': 1, 'object_choices': ['../assets/tri-nex-red.png', '../assets/circle-nex-red.png', '../assets/square-nuni-red.png']}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(9) said: {"response_type":"Ping"}
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(10) said: {"response_type":"Pong"}
+handle_client_response 10 Pong {'response_type': 'Pong'}
+Client(10) said: {"response_type":"Ping"}
+handle_client_response 10 Ping {'response_type': 'Ping'}
+Client(9) said: {"response_type":"Pong"}
+handle_client_response 9 Pong {'response_type': 'Pong'}
+Client(10) disconnected
+Client(9) said: {"response_type":"Ping"}
+[WARNING] Skipping ping to 10: ** client_info not set. ** 
+handle_client_response 9 Ping {'response_type': 'Ping'}
+Client(9) disconnected
+New client connected and was given id 11
+Client(11) said: {"response_type":"CLIENT_INFO","client_info":"zk6zk1s5qj"}
+handle_client_response 11 CLIENT_INFO {'response_type': 'CLIENT_INFO', 'client_info': 'zk6zk1s5qj'}
+Client(11) said: {"response_type":"Ping"}
+handle_client_response 11 Ping {'response_type': 'Ping'}
+New client connected and was given id 12
+Client(12) said: {"response_type":"CLIENT_INFO","client_info":"2ec8g6p2jo"}
+handle_client_response 12 CLIENT_INFO {'response_type': 'CLIENT_INFO', 'client_info': '2ec8g6p2jo'}
+Client(12) said: {"response_type":"Ping"}
+handle_client_response 12 Ping {'response_type': 'Ping'}
+Client(11) said: {"response_type":"Pong"}
+handle_client_response 11 Pong {'response_type': 'Pong'}
+Client(11) said: {"response_type":"Pong"}
+handle_client_response 11 Pong {'response_type': 'Pong'}
+Client(12) said: {"response_type":"INTERACTION_INSTRUCTIONS_COMPLETE"}
+handle_client_response 12 INTERACTION_INSTRUCTIONS_COMPLETE {'response_type': 'INTERACTION_INSTRUCTIONS_COMPLETE'}
+Client(11) said: {"response_type":"Pong"}
+handle_client_response 11 Pong {'response_type': 'Pong'}
+Client(11) said: {"response_type":"Ping"}
+handle_client_response 11 Ping {'response_type': 'Ping'}
+Client(12) said: {"response_type":"Pong"}
+handle_client_response 12 Pong {'response_type': 'Pong'}
+Client(11) said: {"response_type":"INTERACTION_INSTRUCTIONS_COMPLETE"}
+handle_client_response 11 INTERACTION_INSTRUCTIONS_COMPLETE {'response_type': 'INTERACTION_INSTRUCTIONS_COMPLETE'}
+Starting interaction
+Sending to director_id 11: {'command_type': 'Director', 'target_object': {'lexicalization_number': 1, 'lexicalisation': 'compositional', 'encoding': 'everything_not', 'semantics': 'not-exist', 'sentence': 'Everything in this picture is not red', 'shape': 'tri', 'nex form': 'Nothing', 'picture': 'tri-nex-red'}, 'partner_id': '2ec8g6p2jo', 'lexicalization_number': 1, 'object_choices': ['../assets/square-nuni-red.png', '../assets/circle-nex-red.png', '../assets/tri-nex-red.png']}
+Client(12) said: {"response_type":"Pong"}
+handle_client_response 12 Pong {'response_type': 'Pong'}
+Client(11) said: {"response_type":"RESPONSE","participant":"zk6zk1s5qj","partner":"2ec8g6p2jo","role":"Director","target_object":{"lexicalization_number":1,"lexicalisation":"compositional","encoding":"everything_not","semantics":"not-exist","sentence":"Everything in this picture is not red","shape":"tri","nex form":"Nothing","picture":"tri-nex-red","object_choices":["../assets/square-nuni-red.png","../assets/circle-nex-red.png","../assets/tri-nex-red.png"]},"response":"Not everything in this picture is red"}
+handle_client_response 11 RESPONSE {'response_type': 'RESPONSE', 'participant': 'zk6zk1s5qj', 'partner': '2ec8g6p2jo', 'role': 'Director', 'target_object': {'lexicalization_number': 1, 'lexicalisation': 'compositional', 'encoding': 'everything_not', 'semantics': 'not-exist', 'sentence': 'Everything in this picture is not red', 'shape': 'tri', 'nex form': 'Nothing', 'picture': 'tri-nex-red', 'object_choices': ['../assets/square-nuni-red.png', '../assets/circle-nex-red.png', '../assets/tri-nex-red.png']}, 'response': 'Not everything in this picture is red'}
+handle_director_response {'response_type': 'RESPONSE', 'participant': 'zk6zk1s5qj', 'partner': '2ec8g6p2jo', 'role': 'Director', 'target_object': {'lexicalization_number': 1, 'lexicalisation': 'compositional', 'encoding': 'everything_not', 'semantics': 'not-exist', 'sentence': 'Everything in this picture is not red', 'shape': 'tri', 'nex form': 'Nothing', 'picture': 'tri-nex-red', 'object_choices': ['../assets/square-nuni-red.png', '../assets/circle-nex-red.png', '../assets/tri-nex-red.png']}, 'response': 'Not everything in this picture is red'}
+Client(12) said: {"response_type":"Pong"}
+handle_client_response 12 Pong {'response_type': 'Pong'}
+Client(12) said: {"response_type":"Ping"}
+handle_client_response 12 Ping {'response_type': 'Ping'}
+Client(11) said: {"response_type":"Pong"}
+handle_client_response 11 Pong {'response_type': 'Pong'}
+Client(12) said: {"response_type":"RESPONSE","participant":"2ec8g6p2jo","partner":"zk6zk1s5qj","role":"Matcher","director_label":"Not everything in this picture is red","response":"<img src=\"../assets/circle-nex-red.png\" style=\"width:400px; height:auto;\">","choices":["../assets/circle-nex-red.png","../assets/tri-nex-red.png","../assets/square-nuni-red.png"]}
+handle_client_response 12 RESPONSE {'response_type': 'RESPONSE', 'participant': '2ec8g6p2jo', 'partner': 'zk6zk1s5qj', 'role': 'Matcher', 'director_label': 'Not everything in this picture is red', 'response': '<img src="../assets/circle-nex-red.png" style="width:400px; height:auto;">', 'choices': ['../assets/circle-nex-red.png', '../assets/tri-nex-red.png', '../assets/square-nuni-red.png']}
+in handle_matcher_response
+ ////////// {'response_type': 'RESPONSE', 'participant': '2ec8g6p2jo', 'partner': 'zk6zk1s5qj', 'role': 'Matcher', 'director_label': 'Not everything in this picture is red', 'response': '<img src="../assets/circle-nex-red.png" style="width:400px; height:auto;">', 'choices': ['../assets/circle-nex-red.png', '../assets/tri-nex-red.png', '../assets/square-nuni-red.png']} /////////
+LABEL: tri-nex-red ***************** GUESS: <img src="../assets/circle-nex-red.png" style="width:400px; height:auto;">
+Client(11) said: {"response_type":"Pong"}
+handle_client_response 11 Pong {'response_type': 'Pong'}
+Client(11) said: {"response_type":"Ping"}
+handle_client_response 11 Ping {'response_type': 'Ping'}
+Client(12) said: {"response_type":"Pong"}
+handle_client_response 12 Pong {'response_type': 'Pong'}
+Client(12) said: {"response_type":"Ping"}
+handle_client_response 12 Ping {'response_type': 'Ping'}
+Client(11) said: {"response_type":"Pong"}
+handle_client_response 11 Pong {'response_type': 'Pong'}
+Client(11) said: {"response_type":"Ping"}
+handle_client_response 11 Ping {'response_type': 'Ping'}
+Client(12) said: {"response_type":"Pong"}
+handle_client_response 12 Pong {'response_type': 'Pong'}
+Client(12) said: {"response_type":"Ping"}
+handle_client_response 12 Ping {'response_type': 'Ping'}
+Client(11) said: {"response_type":"Pong"}
+handle_client_response 11 Pong {'response_type': 'Pong'}
+Client(11) said: {"response_type":"Ping"}
+handle_client_response 11 Ping {'response_type': 'Ping'}
+Client(12) said: {"response_type":"Pong"}
+handle_client_response 12 Pong {'response_type': 'Pong'}
+Client(11) said: {"response_type":"FINISHED_FEEDBACK"}
+handle_client_response 11 FINISHED_FEEDBACK {'response_type': 'FINISHED_FEEDBACK'}
+swap roles 11
+Client(12) said: {"response_type":"Pong"}
+handle_client_response 12 Pong {'response_type': 'Pong'}
+Client(12) said: {"response_type":"FINISHED_FEEDBACK"}
+handle_client_response 12 FINISHED_FEEDBACK {'response_type': 'FINISHED_FEEDBACK'}
+swap roles 12
+Sending to director_id 12: {'command_type': 'Director', 'target_object': {'lexicalization_number': 1, 'lexicalisation': 'lexical', 'encoding': 'Nothing', 'semantics': 'not-exist', 'sentence': 'Nothing in this picture is red', 'shape': 'tri', 'nex form': 'Nothing', 'picture': 'tri-nex-red'}, 'partner_id': 'zk6zk1s5qj', 'lexicalization_number': 1, 'object_choices': ['../assets/square-nuni-red.png', '../assets/tri-nex-red.png', '../assets/circle-nex-red.png']}
+Client(11) said: {"response_type":"Pong"}
+handle_client_response 11 Pong {'response_type': 'Pong'}
+Client(12) said: {"response_type":"Ping"}
+handle_client_response 12 Ping {'response_type': 'Ping'}
+Client(11) said: {"response_type":"Pong"}
+handle_client_response 11 Pong {'response_type': 'Pong'}
+Client(12) said: {"response_type":"RESPONSE","participant":"2ec8g6p2jo","partner":"zk6zk1s5qj","role":"Director","target_object":{"lexicalization_number":1,"lexicalisation":"lexical","encoding":"Nothing","semantics":"not-exist","sentence":"Nothing in this picture is red","shape":"tri","nex form":"Nothing","picture":"tri-nex-red","object_choices":["../assets/square-nuni-red.png","../assets/tri-nex-red.png","../assets/circle-nex-red.png"]},"response":"Not everything in this picture is red"}
+handle_client_response 12 RESPONSE {'response_type': 'RESPONSE', 'participant': '2ec8g6p2jo', 'partner': 'zk6zk1s5qj', 'role': 'Director', 'target_object': {'lexicalization_number': 1, 'lexicalisation': 'lexical', 'encoding': 'Nothing', 'semantics': 'not-exist', 'sentence': 'Nothing in this picture is red', 'shape': 'tri', 'nex form': 'Nothing', 'picture': 'tri-nex-red', 'object_choices': ['../assets/square-nuni-red.png', '../assets/tri-nex-red.png', '../assets/circle-nex-red.png']}, 'response': 'Not everything in this picture is red'}
+handle_director_response {'response_type': 'RESPONSE', 'participant': '2ec8g6p2jo', 'partner': 'zk6zk1s5qj', 'role': 'Director', 'target_object': {'lexicalization_number': 1, 'lexicalisation': 'lexical', 'encoding': 'Nothing', 'semantics': 'not-exist', 'sentence': 'Nothing in this picture is red', 'shape': 'tri', 'nex form': 'Nothing', 'picture': 'tri-nex-red', 'object_choices': ['../assets/square-nuni-red.png', '../assets/tri-nex-red.png', '../assets/circle-nex-red.png']}, 'response': 'Not everything in this picture is red'}
+Client(11) said: {"response_type":"Pong"}
+handle_client_response 11 Pong {'response_type': 'Pong'}
+Client(11) said: {"response_type":"Ping"}
+handle_client_response 11 Ping {'response_type': 'Ping'}
+Client(12) said: {"response_type":"Pong"}
+handle_client_response 12 Pong {'response_type': 'Pong'}
+Client(11) said: {"response_type":"RESPONSE","participant":"zk6zk1s5qj","partner":"2ec8g6p2jo","role":"Matcher","director_label":"Not everything in this picture is red","response":"<img src=\"../assets/circle-nex-red.png\" style=\"width:400px; height:auto;\">","choices":["../assets/circle-nex-red.png","../assets/square-nuni-red.png","../assets/tri-nex-red.png"]}
+handle_client_response 11 RESPONSE {'response_type': 'RESPONSE', 'participant': 'zk6zk1s5qj', 'partner': '2ec8g6p2jo', 'role': 'Matcher', 'director_label': 'Not everything in this picture is red', 'response': '<img src="../assets/circle-nex-red.png" style="width:400px; height:auto;">', 'choices': ['../assets/circle-nex-red.png', '../assets/square-nuni-red.png', '../assets/tri-nex-red.png']}
+in handle_matcher_response
+ ////////// {'response_type': 'RESPONSE', 'participant': 'zk6zk1s5qj', 'partner': '2ec8g6p2jo', 'role': 'Matcher', 'director_label': 'Not everything in this picture is red', 'response': '<img src="../assets/circle-nex-red.png" style="width:400px; height:auto;">', 'choices': ['../assets/circle-nex-red.png', '../assets/square-nuni-red.png', '../assets/tri-nex-red.png']} /////////
+LABEL: tri-nex-red ***************** GUESS: <img src="../assets/circle-nex-red.png" style="width:400px; height:auto;">
+Client(12) said: {"response_type":"Pong"}
+handle_client_response 12 Pong {'response_type': 'Pong'}
+Client(12) said: {"response_type":"Ping"}
+handle_client_response 12 Ping {'response_type': 'Ping'}
+Client(11) said: {"response_type":"Pong"}
+handle_client_response 11 Pong {'response_type': 'Pong'}
+Client(11) said: {"response_type":"Ping"}
+handle_client_response 11 Ping {'response_type': 'Ping'}
+Client(12) said: {"response_type":"Pong"}
+handle_client_response 12 Pong {'response_type': 'Pong'}
+Client(12) said: {"response_type":"Ping"}
+handle_client_response 12 Ping {'response_type': 'Ping'}
+Client(11) said: {"response_type":"Pong"}
+handle_client_response 11 Pong {'response_type': 'Pong'}
+Client(11) said: {"response_type":"Ping"}
+handle_client_response 11 Ping {'response_type': 'Ping'}
+Client(12) said: {"response_type":"Pong"}
+handle_client_response 12 Pong {'response_type': 'Pong'}
+Client(12) said: {"response_type":"Ping"}
+handle_client_response 12 Ping {'response_type': 'Ping'}
+Client(11) said: {"response_type":"Pong"}
+handle_client_response 11 Pong {'response_type': 'Pong'}
+Client(12) said: {"response_type":"FINISHED_FEEDBACK"}
+handle_client_response 12 FINISHED_FEEDBACK {'response_type': 'FINISHED_FEEDBACK'}
+swap roles 12
+Client(11) said: {"response_type":"Pong"}
+handle_client_response 11 Pong {'response_type': 'Pong'}
+Client(11) said: {"response_type":"FINISHED_FEEDBACK"}
+handle_client_response 11 FINISHED_FEEDBACK {'response_type': 'FINISHED_FEEDBACK'}
+swap roles 11
+Sending to director_id 11: {'command_type': 'Director', 'target_object': {'lexicalization_number': 2, 'lexicalisation': 'compositional', 'encoding': 'everything_not', 'semantics': 'not-exist', 'sentence': 'Everything in this picture is not blue', 'shape': 'tri', 'nex form': 'Nothing', 'picture': 'tri-nex-blue'}, 'partner_id': '2ec8g6p2jo', 'lexicalization_number': 2, 'object_choices': ['../assets/tri-nex-blue.png', '../assets/circle-nex-blue.png', '../assets/square-nuni-blue.png']}
+Client(11) said: {"response_type":"Ping"}
+handle_client_response 11 Ping {'response_type': 'Ping'}
+Client(12) said: {"response_type":"Pong"}
+handle_client_response 12 Pong {'response_type': 'Pong'}
+Client(12) said: {"response_type":"Pong"}
+handle_client_response 12 Pong {'response_type': 'Pong'}

@@ -1,0 +1,122 @@
+[
+    {
+      "lexicalization_number": 1,
+      "lexicalisation": "lexical",
+      "encoding": "zop",
+      "semantics": "not-exist",
+      "sentence": "Zop shapes are red",
+      "nex form": "zop",
+      "circle picture": "circle-nex-red",
+      "triangle picture": "tri-nex-red"
+    },
+    {
+      "lexicalization_number": 1,
+      "lexicalisation": "compositional",
+      "encoding": "lem_not",
+      "semantics": "not-exist",
+      "sentence": "Lem shapes are non-red",
+      "nex form": "zop",
+      "circle picture": "circle-nex-red",
+      "triangle picture": "tri-nex-red"
+    },
+    {
+      "lexicalization_number": 1,
+      "lexicalisation": "compositional",
+      "encoding": "not_lem",
+      "semantics": "not-universal",
+      "sentence": "Not lem shapes are red",
+      "nex form": "zop",
+      "circle picture": "circle-nuni-red",
+      "triangle picture": "tri-nuni-red"
+    },
+    {
+        "lexicalization_number": 2,
+        "lexicalisation": "lexical",
+        "encoding": "zop",
+        "semantics": "not-exist",
+        "sentence": "Zop shapes are blue",
+        "nex form": "zop",
+        "circle picture": "circle-nex-blue",
+        "triangle picture": "tri-nex-blue"
+      },
+      {
+        "lexicalization_number": 2,
+        "lexicalisation": "compositional",
+        "encoding": "lem_not",
+        "semantics": "not-exist",
+        "sentence": "Lem shapes are non-blue",
+        "nex form": "zop",
+        "circle picture": "circle-nex-blue",
+        "triangle picture": "tri-nex-blue"
+      },
+      {
+        "lexicalization_number": 2,
+        "lexicalisation": "compositional",
+        "encoding": "not_lem",
+        "semantics": "not-universal",
+        "sentence": "Not lem shapes are blue",
+        "nex form": "zop",
+        "circle picture": "circle-nuni-blue",
+        "triangle picture": "tri-nuni-blue"
+      },
+      {
+        "lexicalization_number": 3,
+        "lexicalisation": "lexical",
+        "encoding": "zop",
+        "semantics": "not-exist",
+        "sentence": "Zop shapes are filled",
+        "nex form": "zop",
+        "circle picture": "circle-nex-filled",
+        "triangle picture": "tri-nex-filled"
+      },
+      {
+        "lexicalization_number": 3,
+        "lexicalisation": "compositional",
+        "encoding": "lem_not",
+        "semantics": "not-exist",
+        "sentence": "Lem shapes are un-filled",
+        "nex form": "zop",
+        "circle picture": "circle-nex-filled",
+        "triangle picture": "tri-nex-filled"
+      },
+      {
+        "lexicalization_number": 3,
+        "lexicalisation": "compositional",
+        "encoding": "not_lem",
+        "semantics": "not-universal",
+        "sentence": "Not lem shapes are filled",
+        "nex form": "zop",
+        "circle picture": "circle-nuni-filled",
+        "triangle picture": "tri-nuni-filled"
+      },
+      {
+        "lexicalization_number": 4,
+        "lexicalisation": "lexical",
+        "encoding": "zop",
+        "semantics": "not-exist",
+        "sentence": "Zop shapes are broken",
+        "nex form": "zop",
+        "circle picture": "circle-nex-broken",
+        "triangle picture": "tri-nex-broken"
+      },
+      {
+        "lexicalization_number": 4,
+        "lexicalisation": "compositional",
+        "encoding": "lem_not",
+        "semantics": "not-exist",
+        "sentence": "Lem shapes are un-broken",
+        "nex form": "zop",
+        "circle picture": "circle-nex-broken",
+        "triangle picture": "tri-nex-broken"
+      },
+      {
+        "lexicalization_number": 4,
+        "lexicalisation": "compositional",
+        "encoding": "not_lem",
+        "semantics": "not-universal",
+        "sentence": "Not lem shapes are broken",
+        "nex form": "zop",
+        "circle picture": "circle-nuni-broken",
+        "triangle picture": "tri-nuni-broken"
+      }
+]
