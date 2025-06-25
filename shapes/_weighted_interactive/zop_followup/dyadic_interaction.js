@@ -18,11 +18,11 @@ var jsPsych = initJsPsych({
 });
 
 //Assign an ID and preload the trial bank.
-//WATARU: this needs to be flipped from randomID to prolific before an experiment launch online, and flipped back when tested locally.
-var PARTICIPANT_ID = jsPsych.randomization.randomID(10)//jsPsych.data.getURLVariable('PROLIFIC_PID')
+var PARTICIPANT_ID = jsPsych.data.getURLVariable('PROLIFIC_PID') // jsPsych.randomization.randomID(10)
+
 async function fetchTrialData() {
   //*********** change this to /lem_trials.json for the other condition! ************
-  const zopResponse = await fetch('zop-trials.json');
+  const zopResponse = await fetch('zop-en-trials.json');
   const warmup_trials = await fetch ('../../warmup_trials.json')
   if (!zopResponse.ok) {
       throw new Error('Could not fetch experiment trials');
@@ -124,11 +124,9 @@ function save_dyadic_interaction_data(data) {
     data.time_elapsed,
     data.partner_id,
     data.stimulus,
-    data.observation_label,
-    data.button_choices,
     data.button_selected,
-    data.rt,
     data.score,
+    data.c_score,
     data.target_object,
     survey_response 
   ];
@@ -143,7 +141,7 @@ var write_headers = {
     var this_participant_filename = "di_" + PARTICIPANT_ID + ".csv";
     save_data(
       this_participant_filename,
-      "PARTICIPANT_ID,trial_index,trial_type,time_elapsed,partner_id,stimulus,observation_label,button1,button2,button_selected,rt,score,target_object,survey_responses\n"
+      "PARTICIPANT_ID,trial_index,trial_type,time_elapsed,partner_id,stimulus,observation_label,button1,button2,button3,button_selected,score,c_score,survey_responses\n"
     );
   },
 };
@@ -385,7 +383,7 @@ function partner_dropout() {
 window.partner_dropout = partner_dropout
 
 //At the end of the experiment, ask what the participant thinks the nonce words mean using an embedded JsPsych survey trial. 
-function end_experiment(score) {
+function end_experiment(cumulative_score) {
   var survey_trial = {
     type: jsPsychSurveyText,
     questions: [
@@ -393,7 +391,7 @@ function end_experiment(score) {
       { prompt: "What kind of strategy did you use to tackle it?" }
     ],
     preamble: "Thank you again for participating in our experiment. Please answer in a few words what you think each of the two made-up words means.",
-    button_label: 'End experiment',
+    button_label: 'Continue',
     on_finish: function(data) {
       var response_zop = data.response.Q0; 
       var response_lem = data.response.Q1; 
@@ -401,6 +399,13 @@ function end_experiment(score) {
       save_dyadic_interaction_data(data);
     }
   }
+
+  var code_screen = {
+    type: jsPsychHtmlButtonResponse,
+    stimulus: "Your completion code is <b><span style='color:red'>C12WYY4J</span><?b>. MAKE A NOTE OF THIS CODE TO SUBMIT TO PROLIFIC.",
+    button_label: "End experiment"
+  }  
+
   var final_screen = {
     type: jsPsychHtmlButtonResponse,
     stimulus: function() {
@@ -422,6 +427,7 @@ function end_experiment(score) {
     },
   };
   jsPsych.addNodeToEndOfTimeline(survey_trial)
+  jsPsych.addNodeToEndOfTimeline(code_screen)
   jsPsych.addNodeToEndOfTimeline(final_screen);
   jsPsych.resumeExperiment();
 }
@@ -449,21 +455,21 @@ function director_trial(target_object, partner_id) {
       const imageHTML = imageChoices.map(imgSrc => {
         const fullPath = imgSrc.includes('assets') ? imgSrc : PREPATH + imgSrc;
         const isTarget = fullPath === targetImgPath;
-        // WATARU: this is where the "correct" choice is highlighted for the SENDER
         return `<img src="${fullPath}" 
                      style="width: 400px; height: auto; margin: 10px; padding: 5px; 
-                            ${isTarget ? 'border: 6px solid green;' : 'border: none;'}">`;
+                            ${isTarget ? 'opacity: 1;' : 'opacity: 0.3;'}">`;
       }).join("");
-    
+      let prompt1 = "<p><small>Select a sentence matching the highlighted picture to send to your partner. Your partner will choose a picture from the set of options you see here.</small></p>";
       return `
         <div style="text-align:center;">
-          <div style="margin-bottom: 20px; font-size: 22px;"><i>${target_object['sentence']}</i></div>
+          <div style="margin-bottom: 20px; font-size: 22px;"><i>${prompt1}</i></div>
           <div style="display: flex; justify-content: center; flex-wrap: wrap;">
             ${imageHTML}
           </div>
         </div>
       `;
     },
+    
     choices: label_choices,
     on_start: function (trial) {
       const shuffled_label_choices = jsPsych.randomization.shuffle(label_choices);
@@ -479,6 +485,8 @@ function director_trial(target_object, partner_id) {
       data.button_selected = label_selected;
       data.trial_type = "director";
       data.partner_id = partner_id;
+      data.stimulus = target_object['sentence']
+      data.target_object = target_object['picture']
       save_dyadic_interaction_data(data);
 
       // Notify server of the chosen label
@@ -514,13 +522,14 @@ with a few changes to accommodate our new sorting and prompt selection methods.
 
 function matcher_trial(label, partner_id, object_choices) {
   end_waiting();
+  var prompt1 = "<p><em>Select the picture your partner is describing: </em></p>";
   var imageChoices = object_choices.map(function(imageSrc) {
     console.log(imageSrc);
     return `<img src="${imageSrc}" style="width:400px; height:auto;">`; 
   });
   var trial = {
     type: jsPsychHtmlButtonResponse,
-    stimulus: label,
+    stimulus: prompt1.concat('\n', label),
     choices: imageChoices,
     button_html:
       '<button class="jspsych-btn">%choice%</button>',
@@ -672,9 +681,7 @@ handling for the cumulative score in the server.py and utlities.js file.
 //   jsPsych.addNodeToEndOfTimeline(feedback_trial);
 //   jsPsych.resumeExperiment();
 // }
-/******************************************************************************/
-/*** New Feedback Display ****************************************/
-/******************************************************************************/
+
 function display_feedback(score, c_score, label, guess, target, object_label) {
   end_waiting();
 
@@ -744,7 +751,9 @@ function display_feedback(score, c_score, label, guess, target, object_label) {
     trial_duration: 14000,
     on_load: revealQuadrants, 
     on_finish: function (data) {
+      data.stimulus = '';
       data.score = score;
+      data.c_score = c_score;
       save_dyadic_interaction_data(data);
       send_to_server({ response_type: "FINISHED_FEEDBACK" });
       jsPsych.pauseExperiment();
@@ -755,7 +764,7 @@ function display_feedback(score, c_score, label, guess, target, object_label) {
   jsPsych.resumeExperiment();
 }
 
-//[JE] OLD FEEDBACK DISPLAY
+
 // function display_feedback(score, c_score, label, guess, target) {
 //   end_waiting();
 //   if (score >= 1) {
@@ -929,14 +938,14 @@ the rest of the trials will be added dynamically.
 */
 
 var full_timeline = [].concat(
-  // consent_screen,
-  // preliminary_instructions,
-  // preload_trial,
-  // write_headers,
-  // warmup_instructions,
-  // warmup_timeline,
-  // instruction_screen_observation,
-  // observation_trials,
+  consent_screen,
+  preliminary_instructions,
+  preload_trial,
+  write_headers,
+  warmup_instructions,
+  warmup_timeline,
+  instruction_screen_observation,
+  observation_trials,
   sender_instructions,
   receiver_instructions,
   instruction_screen_enter_waiting_room,

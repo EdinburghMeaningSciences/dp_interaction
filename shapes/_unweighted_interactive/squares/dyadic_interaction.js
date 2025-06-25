@@ -370,7 +370,7 @@ function end_experiment(score) {
       { prompt: "What kind of strategy did you use to tackle it?" }
     ],
     preamble: "Thank you again for participating in our experiment. Please answer in a few words what you think each of the two made-up words means.",
-    button_label: 'End experiment',
+    button_label: 'Continue',
     on_finish: function(data) {
       var response_zop = data.response.Q0; 
       var response_lem = data.response.Q1; 
@@ -378,6 +378,13 @@ function end_experiment(score) {
       save_dyadic_interaction_data(data);
     }
   }
+
+  var code_screen = {
+    type: jsPsychHtmlButtonResponse,
+    stimulus: "Your completion code is <b><span style='color:red'>C12WYY4J</span><?b>. MAKE A NOTE OF THIS CODE TO SUBMIT TO PROLIFIC.",
+    button_label: "End experiment"
+  }  
+
   var final_screen = {
     type: jsPsychHtmlButtonResponse,
     stimulus: function() {
@@ -399,6 +406,7 @@ function end_experiment(score) {
     },
   };
   jsPsych.addNodeToEndOfTimeline(survey_trial)
+  jsPsych.addNodeToEndOfTimeline(code_screen)
   jsPsych.addNodeToEndOfTimeline(final_screen);
   jsPsych.resumeExperiment();
 }
@@ -710,16 +718,16 @@ function display_feedback(score, c_score, label, guess, target, object_label) {
 
   function revealQuadrants() {
     setTimeout(() => { document.getElementById("quadrant-1").style.opacity = 1; }, 0);    // TL
-    setTimeout(() => { document.getElementById("quadrant-2").style.opacity = 1; }, 2000); // BL
-    setTimeout(() => { document.getElementById("quadrant-3").style.opacity = 1; }, 5000); // TR
-    setTimeout(() => { document.getElementById("quadrant-4").style.opacity = 1; }, 8000); // BR
+    setTimeout(() => { document.getElementById("quadrant-2").style.opacity = 1; }, 100); // BL
+    setTimeout(() => { document.getElementById("quadrant-3").style.opacity = 1; }, 200); // TR
+    setTimeout(() => { document.getElementById("quadrant-4").style.opacity = 1; }, 300); // BR
   }
 
   var feedback_trial = {
     type: jsPsychHtmlButtonResponse,
     stimulus: feedback_html,
     choices: [],
-    trial_duration: 14000,
+    trial_duration: 500, //14000
     on_load: revealQuadrants, 
     on_finish: function (data) {
       data.stimulus = '';
@@ -865,9 +873,8 @@ function show_interaction_instructions() {
       </p>",
       "<h3>Pre-interaction Instructions: Weighting</h3> \
       <p style='text-align:left'> \
-          Your response will be scored after every trial: you get a positive score if the receiver correctly identifies the picture from the sender's description, and a negative score if the receiver picks the wrong picture. <br><br>\
+          Your response will be scored after every trial: you get 1 point if the receiver correctly identifies the picture from the sender's description, and -1 point if the receiver picks the wrong picture. <br><br>\
           You and your partner will receive a bonus payment at the end if your score is greater than 0. The higher your final score, the higher your bonus!<br><br> \
-          <b>Note that the scoring depends on the type of picture.</b> If the picture shown to the sender consists of <b>triangles</b> (indicated by a black frame), the score will be  <span style='color:blue'><b>+2</b></span> if the receiver identifies the picture correctly and  <span style='color:red'><b>-2</b></span> if the receiver chooses the wrong picture. If the picture consists of <b>circles</b> (indicated by the lack of a frame), the score will be +1 if the receiver identifies the picture correctly and -1 if the receiver chooses the wrong picture. <br><br>\
           You will probably get some wrong at first, so watch the feedback and try to learn from it!\
       </p>"
     ],

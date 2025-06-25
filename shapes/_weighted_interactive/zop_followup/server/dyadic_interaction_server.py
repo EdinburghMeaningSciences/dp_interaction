@@ -283,7 +283,7 @@ def enter_phase(client_id, phase):
         progress_phase(client_id)
     elif phase == 'PairParticipants':
         # ***** Change this to the correct json file for the lexical condition *****
-        trial_path = os.path.join('..', 'zop-trials.json')
+        trial_path = os.path.join('..', 'zop-en-trials.json')
         with open(trial_path, 'r') as f:
             trial_bank = json.load(f)
 

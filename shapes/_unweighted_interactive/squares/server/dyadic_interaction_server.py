@@ -404,22 +404,20 @@ def enter_phase(client_id, phase):
             global_participant_data[unpaired_one]['partner'] = unpaired_two
             global_participant_data[unpaired_two]['partner'] = unpaired_one
 
-            split_targets1 = generate_trials(trial_bank)#split_trials(target_list1)
-            split_targets2 = generate_trials(trial_bank)
+            base_trials = generate_trials(trial_bank)
+            trial_list_1 = shuffle(deepcopy(base_trials))
+            trial_list_2 = shuffle(deepcopy(base_trials))
 
-            shuffled_targets1 = shuffle(split_targets1)
-            shuffled_targets2 = shuffle(split_targets2)
-
-            shuffled_targets = list(chain.from_iterable(zip(shuffled_targets1, shuffled_targets2)))
+            shuffled_targets = [val for pair in zip(trial_list_1, trial_list_2) for val in pair]
 
             matcher_targets = collect_prompts(shuffled_targets)
             global_participant_data[unpaired_one]['matcher_targets'] = matcher_targets
             global_participant_data[unpaired_two]['matcher_targets'] = matcher_targets
-            
-            for c in [unpaired_one, unpaired_two]:
-                global_participant_data[c]['trial_list'] = shuffled_targets
-                global_participant_data[c]['shared_trial_counter'] = 0
-                #progress_phase(c)
+
+            for p in [unpaired_one, unpaired_two]:
+                global_participant_data[p]['trial_list'] = shuffled_targets
+                global_participant_data[p]['shared_trial_counter'] = 0
+
     elif phase == 'Interaction':
         send_instructions(client_id, phase)
     elif phase == 'End':
